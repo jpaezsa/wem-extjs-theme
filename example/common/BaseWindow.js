@@ -14,8 +14,9 @@ Ext.define('BaseWindow', {
 
     initComponent: function () {
         var me = this;
+
         if (me.mask) {
-            Ext.getBody().mask();
+            Ext.fly(document.getElementsByTagName('html')[0]).mask();
         }
 
         me.setFullWidth();
@@ -87,7 +88,7 @@ Ext.define('BaseWindow', {
 
     doClose: function () {
         if (this.mask) {
-           Ext.getBody().unmask();
+           Ext.fly(document.getElementsByTagName('html')[0]).unmask();
         }
         this.destroy();
     }
