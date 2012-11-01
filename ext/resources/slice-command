@@ -1,0 +1,1 @@
+sencha slice theme -d ../ -c css/admin.css -o themes/images/default -m ../manifest.js  -v

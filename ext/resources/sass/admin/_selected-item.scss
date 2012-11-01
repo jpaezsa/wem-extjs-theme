@@ -1,0 +1,114 @@
+.admin-selected-item-box {
+  float: left;
+  display: inline-block;
+}
+
+.admin-selected-item-box.gradient {
+  background-color: $admin-light-grey;
+}
+
+.admin-selected-item-box p {
+  margin: 0 !important;
+}
+
+.admin-selected-item-box.large .right a:hover,
+.admin-selected-item-box.small .right a:hover {
+  border: 1px solid #d1d1d1;
+}
+
+.admin-selected-item-box .left {
+  float: left;
+}
+
+.admin-selected-item-box .center {
+  float: left;
+  border: 0 none !important;
+  border-right: 1px solid #F0F0F0 !important;
+}
+
+.admin-selected-item-box .right {
+  float: left;
+}
+
+/* Large */
+.admin-selected-item-box.large {
+  padding: 6px;
+  margin: 0 12px 12px 0;
+}
+
+.admin-selected-item-box.large .left {
+}
+
+.admin-selected-item-box.large .left img {
+  width: 32px;
+  height: 32px;
+}
+
+.admin-selected-item-box.large .center {
+  margin-right: 10px;
+  padding: 0 11px;
+}
+
+.admin-selected-item-box.large .center h2 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.admin-selected-item-box.large .center p {
+  margin: 0;
+  color: #888;
+}
+
+.admin-selected-item-box.large .right {
+  margin: 6px 6px 0 0;
+}
+
+.admin-selected-item-box.large .right a {
+  width: 22px;
+  height: 22px;
+  display: block;
+  border: 1px solid transparent;
+  background: transparent url(../../../../images/cross.png) no-repeat 2px;
+}
+
+/* Small */
+.admin-selected-item-box.small {
+  margin: 0 10px 10px 0;
+  padding: 3px;
+}
+
+.admin-selected-item-box.small .left {
+}
+
+.admin-selected-item-box.small .left img {
+  width: 20px;
+  height: 20px;
+}
+
+.admin-selected-item-box.small .center {
+  margin-right: 5px;
+  padding: 0 6px;
+}
+
+.admin-selected-item-box.small .center h2 {
+  font-size: 11px;
+  font-weight: normal;
+  margin: 3px 0 0 0;
+}
+
+.admin-selected-item-box.small .center p {
+  margin: 0;
+}
+
+.admin-selected-item-box.small .right {
+  margin: 4px 3px 0 0;
+}
+
+.admin-selected-item-box.small .right a {
+  width: 12px;
+  height: 12px;
+  display: block;
+  border: 1px solid transparent;
+  background: transparent url(../../../../images/cross-sm.png) no-repeat 1px;
+}

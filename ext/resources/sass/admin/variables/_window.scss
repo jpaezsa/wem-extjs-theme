@@ -1,0 +1,17 @@
+.admin-std-window {
+  padding: 40px;
+}
+
+.admin-std-window-white {
+  background-color: #ffffff;
+}
+
+.admin-std-window-dark-purple {
+  background-color: #5133ab;
+  color: #fff !important;
+}
+
+.admin-std-window-dark-black {
+  background-color: $admin-black;
+  color: #fff !important;
+}
