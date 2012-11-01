@@ -1,0 +1,60 @@
+/**
+ * @var {color} $base-color
+ * The base color to be used throughout the theme.
+ */
+$base-color: #ffffff !default;
+
+/**
+ * Admin Colors
+ */
+$admin-black: #141414;
+$admin-blue: #4294DE; /*1B58B8*/
+$admin-light-grey: #eeeeee;
+
+/**
+ * @var {string} $font-family 
+ * The default font-family to be used throughout the theme.
+ */
+
+//$font-family: "Helvetica Neue",Helvetica,Arial,sans-serif !default;
+$font-family: Arial,sans-serif !default;
+$font-size  : 12px !default;
+$color: $admin-black !default;
+
+a {
+  color: #0070de;
+}
+
+h1 {
+  font-size: 36px !important;
+  line-height: 40px;
+}
+
+h2 {
+  font-size: 30px !important;
+  line-height: 40px;
+}
+
+h3 {
+  font-size: 24px !important;
+  line-height: 40px;
+}
+
+h4 {
+  font-size: 18 !important;
+  line-height: 20px;
+}
+
+h5 {
+  font-size: 12px !important;
+  line-height: 20px;
+}
+
+h6 {
+  font-size: 12px !important;
+  line-height: 20px;
+}
+
+p {
+  margin: 0 0 10px !important;
+}
