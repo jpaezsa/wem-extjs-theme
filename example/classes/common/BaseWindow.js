@@ -21,12 +21,7 @@ Ext.define('BaseWindow', {
 
         me.setFullWidth();
         me.addClass(me.backgroundCls);
-
-        me.x = -me.width;
-
-        if (me.anchor) {
-            me.y = me.anchor.getEl().getY() - me.height;
-        }
+        me.doHide();
 
         function handleWindowResize() {
             me.setFullWidth();
@@ -34,7 +29,6 @@ Ext.define('BaseWindow', {
 
         me.addListener('render', function () {
             window.addEventListener('resize', handleWindowResize, false);
-
             me.getEl().animate({
                 duration: 150,
                 easing: 'easeOut',
@@ -69,7 +63,6 @@ Ext.define('BaseWindow', {
             }
 
         ];
-
         me.callParent(arguments);
     },
 
@@ -79,10 +72,15 @@ Ext.define('BaseWindow', {
     },
 
     doShow: function () {
-        this.show();
+        var me = this;
+        if (me.anchor) {
+            me.y = me.anchor.getEl().getY() - me.height;
+        }
+        me.show();
     },
 
     doHide: function () {
+        this.x = -this.width;
         this.hide();
     },
 
