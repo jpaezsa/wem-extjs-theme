@@ -1,0 +1,8 @@
+.DS_Store
+temp/
+*.iws
+*.ids
+*.iml
+*.ipr
+.idea
+.sass-cache
