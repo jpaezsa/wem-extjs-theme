@@ -5,7 +5,6 @@ var FILTER = {
     spaces: ['Enonic.com', 'Intranet', 'Extranet', 'Publisering.no', 'Monitor'],
     types: ['Person', 'Article', 'Log', 'Calendar', 'Document', 'Term', 'Discussion', 'Comment', 'Form', 'Image', 'File', 'Quiz', 'FAQ', 'CaseStudy', 'Taumatawhakatangihangakoauauotamateaturipukakapikimaungahoronukupokaiwhenuakitanatahu'],
     lastModified: ['Today', 'Yesterday', '< 1 week', '< 1 month']
-
 };
 
 var selectedItemLargeBoxHtml = '<div class="admin-selected-item-box gradient large clearfix" id="selected-item-box-user:enonic:mer"><div class="left">' +
