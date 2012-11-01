@@ -1,4 +1,4 @@
-function getSelectedItemBox() {
+function createSelectedItemContainer() {
     return Ext.create('Ext.container.Container', {
         defaults: {
             border: false
@@ -18,7 +18,7 @@ function getSelectedItemBox() {
     });
 }
 
-function getWindowButtonContainer() {
+function createWindowConfigContainer() {
     return Ext.create('Ext.container.Container', {
         cls: 'admin-std-panel',
         defaults: {
@@ -179,7 +179,7 @@ function getStdButtonsContainer(color) {
     });
 }
 
-function getTypographyContainer() {
+function createTypographyContainer() {
     return Ext.create('Ext.container.Container', {
         items: [
             {
@@ -219,7 +219,7 @@ function createSimpsonsStore (storeId) {
 }
 
 
-function getBaseTable() {
+function createBaseTable() {
     return Ext.create('Ext.container.Container', {
         defaults: {
             margin: '0 0 10 0'
@@ -233,6 +233,12 @@ function getBaseTable() {
                 xtype: 'container',
                 layout: {
                     type: 'table',
+                    width: '100%',
+                    tableAttrs: {
+                        style: {
+                            width: '100%'
+                        }
+                    },
                     columns: 2,
                     tdAttrs: {
                         valign: 'top',
@@ -251,8 +257,7 @@ function getBaseTable() {
                             { text: 'Name',  dataIndex: 'name' },
                             { text: 'Email', dataIndex: 'email', flex: 1 },
                             { text: 'Phone', dataIndex: 'phone' }
-                        ],
-                        width: 350
+                        ]
                     },
                     {
                         xtype: 'grid',
@@ -261,8 +266,7 @@ function getBaseTable() {
                             { text: 'Name',  dataIndex: 'name' },
                             { text: 'Email', dataIndex: 'email', flex: 1 },
                             { text: 'Phone', dataIndex: 'phone' }
-                        ],
-                        width: 350
+                        ]
                     },
                     {
                         colspan: 2,
@@ -280,5 +284,32 @@ function getBaseTable() {
                 ]
             }
         ]
+    });
+}
+
+
+function createTreeStore () {
+    return Ext.create('Ext.data.TreeStore', {
+        root: {
+            expanded: true,
+            children: [
+                { text: "detention", leaf: true },
+                { text: "homework", expanded: true, children: [
+                    { text: "book report", leaf: true },
+                    { text: "alegrbra", leaf: true}
+                ] },
+                { text: "buy lottery tickets", leaf: true }
+            ]
+        }
+    });
+}
+
+function createTreePanel () {
+    return Ext.create('Ext.tree.Panel', {
+        title: 'Simple Tree',
+        width: 200,
+        height: 150,
+        store: createTreeStore(),
+        rootVisible: false
     });
 }

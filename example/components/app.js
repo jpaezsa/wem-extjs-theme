@@ -20,11 +20,12 @@ Ext.onReady(function () {
                         xtype: 'component',
                         html: '<h1>Admin Components</h1>'
                     },
-                    getSelectedItemBox(),
-                    getTypographyContainer(),
+                    createSelectedItemContainer(),
+                    createTypographyContainer(),
                     getStdButtonsContainer(),
-                    getWindowButtonContainer(),
-                    getBaseTable()
+                    createWindowConfigContainer(),
+                    createBaseTable(),
+                    createTreePanel()
                 ]
             }
         ]

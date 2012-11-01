@@ -13,7 +13,6 @@ Ext.define('ApplicationBar', {
         {
             xtype: 'tbtext',
             text: 'sitename/path/to/press-releases'
-
         },
         {xtype: 'tbfill'},
         {
