@@ -52,25 +52,25 @@ p {
 .admin-std-button-red {
   background-color: #e36500 !important; }
 
-/* line 22, ../sass/admin/variables/_panel.scss */
+/* line 21, ../sass/admin/variables/_panel.scss */
 .admin-std-panel {
   padding: 20px; }
 
-/* line 27, ../sass/admin/variables/_panel.scss */
+/* line 26, ../sass/admin/variables/_panel.scss */
 .admin-filter-panel {
   background-color: #efefef !important; }
 
-/* line 31, ../sass/admin/variables/_panel.scss */
+/* line 30, ../sass/admin/variables/_panel.scss */
 .admin-filter-panel .x-fieldset {
   border: none !important; }
 
-/* line 35, ../sass/admin/variables/_panel.scss */
+/* line 34, ../sass/admin/variables/_panel.scss */
 .admin-filter-panel .x-fieldset-header {
   color: #000000 !important;
   font-size: 15px !important;
   padding: 0 0 0 0 !important; }
 
-/* line 41, ../sass/admin/variables/_panel.scss */
+/* line 40, ../sass/admin/variables/_panel.scss */
 .admin-filter-panel .x-fieldset-body {
   padding-left: 10px; }
 
@@ -233,11 +233,11 @@ p {
 
 /* line 67, ../sass/admin/_selected-item.scss */
 .admin-selected-item-box.large .right a {
-  width: 22px;
-  height: 22px;
+  width: 24px;
+  height: 24px;
   display: block;
   border: 1px solid transparent;
-  background: transparent url(../../../../images/cross.png) no-repeat 2px; }
+  background: transparent url(../../../../example/images/navigate_cross-24px.png) no-repeat -2px; }
 
 /* Small */
 /* line 76, ../sass/admin/_selected-item.scss */
@@ -267,15 +267,15 @@ p {
 
 /* line 104, ../sass/admin/_selected-item.scss */
 .admin-selected-item-box.small .right {
-  margin: 4px 3px 0 0; }
+  margin: 2px 3px 0 0; }
 
 /* line 108, ../sass/admin/_selected-item.scss */
 .admin-selected-item-box.small .right a {
-  width: 12px;
-  height: 12px;
+  width: 16px;
+  height: 16px;
   display: block;
   border: 1px solid transparent;
-  background: transparent url(../../../../images/cross-sm.png) no-repeat 1px; }
+  background: transparent url(../../../../example/images/navigate_cross-16px.png) no-repeat -1px; }
 
 /**
  * @var {string} $prefix 
