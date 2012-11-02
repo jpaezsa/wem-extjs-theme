@@ -1,6 +1,6 @@
 Ext.define('BaseGridPanel', {
-    xtype: 'baseGridPanel',
     extend: 'Ext.grid.Panel',
+    xtype: 'baseGridPanel',
     deferRowRender: true,
     cls: 'admin-std-grid',
     viewConfig: {

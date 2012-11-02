@@ -1,6 +1,6 @@
 Ext.define('BaseWindow', {
-    xtype: 'baseWindow',
     extend: 'Ext.container.Container',
+    xtype: 'baseWindow',
     floating: true,
     shadow: false,
     width: 10,
