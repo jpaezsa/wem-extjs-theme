@@ -271,6 +271,9 @@ function createBaseTable() {
                     {
                         colspan: 2,
                         xtype: 'baseGridPanel',
+                        style: {
+                            border: '1px solid #eee'
+                        },
                         store: createSimpsonsStore('simpsonsStore3'),
                         selModel: Ext.create('Ext.selection.CheckboxModel', {
                             headerWidth: 42
