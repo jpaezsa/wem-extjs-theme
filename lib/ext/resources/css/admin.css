@@ -52,25 +52,25 @@ p {
 .admin-std-button-red {
   background-color: #e36500 !important; }
 
-/* line 14, ../sass/admin/variables/_panel.scss */
+/* line 22, ../sass/admin/variables/_panel.scss */
 .admin-std-panel {
   padding: 20px; }
 
-/* line 19, ../sass/admin/variables/_panel.scss */
+/* line 27, ../sass/admin/variables/_panel.scss */
 .admin-filter-panel {
   background-color: #efefef !important; }
 
-/* line 23, ../sass/admin/variables/_panel.scss */
+/* line 31, ../sass/admin/variables/_panel.scss */
 .admin-filter-panel .x-fieldset {
   border: none !important; }
 
-/* line 27, ../sass/admin/variables/_panel.scss */
+/* line 35, ../sass/admin/variables/_panel.scss */
 .admin-filter-panel .x-fieldset-header {
   color: #000000 !important;
   font-size: 15px !important;
   padding: 0 0 0 0 !important; }
 
-/* line 33, ../sass/admin/variables/_panel.scss */
+/* line 41, ../sass/admin/variables/_panel.scss */
 .admin-filter-panel .x-fieldset-body {
   padding-left: 10px; }
 
@@ -6576,16 +6576,16 @@ textarea.x-form-invalid-field {
 
 /* line 129, ../themes/stylesheets/ext4/default/widgets/_panel.scss */
 .x-panel-collapsed .x-panel-header-collapsed-border-top {
-  border-bottom-width: 1px !important; }
+  border-bottom-width: 0 !important; }
 /* line 132, ../themes/stylesheets/ext4/default/widgets/_panel.scss */
 .x-panel-collapsed .x-panel-header-collapsed-border-right {
-  border-left-width: 1px !important; }
+  border-left-width: 0 !important; }
 /* line 135, ../themes/stylesheets/ext4/default/widgets/_panel.scss */
 .x-panel-collapsed .x-panel-header-collapsed-border-bottom {
-  border-top-width: 1px !important; }
+  border-top-width: 0 !important; }
 /* line 138, ../themes/stylesheets/ext4/default/widgets/_panel.scss */
 .x-panel-collapsed .x-panel-header-collapsed-border-left {
-  border-right-width: 1px !important; }
+  border-right-width: 0 !important; }
 
 /* line 145, ../themes/stylesheets/ext4/default/widgets/_panel.scss */
 .x-nlg .x-panel-header-vertical .x-frame-mc {
@@ -6599,13 +6599,13 @@ textarea.x-form-invalid-field {
 .x-panel-header-default {
   font-size: 11px;
   border-color: #ebe7e7;
-  border-width: 1px;
+  border-width: 0;
   border-style: solid;
   background-image: none;
-  background-color: #141414;
-  -webkit-box-shadow: #2e2e2e 0 1px 0px 0 inset;
-  -moz-box-shadow: #2e2e2e 0 1px 0px 0 inset;
-  box-shadow: #2e2e2e 0 1px 0px 0 inset; }
+  background-color: #444444;
+  -webkit-box-shadow: #5e5e5e 0 1px 0px 0 inset;
+  -moz-box-shadow: #5e5e5e 0 1px 0px 0 inset;
+  box-shadow: #5e5e5e 0 1px 0px 0 inset; }
 
 /* line 277, ../themes/stylesheets/ext4/default/widgets/_panel.scss */
 .x-nlg .x-panel-header-default-top {
@@ -6660,7 +6660,7 @@ textarea.x-form-invalid-field {
 .x-panel-header-default-left,
 .x-panel-header-default-right {
   background-image: none;
-  background-color: #141414; }
+  background-color: #444444; }
 
 /* line 416, ../themes/stylesheets/ext4/default/widgets/_panel.scss */
 .x-panel-collapsed .x-panel-header-default-top {
@@ -6697,27 +6697,27 @@ textarea.x-form-invalid-field {
 
 /* line 434, ../themes/stylesheets/ext4/default/widgets/_panel.scss */
 .x-panel-header-default-top {
-  -webkit-box-shadow: #2e2e2e 0 1px 0px 0 inset;
-  -moz-box-shadow: #2e2e2e 0 1px 0px 0 inset;
-  box-shadow: #2e2e2e 0 1px 0px 0 inset; }
+  -webkit-box-shadow: #5e5e5e 0 1px 0px 0 inset;
+  -moz-box-shadow: #5e5e5e 0 1px 0px 0 inset;
+  box-shadow: #5e5e5e 0 1px 0px 0 inset; }
 
 /* line 438, ../themes/stylesheets/ext4/default/widgets/_panel.scss */
 .x-panel-header-default-right {
-  -webkit-box-shadow: #2e2e2e -1px 0 0px 0 inset;
-  -moz-box-shadow: #2e2e2e -1px 0 0px 0 inset;
-  box-shadow: #2e2e2e -1px 0 0px 0 inset; }
+  -webkit-box-shadow: #5e5e5e -1px 0 0px 0 inset;
+  -moz-box-shadow: #5e5e5e -1px 0 0px 0 inset;
+  box-shadow: #5e5e5e -1px 0 0px 0 inset; }
 
 /* line 442, ../themes/stylesheets/ext4/default/widgets/_panel.scss */
 .x-panel-header-default-bottom {
-  -webkit-box-shadow: #2e2e2e 0 -1px 0px 0 inset;
-  -moz-box-shadow: #2e2e2e 0 -1px 0px 0 inset;
-  box-shadow: #2e2e2e 0 -1px 0px 0 inset; }
+  -webkit-box-shadow: #5e5e5e 0 -1px 0px 0 inset;
+  -moz-box-shadow: #5e5e5e 0 -1px 0px 0 inset;
+  box-shadow: #5e5e5e 0 -1px 0px 0 inset; }
 
 /* line 446, ../themes/stylesheets/ext4/default/widgets/_panel.scss */
 .x-panel-header-default-left {
-  -webkit-box-shadow: #2e2e2e 1px 0 0px 0 inset;
-  -moz-box-shadow: #2e2e2e 1px 0 0px 0 inset;
-  box-shadow: #2e2e2e 1px 0 0px 0 inset; }
+  -webkit-box-shadow: #5e5e5e 1px 0 0px 0 inset;
+  -moz-box-shadow: #5e5e5e 1px 0 0px 0 inset;
+  box-shadow: #5e5e5e 1px 0 0px 0 inset; }
 
 /* line 481, ../themes/stylesheets/ext4/default/widgets/_panel.scss */
 .x-panel-header-default-right-tc,
@@ -6739,13 +6739,13 @@ textarea.x-form-invalid-field {
 .x-panel-header-default-framed {
   font-size: 11px;
   border-color: #ebe7e7;
-  border-width: 1px;
+  border-width: 0;
   border-style: solid;
   background-image: none;
-  background-color: #141414;
-  -webkit-box-shadow: #2e2e2e 0 1px 0px 0 inset;
-  -moz-box-shadow: #2e2e2e 0 1px 0px 0 inset;
-  box-shadow: #2e2e2e 0 1px 0px 0 inset; }
+  background-color: #444444;
+  -webkit-box-shadow: #5e5e5e 0 1px 0px 0 inset;
+  -moz-box-shadow: #5e5e5e 0 1px 0px 0 inset;
+  box-shadow: #5e5e5e 0 1px 0px 0 inset; }
 
 /* line 277, ../themes/stylesheets/ext4/default/widgets/_panel.scss */
 .x-nlg .x-panel-header-default-framed-top {
@@ -6825,7 +6825,7 @@ textarea.x-form-invalid-field {
 .x-panel-header-default-framed-left,
 .x-panel-header-default-framed-right {
   background-image: none;
-  background-color: #141414; }
+  background-color: #444444; }
 
 /* line 69, ../themes/stylesheets/ext4/default/mixins/_frame.scss */
 .x-panel-default-framed {
@@ -6900,12 +6900,12 @@ textarea.x-form-invalid-field {
   border-width: 1px 1px 0 1px;
   border-style: solid;
   background-image: none;
-  background-color: #141414; }
+  background-color: #444444; }
 
 /* line 102, ../themes/stylesheets/ext4/default/mixins/_frame.scss */
 .x-nlg .x-panel-header-default-framed-top-mc {
   background-image: url('../themes/images/default/panel-header/panel-header-default-framed-top-bg.gif');
-  background-color: #141414; }
+  background-color: #444444; }
 
 /* line 115, ../themes/stylesheets/ext4/default/mixins/_frame.scss */
 .x-nbr .x-panel-header-default-framed-top {
@@ -6963,12 +6963,12 @@ textarea.x-form-invalid-field {
   border-width: 1px 1px 1px 0;
   border-style: solid;
   background-image: none;
-  background-color: #141414; }
+  background-color: #444444; }
 
 /* line 102, ../themes/stylesheets/ext4/default/mixins/_frame.scss */
 .x-nlg .x-panel-header-default-framed-right-mc {
   background-image: url('../themes/images/default/panel-header/panel-header-default-framed-right-bg.gif');
-  background-color: #141414; }
+  background-color: #444444; }
 
 /* line 115, ../themes/stylesheets/ext4/default/mixins/_frame.scss */
 .x-nbr .x-panel-header-default-framed-right {
@@ -7027,12 +7027,12 @@ textarea.x-form-invalid-field {
   border-width: 0 1px 1px 1px;
   border-style: solid;
   background-image: none;
-  background-color: #141414; }
+  background-color: #444444; }
 
 /* line 102, ../themes/stylesheets/ext4/default/mixins/_frame.scss */
 .x-nlg .x-panel-header-default-framed-bottom-mc {
   background-image: url('../themes/images/default/panel-header/panel-header-default-framed-bottom-bg.gif');
-  background-color: #141414; }
+  background-color: #444444; }
 
 /* line 115, ../themes/stylesheets/ext4/default/mixins/_frame.scss */
 .x-nbr .x-panel-header-default-framed-bottom {
@@ -7090,12 +7090,12 @@ textarea.x-form-invalid-field {
   border-width: 1px 0 1px 1px;
   border-style: solid;
   background-image: none;
-  background-color: #141414; }
+  background-color: #444444; }
 
 /* line 102, ../themes/stylesheets/ext4/default/mixins/_frame.scss */
 .x-nlg .x-panel-header-default-framed-left-mc {
   background-image: url('../themes/images/default/panel-header/panel-header-default-framed-left-bg.gif');
-  background-color: #141414; }
+  background-color: #444444; }
 
 /* line 115, ../themes/stylesheets/ext4/default/mixins/_frame.scss */
 .x-nbr .x-panel-header-default-framed-left {
@@ -7138,27 +7138,27 @@ textarea.x-form-invalid-field {
 
 /* line 399, ../themes/stylesheets/ext4/default/widgets/_panel.scss */
 .x-panel-header-default-framed-top {
-  -webkit-box-shadow: #2e2e2e 0 1px 0px 0 inset, #2e2e2e -1px 0 0px 0 inset, #2e2e2e 1px 0 0px 0 inset;
-  -moz-box-shadow: #2e2e2e 0 1px 0px 0 inset, #2e2e2e -1px 0 0px 0 inset, #2e2e2e 1px 0 0px 0 inset;
-  box-shadow: #2e2e2e 0 1px 0px 0 inset, #2e2e2e -1px 0 0px 0 inset, #2e2e2e 1px 0 0px 0 inset; }
+  -webkit-box-shadow: #5e5e5e 0 1px 0px 0 inset, #5e5e5e -1px 0 0px 0 inset, #5e5e5e 1px 0 0px 0 inset;
+  -moz-box-shadow: #5e5e5e 0 1px 0px 0 inset, #5e5e5e -1px 0 0px 0 inset, #5e5e5e 1px 0 0px 0 inset;
+  box-shadow: #5e5e5e 0 1px 0px 0 inset, #5e5e5e -1px 0 0px 0 inset, #5e5e5e 1px 0 0px 0 inset; }
 
 /* line 403, ../themes/stylesheets/ext4/default/widgets/_panel.scss */
 .x-panel-header-default-framed-right {
-  -webkit-box-shadow: #2e2e2e 0 1px 0px 0 inset, #2e2e2e 0 -1px 0px 0 inset, #2e2e2e -1px 0 0px 0 inset;
-  -moz-box-shadow: #2e2e2e 0 1px 0px 0 inset, #2e2e2e 0 -1px 0px 0 inset, #2e2e2e -1px 0 0px 0 inset;
-  box-shadow: #2e2e2e 0 1px 0px 0 inset, #2e2e2e 0 -1px 0px 0 inset, #2e2e2e -1px 0 0px 0 inset; }
+  -webkit-box-shadow: #5e5e5e 0 1px 0px 0 inset, #5e5e5e 0 -1px 0px 0 inset, #5e5e5e -1px 0 0px 0 inset;
+  -moz-box-shadow: #5e5e5e 0 1px 0px 0 inset, #5e5e5e 0 -1px 0px 0 inset, #5e5e5e -1px 0 0px 0 inset;
+  box-shadow: #5e5e5e 0 1px 0px 0 inset, #5e5e5e 0 -1px 0px 0 inset, #5e5e5e -1px 0 0px 0 inset; }
 
 /* line 407, ../themes/stylesheets/ext4/default/widgets/_panel.scss */
 .x-panel-header-default-framed-bottom {
-  -webkit-box-shadow: #2e2e2e 0 -1px 0px 0 inset, #2e2e2e -1px 0 0px 0 inset, #2e2e2e 1px 0 0px 0 inset;
-  -moz-box-shadow: #2e2e2e 0 -1px 0px 0 inset, #2e2e2e -1px 0 0px 0 inset, #2e2e2e 1px 0 0px 0 inset;
-  box-shadow: #2e2e2e 0 -1px 0px 0 inset, #2e2e2e -1px 0 0px 0 inset, #2e2e2e 1px 0 0px 0 inset; }
+  -webkit-box-shadow: #5e5e5e 0 -1px 0px 0 inset, #5e5e5e -1px 0 0px 0 inset, #5e5e5e 1px 0 0px 0 inset;
+  -moz-box-shadow: #5e5e5e 0 -1px 0px 0 inset, #5e5e5e -1px 0 0px 0 inset, #5e5e5e 1px 0 0px 0 inset;
+  box-shadow: #5e5e5e 0 -1px 0px 0 inset, #5e5e5e -1px 0 0px 0 inset, #5e5e5e 1px 0 0px 0 inset; }
 
 /* line 411, ../themes/stylesheets/ext4/default/widgets/_panel.scss */
 .x-panel-header-default-framed-left {
-  -webkit-box-shadow: #2e2e2e 0 1px 0px 0 inset, #2e2e2e 0 -1px 0px 0 inset, #2e2e2e 1px 0 0px 0 inset;
-  -moz-box-shadow: #2e2e2e 0 1px 0px 0 inset, #2e2e2e 0 -1px 0px 0 inset, #2e2e2e 1px 0 0px 0 inset;
-  box-shadow: #2e2e2e 0 1px 0px 0 inset, #2e2e2e 0 -1px 0px 0 inset, #2e2e2e 1px 0 0px 0 inset; }
+  -webkit-box-shadow: #5e5e5e 0 1px 0px 0 inset, #5e5e5e 0 -1px 0px 0 inset, #5e5e5e 1px 0 0px 0 inset;
+  -moz-box-shadow: #5e5e5e 0 1px 0px 0 inset, #5e5e5e 0 -1px 0px 0 inset, #5e5e5e 1px 0 0px 0 inset;
+  box-shadow: #5e5e5e 0 1px 0px 0 inset, #5e5e5e 0 -1px 0px 0 inset, #5e5e5e 1px 0 0px 0 inset; }
 
 /* line 452, ../themes/stylesheets/ext4/default/widgets/_panel.scss */
 .x-panel .x-panel-header-default-framed-top {
@@ -7202,12 +7202,12 @@ textarea.x-form-invalid-field {
   border-width: 1px;
   border-style: solid;
   background-image: none;
-  background-color: #141414; }
+  background-color: #444444; }
 
 /* line 102, ../themes/stylesheets/ext4/default/mixins/_frame.scss */
 .x-nlg .x-panel-header-default-framed-collapsed-top-mc {
   background-image: url('../themes/images/default/panel-header/panel-header-default-framed-collapsed-top-bg.gif');
-  background-color: #141414; }
+  background-color: #444444; }
 
 /* line 115, ../themes/stylesheets/ext4/default/mixins/_frame.scss */
 .x-nbr .x-panel-header-default-framed-collapsed-top {
@@ -7265,12 +7265,12 @@ textarea.x-form-invalid-field {
   border-width: 1px;
   border-style: solid;
   background-image: none;
-  background-color: #141414; }
+  background-color: #444444; }
 
 /* line 102, ../themes/stylesheets/ext4/default/mixins/_frame.scss */
 .x-nlg .x-panel-header-default-framed-collapsed-right-mc {
   background-image: url('../themes/images/default/panel-header/panel-header-default-framed-collapsed-right-bg.gif');
-  background-color: #141414; }
+  background-color: #444444; }
 
 /* line 115, ../themes/stylesheets/ext4/default/mixins/_frame.scss */
 .x-nbr .x-panel-header-default-framed-collapsed-right {
@@ -7329,12 +7329,12 @@ textarea.x-form-invalid-field {
   border-width: 1px;
   border-style: solid;
   background-image: none;
-  background-color: #141414; }
+  background-color: #444444; }
 
 /* line 102, ../themes/stylesheets/ext4/default/mixins/_frame.scss */
 .x-nlg .x-panel-header-default-framed-collapsed-bottom-mc {
   background-image: url('../themes/images/default/panel-header/panel-header-default-framed-collapsed-bottom-bg.gif');
-  background-color: #141414; }
+  background-color: #444444; }
 
 /* line 115, ../themes/stylesheets/ext4/default/mixins/_frame.scss */
 .x-nbr .x-panel-header-default-framed-collapsed-bottom {
@@ -7392,12 +7392,12 @@ textarea.x-form-invalid-field {
   border-width: 1px;
   border-style: solid;
   background-image: none;
-  background-color: #141414; }
+  background-color: #444444; }
 
 /* line 102, ../themes/stylesheets/ext4/default/mixins/_frame.scss */
 .x-nlg .x-panel-header-default-framed-collapsed-left-mc {
   background-image: url('../themes/images/default/panel-header/panel-header-default-framed-collapsed-left-bg.gif');
-  background-color: #141414; }
+  background-color: #444444; }
 
 /* line 115, ../themes/stylesheets/ext4/default/mixins/_frame.scss */
 .x-nbr .x-panel-header-default-framed-collapsed-left {

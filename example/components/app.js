@@ -29,7 +29,6 @@ Ext.onReady(function () {
                 ]
             }
         ]
-
     });
 });
 
