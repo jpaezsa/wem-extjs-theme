@@ -18,7 +18,7 @@ Ext.onReady(function () {
                 items: [
                     {
                         xtype: 'component',
-                        html: '<h1>Admin Components</h1>'
+                        html: '<h1>Admin Widgets</h1>'
                     },
                     createSelectedItemContainer(),
                     createTypographyContainer(),
