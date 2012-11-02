@@ -227,7 +227,7 @@ function createBaseTable() {
         items: [
             {
                 xtype: 'component',
-                html: '<h2>Grids</h2>'
+                html: '<h2>Grid</h2>'
             },
             {
                 xtype: 'container',
@@ -305,11 +305,18 @@ function createTreeStore () {
 }
 
 function createTreePanel () {
-    return Ext.create('Ext.tree.Panel', {
-        title: 'Simple Tree',
-        width: 200,
-        height: 150,
-        store: createTreeStore(),
-        rootVisible: false
+    return Ext.create('Ext.container.Container', {
+        items: [
+            {
+                xtype: 'component',
+                html: '<h2>Tree</h2>'
+            },
+            {
+                xtype: 'treepanel',
+                title: 'Simple Tree',
+                store: createTreeStore(),
+                rootVisible: false
+            }
+        ]
     });
 }
