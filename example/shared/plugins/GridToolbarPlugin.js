@@ -1,6 +1,6 @@
-Ext.define('Admin.plugins.AdminGridToolbarPlugin', {
+Ext.define('Admin.plugins.GridToolbarPlugin', {
     extend: 'Object',
-    alias: 'plugin.adminGridToolbarPlugin',
+    alias: 'plugin.gridToolbarPlugin',
 
     constructor: function (config) {
         if (config) {

@@ -64,7 +64,7 @@ Ext.define('Admin.view.topbar.TopBarPanel', {
                 login: function (cmp) {
                     console.log('login');
                     cmp.loggedUser = {
-                        img: '../images/profile-image.png'
+                        img: '../resources/images/profile-image.png'
                     };
                 },
                 logout: function (cmp) {
@@ -90,7 +90,7 @@ Ext.define('Admin.view.topbar.TopBarPanel', {
                 {
                     title: 'Profile',
                     cls: 'profile title-top title-mask',
-                    img: '../images/profile-image.png',
+                    img: '../resources/images/profile-image.png',
                     contentTpl: new Ext.XTemplate('<img src="{img}" alt=""/>')
                 },
                 {
@@ -98,15 +98,15 @@ Ext.define('Admin.view.topbar.TopBarPanel', {
                     cls: 'span2 activity title-top title-right',
                     posts: [
                         {
-                            img: '../images/profile-image.png',
+                            img: '../resources/images/profile-image.png',
                             text: 'Hello there !'
                         },
                         {
-                            img: '../images/profile-image.png',
+                            img: '../resources/images/profile-image.png',
                             text: 'What do you think about this new tile based start menu ?'
                         },
                         {
-                            img: '../images/profile-image.png',
+                            img: '../resources/images/profile-image.png',
                             text: 'Huh ?'
                         }
                     ],

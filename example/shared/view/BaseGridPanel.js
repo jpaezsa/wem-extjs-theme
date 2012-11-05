@@ -1,6 +1,9 @@
 Ext.define('Admin.view.BaseGridPanel', {
     extend: 'Ext.grid.Panel',
     alias: 'widget.baseGridPanel',
+    requires: [
+        'Admin.plugins.GridToolbarPlugin'
+    ],
     deferRowRender: true,
     cls: 'admin-std-grid',
     viewConfig: {
@@ -17,7 +20,7 @@ Ext.define('Admin.view.BaseGridPanel', {
                 cls: 'admin-std-white-toolbar',
                 store: me.store,
                 gridPanel: me,
-                plugins: ['Admin.plugins.adminGridToolbarPlugin']
+                plugins: ['gridToolbarPlugin']
             };
         }
         me.callParent(arguments);
