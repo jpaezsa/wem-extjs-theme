@@ -2,7 +2,7 @@ Ext.application({
     name: 'App',
     appFolder: 'app',
     requires: [
-        'Admin.view.applicationbar.ApplicationBar',
+        'Admin.view.topbar.TopBarPanel',
         'Example.view.FilterPanel',
         'Example.view.BrowsePanel'
     ],
@@ -12,7 +12,7 @@ Ext.application({
             items: [
                 {
                     region: 'north',
-                    xtype: 'applicationBar'
+                    xtype: 'topBarPanel'
                 },
                 {
                     region: 'west',
