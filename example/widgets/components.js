@@ -99,7 +99,7 @@ function createWindowConfigContainer() {
 }
 
 
-function getStdButtonsContainer(color) {
+function getStdButtonsContainer() {
     return Ext.create('Ext.container.Container', {
         defaults: {
             margin: '0 10 0 0'
@@ -111,27 +111,23 @@ function getStdButtonsContainer(color) {
             },
             {
                 xtype: 'button',
-                text: 'Std Small',
+                text: 'Small',
+                scale: 'small'
+            },
+            {
+                xtype: 'button',
+                text: 'Medium',
+                scale: 'medium'
+            },
+            {
+                xtype: 'button',
+                text: 'Large',
+                scale: 'large'
+            },
+            {
+                xtype: 'button',
+                text: 'Small w/menu',
                 scale: 'small',
-                cls: 'admin-std-button-' + color
-            },
-            {
-                xtype: 'button',
-                text: 'Std Medium',
-                scale: 'medium',
-                cls: 'admin-std-button-' + color
-            },
-            {
-                xtype: 'button',
-                text: 'Std Large',
-                scale: 'large',
-                cls: 'admin-std-button-' + color
-            },
-            {
-                xtype: 'button',
-                text: 'Std Small w/menu',
-                scale: 'small',
-                cls: 'admin-std-button-' + color,
                 menu: [
                     {text: 'Item 1'},
                     {text: 'Item 2'},
@@ -142,9 +138,8 @@ function getStdButtonsContainer(color) {
             {
                 xtype: 'cycle',
                 showText: true,
-                prependText: 'Std Small Cycle ',
+                prependText: 'Small Cycle ',
                 scale: 'small',
-                cls: 'admin-std-button-' + color,
                 menu: {
                     items: [
                         {
@@ -162,8 +157,7 @@ function getStdButtonsContainer(color) {
             },
             {
                 xtype: 'splitbutton',
-                text: 'Std Small Split',
-                cls: 'admin-std-button-' + color,
+                text: 'Small Split',
                 menu: new Ext.menu.Menu({
                     items: [
                         {
@@ -174,6 +168,22 @@ function getStdButtonsContainer(color) {
                         }
                     ]
                 })
+            },
+            {
+                xtype: 'component',
+                html: '<h4>Colors</h4>',
+            },
+            {
+                xtype: 'button',
+                ui: 'admin-button-grey',
+                text: 'Grey',
+                scale: 'small'
+            },
+            {
+                xtype: 'button',
+                ui: 'admin-button-red',
+                text: 'Red',
+                scale: 'small'
             }
         ]
     });

@@ -1,22 +1,23 @@
 $admin-button-default-background-color: #2C76E9;
 
+// Alternative colors
+$admin-button-red: #e36500;
+$admin-button-grey: #cccccc;
+
 // Small
 $button-small-border-radius: 0 !default;
-$button-small-border-width: 0 !default;
 $button-small-padding: 5px 16px !default;
 $button-small-font-size: ceil($font-size * 1.2) !default;
 $button-small-font-weight: bold !default;
 
 // Medium
 $button-medium-border-radius: 0 !default;
-$button-medium-border-width: 0 !default;
 $button-medium-padding: 5px 17px !default;
 $button-medium-font-size: ceil($font-size * 1.2) !default;
 $button-medium-font-weight: bold !default;
 
 // Large
 $button-large-border-radius: 0 !default;
-$button-large-border-width: 0 !default;
 $button-large-padding: 4px 26px !default;
 $button-large-font-size: ceil($font-size * 1.2) !default;
 $button-large-font-weight: bold !default;
@@ -26,12 +27,12 @@ $button-large-font-weight: bold !default;
 $button-default-color: #ffffff !default;
 $button-default-base-color-over: lighten($admin-button-default-background-color, 10) !default;
 $button-default-base-color-focus: $button-default-base-color-over !default;
-$button-default-base-color-pressed: $admin-black !default;
+$button-default-base-color-pressed: $button-default-base-color-over !default;
 
-$button-default-border-color: transparent !default;
-$button-default-border-color-over: transparent !default;
-$button-default-border-color-focus: darken($admin-button-default-background-color, 50) !default;
-$button-default-border-color-pressed: transparent !default;
+$button-default-border-color: $admin-button-default-background-color !default;
+$button-default-border-color-over: lighten($admin-button-default-background-color, 10) !default;
+$button-default-border-color-focus: $admin-button-default-background-color !default;
+$button-default-border-color-pressed: $admin-button-default-background-color !default;
 
 $button-default-background-color: $admin-button-default-background-color !default;
 $button-default-background-color-over: $button-default-base-color-over !default;
@@ -53,8 +54,3 @@ $button-toolbar-background-gradient-over: '' !default;
 $button-toolbar-background-gradient-focus: '';
 $button-toolbar-background-gradient-pressed: '' !default;
 $button-toolbar-background-gradient-disabled: null !default;
-
-// Alternative colors
-.admin-std-button-red {
-  background-color: #e36500 !important;
-}
