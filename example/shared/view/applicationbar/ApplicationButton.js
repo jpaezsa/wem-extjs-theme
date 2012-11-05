@@ -1,4 +1,4 @@
-Ext.define('ApplicationButton', {
+Ext.define('Admin.view.applicationbar.ApplicationButton', {
     xtype: 'applicationButton',
     extend: 'Ext.button.Button',
     text: 'Content Manager',

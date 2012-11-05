@@ -1,27 +1,24 @@
 <html>
 <head>
-  <meta charset="utf-8"/>
+    <meta charset="utf-8"/>
+    <title>Enonic WEM - Admin Console Widgets</title>
 
-  <title>Enonic WEM - Admin Console Widgets</title>
+    <script type="text/javascript" src="../../lib/ext/ext-all.js"></script>
+    <script type="text/javascript" src="../util.js"></script>
+    <script type="text/javascript" src="widgets.js"></script>
+    <script type="text/javascript">
+        Ext.Loader.setConfig({
+            enabled: true,
+            paths: {
+                'Example': 'app',
+                'Admin': '../shared'
+            },
+            disableCaching: false
+        });
+    </script>
+    <script type="text/javascript" src="app.js"></script>
 
-  <script type="text/javascript" src="../../lib/ext/ext-all.js"></script>
-
-  <script type="text/javascript" src="../util.js"></script>
-
-  <script type="text/javascript" src="components.js"></script>
-
-  <script type="text/javascript" src="../classes/common/applicationbar/ApplicationBar.js"></script>
-  <script type="text/javascript" src="../classes/common/applicationbar/ApplicationButton.js"></script>
-
-  <script type="text/javascript" src="../classes/common/plugins/GridToolbarPlugin.js"></script>
-  <script type="text/javascript" src="../classes/common/BaseFilterPanel.js"></script>
-  <script type="text/javascript" src="../classes/common/BaseGridPanel.js"></script>
-  <script type="text/javascript" src="../classes/common/BaseWindow.js"></script>
-
-  <link rel="stylesheet" type="text/css" href="../../lib/ext/resources/css/admin.css" />
-
-  <script type="text/javascript" src="app.js"></script>
-
+    <link rel="stylesheet" type="text/css" href="../../lib/ext/resources/css/admin.css"/>
 </head>
 <body>
 

@@ -1,6 +1,6 @@
-Ext.define('ExampleDetailsPanel', {
+Ext.define('Example.view.DetailsPanel', {
     xtype: 'exampleDetailsPanel',
-    extend: 'BaseDetailsPanel',
+    extend: 'Admin.view.BaseDetailsPanel',
     autoScroll: true,
 
     initComponent: function () {

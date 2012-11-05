@@ -1,4 +1,4 @@
-Ext.define('BaseFilterPanel', {
+Ext.define('Admin.view.BaseFilterPanel', {
     extend: 'Ext.panel.Panel',
     xtype: 'baseFilterPanel',
     width: 205,

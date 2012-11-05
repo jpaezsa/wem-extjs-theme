@@ -1,4 +1,4 @@
-Ext.define('BaseWindow', {
+Ext.define('Admin.view.BaseWindow', {
     extend: 'Ext.container.Container',
     xtype: 'baseWindow',
     floating: true,

@@ -1,4 +1,4 @@
-Ext.define('AdminGridToolbarPlugin', {
+Ext.define('Admin.plugins.AdminGridToolbarPlugin', {
     extend: 'Object',
     alias: 'plugin.adminGridToolbarPlugin',
 

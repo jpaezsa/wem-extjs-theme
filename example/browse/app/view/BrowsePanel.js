@@ -1,6 +1,10 @@
-Ext.define('ExampleBrowsePanel', {
+Ext.define('Example.view.BrowsePanel', {
     xtype: 'exampleBrowsePanel',
     extend: 'Ext.panel.Panel',
+    requires: [
+        'Example.view.GridPanel',
+        'Example.view.DetailsPanel'
+    ],
     layout: 'border',
     tbar: [
         {

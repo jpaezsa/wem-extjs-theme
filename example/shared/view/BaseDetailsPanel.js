@@ -1,4 +1,4 @@
-Ext.define('BaseDetailsPanel', {
+Ext.define('Admin.view.BaseDetailsPanel', {
     extend: 'Ext.panel.Panel',
     xtype: 'baseDetailsPanel',
     autoScroll: true,

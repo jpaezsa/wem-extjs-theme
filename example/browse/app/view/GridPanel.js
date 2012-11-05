@@ -1,6 +1,6 @@
-Ext.define('ExampleGridPanel', {
+Ext.define('Example.view.GridPanel', {
     xtype: 'exampleGridPanel',
-    extend: 'BaseGridPanel',
+    extend: 'Admin.view.BaseGridPanel',
     selModel: Ext.create('Ext.selection.CheckboxModel', {
         headerWidth: 42
     }),

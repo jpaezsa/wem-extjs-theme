@@ -1,4 +1,4 @@
-Ext.define('BaseGridPanel', {
+Ext.define('Admin.view.BaseGridPanel', {
     extend: 'Ext.grid.Panel',
     xtype: 'baseGridPanel',
     deferRowRender: true,
@@ -11,16 +11,16 @@ Ext.define('BaseGridPanel', {
 
     initComponent: function () {
         var me = this;
-
+        /*
         if (me.getSelectionModel().$className === 'Ext.selection.CheckboxModel') {
             me.tbar = {
                 xtype: 'toolbar',
                 cls: 'admin-std-white-toolbar',
                 store: me.store,
                 gridPanel: me,
-                plugins: ['adminGridToolbarPlugin']
+                plugins: ['Admin.plugins.adminGridToolbarPlugin']
             };
-        }
+        }*/
         me.callParent(arguments);
     }
 

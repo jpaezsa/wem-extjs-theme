@@ -1,6 +1,6 @@
-Ext.define('ExampleFilterPanel', {
+Ext.define('Example.view.FilterPanel', {
     xtype: 'exampleFilterPanel',
-    extend: 'BaseFilterPanel',
+    extend: 'Admin.view.BaseFilterPanel',
     initComponent: function () {
         var me = this;
 

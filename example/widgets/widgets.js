@@ -99,7 +99,7 @@ function createWindowConfigContainer() {
 }
 
 
-function getStdButtonsContainer() {
+function createButtonsContainer() {
     return Ext.create('Ext.container.Container', {
         defaults: {
             margin: '0 10 0 0'
@@ -229,7 +229,7 @@ function createSimpsonsStore (storeId) {
 }
 
 
-function createBaseTable() {
+function createTableContainer() {
     return Ext.create('Ext.container.Container', {
         defaults: {
             margin: '0 0 10 0'

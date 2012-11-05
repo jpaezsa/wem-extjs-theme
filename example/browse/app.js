@@ -1,5 +1,11 @@
 Ext.application({
-    name: 'Admin',
+    name: 'App',
+    appFolder: 'app',
+    requires: [
+        'Admin.view.applicationbar.ApplicationBar',
+        'Example.view.FilterPanel',
+        'Example.view.BrowsePanel'
+    ],
     launch: function () {
         Ext.create('Ext.container.Viewport', {
             layout: 'border',

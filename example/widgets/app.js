@@ -1,34 +1,41 @@
-Ext.onReady(function () {
-    Ext.create('Ext.panel.Panel', {
-        renderTo: Ext.getBody(),
-        border: false,
-        padding: '10 20',
-        items: [
-            {
-                region: 'center',
-                cls: 'admin-std-panel',
-                border: false,
-                defaults: {
-                    margin: '0 0 20 0',
-                    padding: '0 0 20 0',
-                    style: {
-                        borderBottom: '1px solid #ccc'
-                    }
-                },
-                items: [
-                    {
-                        xtype: 'component',
-                        html: '<h1>Admin Widgets</h1>'
+Ext.application({
+    name: 'App',
+    appFolder: 'app',
+    requires: [
+        'Admin.view.BaseGridPanel',
+        'Admin.view.BaseWindow'
+    ],
+    launch: function () {
+        Ext.create('Ext.container.Viewport', {
+            layout: 'border',
+            padding: '0',
+            items: [
+                {
+                    region: 'center',
+                    autoScroll: true,
+                    border: false,
+                    defaults: {
+                        padding: '15 30',
+                        style: {
+                            borderBottom: '1px solid #ccc'
+                        }
                     },
-                    createSelectedItemContainer(),
-                    createTypographyContainer(),
-                    getStdButtonsContainer(),
-                    createWindowConfigContainer(),
-                    createBaseTable(),
-                    createTreePanel()
-                ]
-            }
-        ]
-    });
+                    items: [
+                        {
+                            xtype: 'component',
+                            html: '<h1>Admin Widgets</h1>'
+                        },
+                        createSelectedItemContainer(),
+                        createTypographyContainer(),
+                        createButtonsContainer(),
+                        createWindowConfigContainer(),
+                        createTableContainer(),
+                        createTreePanel()
+                    ]
+                }
+            ]
+        });
+    }
 });
+
 
