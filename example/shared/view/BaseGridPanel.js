@@ -11,7 +11,6 @@ Ext.define('Admin.view.BaseGridPanel', {
 
     initComponent: function () {
         var me = this;
-        /*
         if (me.getSelectionModel().$className === 'Ext.selection.CheckboxModel') {
             me.tbar = {
                 xtype: 'toolbar',
@@ -20,7 +19,7 @@ Ext.define('Admin.view.BaseGridPanel', {
                 gridPanel: me,
                 plugins: ['Admin.plugins.adminGridToolbarPlugin']
             };
-        }*/
+        }
         me.callParent(arguments);
     }
 
