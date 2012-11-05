@@ -19,7 +19,7 @@ Ext.define('Admin.view.topbar.StartMenu', {
     tiles: [],
 
     tpl: new Ext.XTemplate('<div class="top clearfix">' +
-                           '<img class="logo" src="../images/enonic-logo.png"/>' +
+                           '<img class="logo" src="../resources/images/enonic-logo.png"/>' +
                            '<div class="search"><input type="text"></div>' +
                            '<div class="user">' +
                            '<tpl if="loggedUser"><img src="{[values.loggedUser.img]}"/><a class="logout" href="#">Log out</a>' +
