@@ -1,5 +1,5 @@
 Ext.define('Example.view.BrowsePanel', {
-    xtype: 'exampleBrowsePanel',
+    alias: 'widget.exampleBrowsePanel',
     extend: 'Ext.panel.Panel',
     requires: [
         'Example.view.GridPanel',

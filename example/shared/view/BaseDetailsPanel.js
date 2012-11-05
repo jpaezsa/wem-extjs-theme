@@ -1,6 +1,6 @@
 Ext.define('Admin.view.BaseDetailsPanel', {
     extend: 'Ext.panel.Panel',
-    xtype: 'baseDetailsPanel',
+    alias: 'widget.baseDetailsPanel',
     autoScroll: true,
     defaults: {
         cls: 'admin-std-panel'

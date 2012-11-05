@@ -82,7 +82,7 @@ function createWindowConfigContainer() {
                     var showAtAnchor = Ext.ComponentQuery.query('#anchorCheckbox', btn.up())[0].getValue();
 
                     if (!Ext.getCmp('testAdminWindow')) {
-                        var win = new BaseWindow({
+                        var win = new Admin.view.BaseWindow({
                             id: 'testAdminWindow',
                             title: 'Window 1 Title',
                             backgroundCls: backgroundCls,

@@ -1,6 +1,6 @@
 Ext.define('Admin.view.BaseWindow', {
     extend: 'Ext.container.Container',
-    xtype: 'baseWindow',
+    alias: 'widget.baseWindow',
     floating: true,
     shadow: false,
     width: 10,

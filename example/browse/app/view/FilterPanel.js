@@ -1,5 +1,5 @@
 Ext.define('Example.view.FilterPanel', {
-    xtype: 'exampleFilterPanel',
+    alias: 'widget.exampleFilterPanel',
     extend: 'Admin.view.BaseFilterPanel',
     initComponent: function () {
         var me = this;

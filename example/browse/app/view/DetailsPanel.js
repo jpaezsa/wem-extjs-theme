@@ -1,5 +1,5 @@
 Ext.define('Example.view.DetailsPanel', {
-    xtype: 'exampleDetailsPanel',
+    alias: 'widget.exampleDetailsPanel',
     extend: 'Admin.view.BaseDetailsPanel',
     autoScroll: true,
 

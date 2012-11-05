@@ -1,6 +1,6 @@
 Ext.define('Admin.view.BaseFilterPanel', {
     extend: 'Ext.panel.Panel',
-    xtype: 'baseFilterPanel',
+    alias: 'widget.baseFilterPanel',
     width: 205,
     bodyCls: 'admin-std-panel admin-filter-panel',
     autoScroll: true,
