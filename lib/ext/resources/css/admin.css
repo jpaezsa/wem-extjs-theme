@@ -10,154 +10,9 @@
  * @var {string} $font-family 
  * The default font-family to be used throughout the theme.
  */
-/* line 24, ../sass/admin/variables/_core.scss */
-a {
-  color: #0070de; }
-
-/* line 28, ../sass/admin/variables/_core.scss */
-h1 {
-  font-size: 36px !important;
-  line-height: 40px; }
-
-/* line 33, ../sass/admin/variables/_core.scss */
-h2 {
-  font-size: 30px !important;
-  line-height: 40px; }
-
-/* line 38, ../sass/admin/variables/_core.scss */
-h3 {
-  font-size: 24px !important;
-  line-height: 40px; }
-
-/* line 43, ../sass/admin/variables/_core.scss */
-h4 {
-  font-size: 18 !important;
-  line-height: 20px; }
-
-/* line 48, ../sass/admin/variables/_core.scss */
-h5 {
-  font-size: 12px !important;
-  line-height: 20px; }
-
-/* line 53, ../sass/admin/variables/_core.scss */
-h6 {
-  font-size: 12px !important;
-  line-height: 20px; }
-
-/* line 58, ../sass/admin/variables/_core.scss */
-p {
-  margin: 0 0 10px !important; }
-
-/* line 21, ../sass/admin/variables/_panel.scss */
-.admin-std-panel {
-  padding: 20px; }
-
-/* line 26, ../sass/admin/variables/_panel.scss */
-.admin-filter-panel {
-  background-color: #efefef !important; }
-
-/* line 30, ../sass/admin/variables/_panel.scss */
-.admin-filter-panel .x-fieldset {
-  border: none !important; }
-
-/* line 34, ../sass/admin/variables/_panel.scss */
-.admin-filter-panel .x-fieldset-header {
-  color: #000000 !important;
-  font-size: 15px !important;
-  padding: 0 0 0 0 !important; }
-
-/* line 40, ../sass/admin/variables/_panel.scss */
-.admin-filter-panel .x-fieldset-body {
-  padding-left: 10px; }
-
-/* line 2, ../sass/admin/variables/_splitter.scss */
-.x-splitter-default {
-  background-color: #eeeeee;
-  border-top: 1px solid #EBE7E7 !important;
-  border-bottom: 1px solid #EBE7E7 !important; }
-
-/* line 1, ../sass/admin/variables/_window.scss */
-.admin-std-window {
-  padding: 40px; }
-
-/* line 5, ../sass/admin/variables/_window.scss */
-.admin-std-window-white {
-  background-color: #ffffff; }
-
-/* line 9, ../sass/admin/variables/_window.scss */
-.admin-std-window-dark-purple {
-  background-color: #5133ab;
-  color: #fff !important; }
-
-/* line 14, ../sass/admin/variables/_window.scss */
-.admin-std-window-dark-black {
-  background-color: #141414;
-  color: #fff !important; }
-
-/* line 21, ../sass/admin/variables/_grid.scss */
-.x-grid-row .x-grid-cell {
-  vertical-align: middle !important; }
-
-/* line 26, ../sass/admin/variables/_grid.scss */
-.x-grid-row-selected .x-grid-cell,
-.x-grid-row-selected .x-grid-cell-special {
-  color: #fff !important; }
-
-/* line 33, ../sass/admin/variables/_grid.scss */
-.x-grid-row-over .x-grid-cell-special {
-  background-color: #eeeeee; }
-
-/* line 39, ../sass/admin/variables/_grid.scss */
-.x-grid-row .x-grid-cell-special,
-.x-grid-row-alt .x-grid-cell-special {
-  background-color: white !important;
-  background-image: none !important;
-  border-right: none !important; }
-
-/* line 45, ../sass/admin/variables/_grid.scss */
-.x-grid-row-alt .x-grid-cell-special {
-  /*background-color: $grid-row-cell-alt-background !important;*/ }
-
-/* line 49, ../sass/admin/variables/_grid.scss */
-.x-grid-cell-row-checker .x-grid-cell-inner {
-  padding-left: 15px !important;
-  padding-right: 15px !important; }
-
-/* line 53, ../sass/admin/variables/_grid.scss */
-.x-grid-row-checker, .x-column-header-checkbox .x-column-header-text {
-  background-image: url("../themes/images/default/grid/admin-unchecked.gif") !important; }
-
-/* line 56, ../sass/admin/variables/_grid.scss */
-.x-grid-row-selected .x-grid-row-checker, .x-grid-row-checked .x-grid-row-checker {
-  background-image: url("../themes/images/default/grid/admin-checked.gif") !important; }
-
-/* line 60, ../sass/admin/variables/_grid.scss */
-.x-grid-row-over .x-grid-cell-special {
-  background-color: #efefef !important; }
-
-/* line 63, ../sass/admin/variables/_grid.scss */
-.x-grid-row-selected .x-grid-cell-special {
-  background-color: #4294de !important; }
-
-/* line 68, ../sass/admin/variables/_grid.scss */
-.admin-std-grid .x-panel-body-default {
-  border: none !important; }
-
-/* line 4, ../sass/admin/variables/_toolbar.scss */
-.admin-std-white-toolbar {
-  background-color: #ffffff !important;
-  padding: 6px 12px !important; }
-
-/* line 8, ../sass/admin/variables/_toolbar.scss */
-.x-toolbar.admin-std-white-toolbar {
-  border: none !important; }
-
-/* line 13, ../sass/admin/variables/_toolbar.scss */
-.x-toolbar.admin-std-white-toolbar,
-.x-toolbar.admin-std-white-toolbar .x-toolbar-text {
-  font-size: 12px !important;
-  color: #000000 !important; }
-
+/**
+ * Fieldsets
+ */
 /**
  * @class Ext.form.field.Base
  */
@@ -167,6 +22,159 @@ p {
 /**
  * @class Ext.form.field.Radio
  */
+/* line 1, ../sass/admin/css-overrides/_core.scss */
+a {
+  color: #0070de; }
+
+/* line 5, ../sass/admin/css-overrides/_core.scss */
+h1 {
+  font-size: 36px !important;
+  line-height: 40px; }
+
+/* line 10, ../sass/admin/css-overrides/_core.scss */
+h2 {
+  font-size: 30px !important;
+  line-height: 40px; }
+
+/* line 15, ../sass/admin/css-overrides/_core.scss */
+h3 {
+  font-size: 24px !important;
+  line-height: 40px; }
+
+/* line 20, ../sass/admin/css-overrides/_core.scss */
+h4 {
+  font-size: 18 !important;
+  line-height: 20px; }
+
+/* line 25, ../sass/admin/css-overrides/_core.scss */
+h5 {
+  font-size: 12px !important;
+  line-height: 20px; }
+
+/* line 30, ../sass/admin/css-overrides/_core.scss */
+h6 {
+  font-size: 12px !important;
+  line-height: 20px; }
+
+/* line 35, ../sass/admin/css-overrides/_core.scss */
+p {
+  margin: 0 0 10px !important; }
+
+/* line 1, ../sass/admin/css-overrides/_form.scss */
+.x-fieldset {
+  border-top: 1px solid #aaaaaa !important;
+  margin-bottom: 10px; }
+
+/* line 1, ../sass/admin/css-overrides/_grid.scss */
+.x-grid-row .x-grid-cell {
+  vertical-align: middle !important; }
+
+/* line 6, ../sass/admin/css-overrides/_grid.scss */
+.x-grid-row-selected .x-grid-cell,
+.x-grid-row-selected .x-grid-cell-special {
+  color: #fff !important; }
+
+/* line 12, ../sass/admin/css-overrides/_grid.scss */
+.x-grid-row-over .x-grid-cell-special {
+  background-color: #eeeeee; }
+
+/* line 17, ../sass/admin/css-overrides/_grid.scss */
+.x-grid-row .x-grid-cell-special,
+.x-grid-row-alt .x-grid-cell-special {
+  background-color: white !important;
+  background-image: none !important;
+  border-right: none !important; }
+
+/* line 23, ../sass/admin/css-overrides/_grid.scss */
+.x-grid-row-alt .x-grid-cell-special {
+  /*background-color: $grid-row-cell-alt-background !important;*/ }
+
+/* line 27, ../sass/admin/css-overrides/_grid.scss */
+.x-grid-cell-row-checker .x-grid-cell-inner {
+  padding-left: 15px !important;
+  padding-right: 15px !important; }
+
+/* line 31, ../sass/admin/css-overrides/_grid.scss */
+.x-grid-row-checker, .x-column-header-checkbox .x-column-header-text {
+  background-image: url("../themes/images/default/grid/admin-unchecked.gif") !important; }
+
+/* line 34, ../sass/admin/css-overrides/_grid.scss */
+.x-grid-row-selected .x-grid-row-checker, .x-grid-row-checked .x-grid-row-checker {
+  background-image: url("../themes/images/default/grid/admin-checked.gif") !important; }
+
+/* line 38, ../sass/admin/css-overrides/_grid.scss */
+.x-grid-row-over .x-grid-cell-special {
+  background-color: #efefef !important; }
+
+/* line 41, ../sass/admin/css-overrides/_grid.scss */
+.x-grid-row-selected .x-grid-cell-special {
+  background-color: #4294de !important; }
+
+/* line 46, ../sass/admin/css-overrides/_grid.scss */
+.admin-std-grid .x-panel-body-default {
+  border: none !important; }
+
+/* line 1, ../sass/admin/css-overrides/_panel.scss */
+.admin-std-panel {
+  padding: 20px; }
+
+/* line 6, ../sass/admin/css-overrides/_panel.scss */
+.admin-filter-panel {
+  background-color: #efefef !important; }
+
+/* line 10, ../sass/admin/css-overrides/_panel.scss */
+.admin-filter-panel .x-fieldset {
+  border: none !important; }
+
+/* line 14, ../sass/admin/css-overrides/_panel.scss */
+.admin-filter-panel .x-fieldset-header {
+  color: #000000 !important;
+  font-size: 15px !important;
+  padding: 0 0 0 0 !important; }
+
+/* line 20, ../sass/admin/css-overrides/_panel.scss */
+.admin-filter-panel .x-fieldset-body {
+  padding-left: 10px; }
+
+/* line 1, ../sass/admin/css-overrides/_splitter.scss */
+.x-splitter-default {
+  background-color: #eeeeee;
+  border-top: 1px solid #EBE7E7 !important;
+  border-bottom: 1px solid #EBE7E7 !important; }
+
+/* line 1, ../sass/admin/css-overrides/_toolbar.scss */
+.admin-std-white-toolbar {
+  background-color: #ffffff !important;
+  padding: 6px 12px !important; }
+
+/* line 5, ../sass/admin/css-overrides/_toolbar.scss */
+.x-toolbar.admin-std-white-toolbar {
+  border: none !important; }
+
+/* line 10, ../sass/admin/css-overrides/_toolbar.scss */
+.x-toolbar.admin-std-white-toolbar,
+.x-toolbar.admin-std-white-toolbar .x-toolbar-text {
+  font-size: 12px !important;
+  color: #000000 !important; }
+
+/* line 1, ../sass/admin/css-overrides/_window.scss */
+.admin-std-window {
+  padding: 40px; }
+
+/* line 5, ../sass/admin/css-overrides/_window.scss */
+.admin-std-window-white {
+  background-color: #ffffff; }
+
+/* line 9, ../sass/admin/css-overrides/_window.scss */
+.admin-std-window-dark-purple {
+  background-color: #5133ab;
+  color: #fff !important; }
+
+/* line 14, ../sass/admin/css-overrides/_window.scss */
+.admin-std-window-dark-black {
+  background-color: #141414;
+  color: #fff !important; }
+
 /* line 1, ../sass/admin/_selected-item.scss */
 .admin-selected-item-box {
   float: left;
@@ -6178,7 +6186,7 @@ textarea.x-form-field {
 /* line 67, ../themes/stylesheets/ext4/default/widgets/form/_field.scss */
 .x-form-focus,
 textarea.x-form-focus {
-  border-color: #aaaaaa; }
+  border-color: #2a2a2a; }
 
 /* line 72, ../themes/stylesheets/ext4/default/widgets/form/_field.scss */
 .x-form-invalid-field,
@@ -6241,9 +6249,9 @@ textarea.x-form-invalid-field {
 
 /* line 2, ../themes/stylesheets/ext4/default/widgets/form/_fieldset.scss */
 .x-fieldset {
-  border: 1px solid #aaaaaa;
-  padding: 10px;
-  margin-bottom: 10px;
+  border: none;
+  padding: 0 10px;
+  margin-bottom: 0 10px;
   display: block;
   /* preserve margins in IE */
   position: relative; }
@@ -6253,7 +6261,7 @@ textarea.x-form-invalid-field {
   padding-top: 0; }
   /* line 16, ../themes/stylesheets/ext4/default/widgets/form/_fieldset.scss */
   .x-ie .x-fieldset .x-fieldset-body {
-    padding-top: 10px; }
+    padding-top: 0 10px; }
 
 /* line 21, ../themes/stylesheets/ext4/default/widgets/form/_fieldset.scss */
 .x-fieldset-header-checkbox {
@@ -6261,9 +6269,9 @@ textarea.x-form-invalid-field {
 
 /* line 25, ../themes/stylesheets/ext4/default/widgets/form/_fieldset.scss */
 .x-fieldset-header {
-  font: 11px/14px bold Arial, sans-serif;
-  color: #8e6563;
-  padding: 0 3px 1px;
+  font: 15px/14px bold Arial, sans-serif;
+  color: #616161;
+  padding: 0 0 9px;
   overflow: hidden; }
   /* line 31, ../themes/stylesheets/ext4/default/widgets/form/_fieldset.scss */
   .x-fieldset-header .x-fieldset-header-text {
@@ -6290,8 +6298,8 @@ textarea.x-form-invalid-field {
 
 /* line 61, ../themes/stylesheets/ext4/default/widgets/form/_fieldset.scss */
 .x-webkit .x-fieldset-header {
-  -webkit-padding-start: 3px;
-  -webkit-padding-end: 3px; }
+  -webkit-padding-start: 0;
+  -webkit-padding-end: 0; }
 
 /* line 71, ../themes/stylesheets/ext4/default/widgets/form/_fieldset.scss */
 .x-opera .x-fieldset-with-legend {
@@ -6313,8 +6321,8 @@ textarea.x-form-invalid-field {
 /* line 96, ../themes/stylesheets/ext4/default/widgets/form/_fieldset.scss */
 .x-quirks .x-ie .x-fieldset-header,
 .x-ie8m .x-fieldset-header {
-  padding-left: 1px;
-  padding-right: 1px; }
+  padding-left: -2;
+  padding-right: -2; }
 
 /* line 104, ../themes/stylesheets/ext4/default/widgets/form/_fieldset.scss */
 .x-fieldset-collapsed .x-fieldset-body {

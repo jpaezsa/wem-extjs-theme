@@ -3,12 +3,14 @@ function createFormWidgets () {
         xtype: 'form',
 
         id   : 'form-widgets',
-        title: 'Form Widgets',
+
+        // title: 'Form Widgets',
 
         // frame: true,
         border: false,
-        collapsible: true,
 
+        /*
+        collapsible: true,
         tools: [
             {type:'toggle'},
             {type:'close'},
@@ -29,15 +31,14 @@ function createFormWidgets () {
             {type:'save'},
             {type:'print'}
         ],
-
-        bodyPadding: '10 20',
+        */
 
         defaults: {
             anchor    : '98%',
             msgTarget : 'side',
-            allowBlank: false
+            allowBlank: false,
+            margin: '0 0 10 0'
         },
-
         items: [
             {
                 xtype: 'label',
@@ -98,6 +99,7 @@ function createFormWidgets () {
                     {boxLabel: 'Zot', name: 'radios', disabled: true}
                 ]
             },
+            /*
             {
                 hideLabel   : true,
                 id          : 'htmleditor',
@@ -107,6 +109,7 @@ function createFormWidgets () {
                 value       : 'Mouse over toolbar for tooltips.<br /><br />The HTMLEditor IFrame requires a refresh between a stylesheet switch to get accurate colors.',
                 height      : 110
             },
+            */
             {
                 xtype : 'fieldset',
                 title : 'Plain Fieldset',
