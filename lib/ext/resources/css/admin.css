@@ -22,6 +22,9 @@
 /**
  * @class Ext.form.field.Radio
  */
+/**
+ * Trigger Field
+ */
 /* line 1, ../sass/admin/css-overrides/_core.scss */
 a {
   color: #0070de; }
@@ -60,10 +63,37 @@ h6 {
 p {
   margin: 0 0 10px !important; }
 
-/* line 1, ../sass/admin/css-overrides/_form.scss */
+/**
+ * Fieldset
+ */
+/* line 4, ../sass/admin/css-overrides/_form.scss */
 .x-fieldset {
   border-top: 1px solid #aaaaaa !important;
   margin-bottom: 10px; }
+
+/**
+ * Combo trigger
+ */
+/*
+x-trigger-index-0 x-form-trigger x-form-arrow-trigger x-form-trigger-last x-unselectable
+*/
+/* line 16, ../sass/admin/css-overrides/_form.scss */
+.x-form-arrow-trigger {
+  background-image: url("../themes/images/default/form/admin-trigger.gif") !important;
+  background-repeat: no-repeat;
+  border-bottom: none !important;
+  /*
+  background-position: 0px 0px;
+  width: 17px;
+  height: 25px;
+  border-bottom: 1px solid rgb(170, 170, 170);
+  cursor: pointer;
+  overflow: hidden;
+  */ }
+
+/* line 31, ../sass/admin/css-overrides/_form.scss */
+.x-form-trigger-input-cell input {
+  border-right: none !important; }
 
 /* line 1, ../sass/admin/css-overrides/_grid.scss */
 .x-grid-row .x-grid-cell {
@@ -6271,7 +6301,7 @@ textarea.x-form-invalid-field {
 .x-fieldset-header {
   font: 15px/14px bold Arial, sans-serif;
   color: #616161;
-  padding: 0 0 9px;
+  padding: 0 2px 9px 2px;
   overflow: hidden; }
   /* line 31, ../themes/stylesheets/ext4/default/widgets/form/_fieldset.scss */
   .x-fieldset-header .x-fieldset-header-text {
@@ -6298,8 +6328,8 @@ textarea.x-form-invalid-field {
 
 /* line 61, ../themes/stylesheets/ext4/default/widgets/form/_fieldset.scss */
 .x-webkit .x-fieldset-header {
-  -webkit-padding-start: 0;
-  -webkit-padding-end: 0; }
+  -webkit-padding-start: 2px;
+  -webkit-padding-end: 2px; }
 
 /* line 71, ../themes/stylesheets/ext4/default/widgets/form/_fieldset.scss */
 .x-opera .x-fieldset-with-legend {
@@ -6321,8 +6351,8 @@ textarea.x-form-invalid-field {
 /* line 96, ../themes/stylesheets/ext4/default/widgets/form/_fieldset.scss */
 .x-quirks .x-ie .x-fieldset-header,
 .x-ie8m .x-fieldset-header {
-  padding-left: -2;
-  padding-right: -2; }
+  padding-left: 0px;
+  padding-right: 0px; }
 
 /* line 104, ../themes/stylesheets/ext4/default/widgets/form/_fieldset.scss */
 .x-fieldset-collapsed .x-fieldset-body {
@@ -6482,7 +6512,7 @@ textarea.x-form-invalid-field {
 .x-form-trigger {
   background-image: url('../themes/images/default/form/trigger.gif');
   background-position: 0 0;
-  width: 17px;
+  width: 23px;
   height: 25px;
   border-bottom: 1px solid #aaaaaa;
   cursor: pointer;
@@ -6503,28 +6533,28 @@ textarea.x-form-invalid-field {
 
 /* line 33, ../themes/stylesheets/ext4/default/widgets/form/_triggerfield.scss */
 .x-form-trigger-over {
-  background-position: -17px 0;
+  background-position: -23px 0;
   border-bottom-color: #d4d4d4; }
 
 /* line 39, ../themes/stylesheets/ext4/default/widgets/form/_triggerfield.scss */
 .x-form-trigger-wrap-focus .x-form-trigger {
-  background-position: -51px 0;
+  background-position: -69px 0;
   border-bottom-color: #d4d4d4; }
 
 /* line 45, ../themes/stylesheets/ext4/default/widgets/form/_triggerfield.scss */
 .x-form-trigger-wrap-focus .x-form-trigger-over {
-  background-position: -68px 0;
+  background-position: -92px 0;
   border-bottom-color: null; }
 
 /* line 54, ../themes/stylesheets/ext4/default/widgets/form/_triggerfield.scss */
 .x-form-trigger-click,
 .x-form-trigger-wrap-focus .x-form-trigger-click {
-  background-position: -34px 0;
+  background-position: -46px 0;
   border-bottom-color: null; }
 
 /* line 62, ../themes/stylesheets/ext4/default/widgets/form/_triggerfield.scss */
 .x-form-trigger-icon {
-  height: 16px;
+  height: 22px;
   background-repeat: no-repeat;
   background-position: 7px 6px; }
 
@@ -6561,7 +6591,7 @@ textarea.x-form-invalid-field {
 .x-form-trigger-wrap .x-form-spinner-up,
 .x-form-trigger-wrap .x-form-spinner-down {
   background-image: url('../themes/images/default/form/spinner.gif');
-  width: 17px !important;
+  width: 23px !important;
   height: 13px !important;
   font-size: 0;
   /*for IE*/
@@ -6572,19 +6602,19 @@ textarea.x-form-invalid-field {
 
 /* line 109, ../themes/stylesheets/ext4/default/widgets/form/_triggerfield.scss */
 .x-form-trigger-wrap-focus .x-form-spinner-down {
-  background-position: -51px -13px; }
+  background-position: -69px -13px; }
 
 /* line 112, ../themes/stylesheets/ext4/default/widgets/form/_triggerfield.scss */
 .x-form-trigger-wrap .x-form-spinner-down-over {
-  background-position: -17px -13px; }
+  background-position: -23px -13px; }
 
 /* line 115, ../themes/stylesheets/ext4/default/widgets/form/_triggerfield.scss */
 .x-form-trigger-wrap-focus .x-form-spinner-down-over {
-  background-position: -68px -13px; }
+  background-position: -92px -13px; }
 
 /* line 118, ../themes/stylesheets/ext4/default/widgets/form/_triggerfield.scss */
 .x-form-trigger-wrap .x-form-spinner-down-click {
-  background-position: -34px -13px; }
+  background-position: -46px -13px; }
 
 /* line 127, ../themes/stylesheets/ext4/default/widgets/form/_triggerfield.scss */
 .x-field-default-toolbar .x-form-trigger-wrap .x-form-spinner-up,
@@ -6596,16 +6626,16 @@ textarea.x-form-invalid-field {
   background-position: 0 -10px; }
 /* line 135, ../themes/stylesheets/ext4/default/widgets/form/_triggerfield.scss */
 .x-field-default-toolbar .x-form-trigger-wrap-focus .x-form-spinner-down {
-  background-position: -51px -10px; }
+  background-position: -69px -10px; }
 /* line 138, ../themes/stylesheets/ext4/default/widgets/form/_triggerfield.scss */
 .x-field-default-toolbar .x-form-trigger-wrap .x-form-spinner-down-over {
-  background-position: -17px -10px; }
+  background-position: -23px -10px; }
 /* line 141, ../themes/stylesheets/ext4/default/widgets/form/_triggerfield.scss */
 .x-field-default-toolbar .x-form-trigger-wrap-focus .x-form-spinner-down-over {
-  background-position: -68px -10px; }
+  background-position: -92px -10px; }
 /* line 144, ../themes/stylesheets/ext4/default/widgets/form/_triggerfield.scss */
 .x-field-default-toolbar .x-form-trigger-wrap .x-form-spinner-down-click {
-  background-position: -34px -10px; }
+  background-position: -46px -10px; }
 
 /* line 150, ../themes/stylesheets/ext4/default/widgets/form/_triggerfield.scss */
 .x-trigger-noedit {

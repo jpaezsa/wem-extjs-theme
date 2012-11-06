@@ -56,6 +56,12 @@ function createFormWidgets () {
                 store: ['Foo', 'Bar']
             },
             {
+                fieldLabel: 'ComboBox (disabled)',
+                xtype: 'combo',
+                disabled: true,
+                store: ['Foo', 'Bar']
+            },
+            {
                 fieldLabel: 'DateField',
                 xtype     : 'datefield',
                 name      : 'date'
