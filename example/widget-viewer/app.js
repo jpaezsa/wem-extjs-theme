@@ -29,7 +29,7 @@ Ext.application({
                         createTypographyContainer(),
                         createButtonsContainer(),
                         createWindowConfigContainer(),
-                        createTableContainer(),
+                        createGridsContainer(),
                         createTreePanel()
                     ]
                 }
