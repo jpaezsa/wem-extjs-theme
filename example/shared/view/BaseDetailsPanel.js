@@ -15,7 +15,7 @@ Ext.define('Admin.view.BaseDetailsPanel', {
             items: [
                 {
                     xtype: 'tbtext',
-                    text: 'No items selected - Choose from list above - <a href="">Clear selection</a>'
+                    text: 'No items selected - Choose from list above - <a href="javascript:;">Clear selection</a>'
                 }
             ]
         };

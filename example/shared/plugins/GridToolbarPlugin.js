@@ -39,11 +39,23 @@ Ext.define('Admin.plugins.GridToolbarPlugin', {
     createSelectAllButton: function () {
         var me = this;
         return Ext.create('Ext.Component', {
-            autoEl: {tag: 'a', href: 'javascript:;', html: 'Select All'},
+            autoEl: {
+                tag: 'a',
+                href: 'javascript:;',
+                html: 'Select All',
+                cls: 'admin-grid-toolbar-btn-none-selected'
+            },
             listeners: {
                 render: function (cmp) {
                     cmp.el.on('click', function () {
-                        me.toolbar.gridPanel.getSelectionModel().selectAll();
+                        if (cmp.el.hasCls('admin-grid-toolbar-btn-none-selected')) {
+                            me.toolbar.gridPanel.getSelectionModel().selectAll();
+                            cmp.el.setHTML('Deselect all');
+                        } else {
+                            me.toolbar.gridPanel.getSelectionModel().deselectAll();
+                            cmp.el.setHTML('Select all');
+                        }
+                        cmp.el.toggleCls('admin-grid-toolbar-btn-none-selected');
                     });
                 }
             }
