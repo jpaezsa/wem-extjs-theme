@@ -164,6 +164,9 @@ p {
 /**
  * @class Ext.form.field.Checkbox
  */
+/**
+ * @class Ext.form.field.Radio
+ */
 /* line 1, ../sass/admin/_selected-item.scss */
 .admin-selected-item-box {
   float: left;
@@ -6428,7 +6431,7 @@ textarea.x-form-invalid-field {
 /* Radios */
 /* line 50, ../themes/stylesheets/ext4/default/widgets/form/_checkbox.scss */
 .x-form-radio {
-  background-image: url('../themes/images/default/form/radio.gif'); }
+  background-image: url('../themes/images/default/form/admin-radio.gif'); }
 
 /* boxLabel */
 /* line 55, ../themes/stylesheets/ext4/default/widgets/form/_checkbox.scss */
