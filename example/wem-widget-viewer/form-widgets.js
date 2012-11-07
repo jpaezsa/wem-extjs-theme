@@ -48,7 +48,7 @@ function createFormWidgets () {
                 fieldLabel: 'TextField',
                 xtype     : 'textfield',
                 name      : 'someField',
-                emptyText : 'Enter a value'
+                emptyText : 'Placeholder text'
             },
             {
                 fieldLabel: 'ComboBox',

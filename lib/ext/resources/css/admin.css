@@ -71,27 +71,21 @@ p {
   border-top: 1px solid #aaaaaa !important;
   margin-bottom: 10px; }
 
+/* line 9, ../sass/admin/css-overrides/_form.scss */
+.x-fieldset-header-text {
+  border-bottom: 1px solid #aaaaaa;
+  margin-bottom: 7px; }
+
 /**
  * Combo trigger
  */
-/*
-x-trigger-index-0 x-form-trigger x-form-arrow-trigger x-form-trigger-last x-unselectable
-*/
-/* line 16, ../sass/admin/css-overrides/_form.scss */
+/* line 17, ../sass/admin/css-overrides/_form.scss */
 .x-form-arrow-trigger {
   background-image: url("../themes/images/default/form/admin-trigger.gif") !important;
   background-repeat: no-repeat;
-  border-bottom: none !important;
-  /*
-  background-position: 0px 0px;
-  width: 17px;
-  height: 25px;
-  border-bottom: 1px solid rgb(170, 170, 170);
-  cursor: pointer;
-  overflow: hidden;
-  */ }
+  border-bottom: none !important; }
 
-/* line 31, ../sass/admin/css-overrides/_form.scss */
+/* line 23, ../sass/admin/css-overrides/_form.scss */
 .x-form-trigger-input-cell input {
   border-right: none !important; }
 
@@ -6301,7 +6295,7 @@ textarea.x-form-invalid-field {
 .x-fieldset-header {
   font: 15px/14px bold Arial, sans-serif;
   color: #616161;
-  padding: 0 2px 9px 2px;
+  padding: 0 0 9px 0;
   overflow: hidden; }
   /* line 31, ../themes/stylesheets/ext4/default/widgets/form/_fieldset.scss */
   .x-fieldset-header .x-fieldset-header-text {
@@ -6328,8 +6322,8 @@ textarea.x-form-invalid-field {
 
 /* line 61, ../themes/stylesheets/ext4/default/widgets/form/_fieldset.scss */
 .x-webkit .x-fieldset-header {
-  -webkit-padding-start: 2px;
-  -webkit-padding-end: 2px; }
+  -webkit-padding-start: 0;
+  -webkit-padding-end: 0; }
 
 /* line 71, ../themes/stylesheets/ext4/default/widgets/form/_fieldset.scss */
 .x-opera .x-fieldset-with-legend {
@@ -6351,8 +6345,8 @@ textarea.x-form-invalid-field {
 /* line 96, ../themes/stylesheets/ext4/default/widgets/form/_fieldset.scss */
 .x-quirks .x-ie .x-fieldset-header,
 .x-ie8m .x-fieldset-header {
-  padding-left: 0px;
-  padding-right: 0px; }
+  padding-left: -2;
+  padding-right: -2; }
 
 /* line 104, ../themes/stylesheets/ext4/default/widgets/form/_fieldset.scss */
 .x-fieldset-collapsed .x-fieldset-body {

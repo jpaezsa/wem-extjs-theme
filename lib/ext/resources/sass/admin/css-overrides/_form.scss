@@ -6,28 +6,21 @@
   margin-bottom: 10px;
 }
 
+.x-fieldset-header-text {
+  border-bottom: 1px solid $admin-field-border-color;
+  margin-bottom: 7px;
+}
+
 /**
  * Combo trigger
  */
-
-/*
-x-trigger-index-0 x-form-trigger x-form-arrow-trigger x-form-trigger-last x-unselectable
-*/
 .x-form-arrow-trigger {
   background-image: url("../themes/images/default/form/admin-trigger.gif") !important;
   background-repeat: no-repeat;
   border-bottom: none !important;
-
-/*
-background-position: 0px 0px;
-width: 17px;
-height: 25px;
-border-bottom: 1px solid rgb(170, 170, 170);
-cursor: pointer;
-overflow: hidden;
-*/
 }
 
 .x-form-trigger-input-cell input {
   border-right: none !important;
 }
+
