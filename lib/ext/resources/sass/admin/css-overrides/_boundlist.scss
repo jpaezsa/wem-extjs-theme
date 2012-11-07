@@ -1,0 +1,17 @@
+.x-boundlist-selected {
+  color: #fff !important;
+}
+
+/*.x-boundlist-item {
+  padding: 8px 4px !important;
+}
+*/
+
+.x-boundlist-item-over {
+  color: #000 !important;
+}
+
+.x-boundlist-selected.x-boundlist-item-over {
+  background-color: $boundlist-item-selected-background-color !important;
+  color: #fff !important;
+}
