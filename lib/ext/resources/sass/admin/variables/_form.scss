@@ -1,4 +1,6 @@
 $admin-field-border-color: #aaaaaa;
+$admin-field-focus-border-color: darken($admin-field-border-color, 50);
+$admin-field-invalid-border-color: #c30;
 
 /**
  * Fieldsets
@@ -22,10 +24,11 @@ $form-field-height: 26px !default;
 
 // border
 $form-field-border-color: $admin-field-border-color !default;
-$form-field-focus-border-color: darken($admin-field-border-color, 50) !default;
+$form-field-focus-border-color: $admin-field-focus-border-color !default;
+$form-field-invalid-border-color: $admin-field-invalid-border-color !default;
 
 // background
-$form-field-background-image: '' !default;
+$form-field-background-image: null !default;
 
 /**
  * @class Ext.form.field.Checkbox

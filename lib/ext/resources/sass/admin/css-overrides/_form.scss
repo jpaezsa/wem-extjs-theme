@@ -12,14 +12,49 @@
 }
 
 /**
- * Combo trigger
+ * Triggers and Spinner
  */
-.x-form-arrow-trigger {
+.x-form-arrow-trigger,
+.x-form-date-trigger,
+.x-form-time-trigger {
   background-image: url("../themes/images/default/form/admin-trigger.gif") !important;
   background-repeat: no-repeat;
-  border-bottom: none !important;
+  border-width: 1px 1px 1px medium !important;
+  border-style: solid solid solid none !important;
+  border-color: $admin-field-border-color $admin-field-border-color $admin-field-border-color !important;
+  border-left: none !important;
 }
 
+.x-form-trigger-wrap .x-form-spinner-up,
+.x-form-trigger-wrap .x-form-spinner-down {
+  background-image: url("../themes/images/default/form/admin-spinner.gif") !important;
+  border-top: 1px solid $admin-field-border-color !important;
+  border-right: 1px solid $admin-field-border-color !important;
+  border-bottom: 1px solid $admin-field-border-color !important;
+  border-left: none !important;
+}
+
+// Focused
+.x-form-trigger-wrap-focus .x-form-trigger,
+.x-form-trigger-wrap-focus .x-form-spinner-up,
+.x-form-trigger-wrap-focus .x-form-spinner-down {
+  border-width: 1px 1px 1px medium !important;
+  border-style: solid solid solid none !important;
+  border-color: $admin-field-focus-border-color $admin-field-focus-border-color $admin-field-focus-border-color !important;
+}
+
+// Invalid
+.x-form-invalid .x-form-arrow-trigger,
+.x-form-invalid .x-form-date-trigger,
+.x-form-invalid .x-form-time-trigger {
+  border-width: 1px 1px 1px medium !important;
+  border-style: solid solid solid none !important;
+  border-color: $admin-field-invalid-border-color $admin-field-invalid-border-color $admin-field-invalid-border-color !important;
+}
+
+.x-item-disabled .x-form-arrow-trigger {
+  opacity: .3;
+}
 .x-form-trigger-input-cell input {
   border-right: none !important;
 }
