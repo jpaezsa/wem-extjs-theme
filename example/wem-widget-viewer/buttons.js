@@ -70,17 +70,17 @@ function createButtonsContainer() {
             },
             {
                 xtype: 'component',
-                html: '<h4>Colors</h4>',
+                html: '<h4>Colors</h4>'
             },
             {
                 xtype: 'button',
-                ui: 'admin-button-grey',
+                ui: 'grey',
                 text: 'Grey',
                 scale: 'small'
             },
             {
                 xtype: 'button',
-                ui: 'admin-button-red',
+                ui: 'red',
                 text: 'Red',
                 scale: 'small'
             }
