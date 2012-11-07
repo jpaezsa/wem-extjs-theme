@@ -168,7 +168,7 @@ x-trigger-index-0 x-form-trigger x-form-arrow-trigger x-form-trigger-last x-unse
 
 /* line 1, ../sass/admin/css-overrides/_splitter.scss */
 .x-splitter-default {
-  background-color: #eeeeee;
+  background-color: #ffffff;
   border-top: 1px solid #EBE7E7 !important;
   border-bottom: 1px solid #EBE7E7 !important; }
 

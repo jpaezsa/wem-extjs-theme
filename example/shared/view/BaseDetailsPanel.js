@@ -8,9 +8,6 @@ Ext.define('Admin.view.BaseDetailsPanel', {
     initComponent: function () {
         this.tbar = {
             xtype: 'toolbar',
-            style: {
-                borderTop: '1px solid #eee !important'
-            },
             cls: 'admin-std-white-toolbar',
             items: [
                 {
