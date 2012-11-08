@@ -61,11 +61,11 @@ Ext.define('Admin.view.BaseFeedbackWindow', {
 
         me.addListener('render', function () {
             me.doAnimate();
-            Ext.fly(window).addListener('resize', me.setFullWidth);
+            Ext.fly(window).addListener('resize', resizeHandler);
         });
 
         me.addListener('destroy', function () {
-            Ext.fly(window).removeListener('resize', me.setFullWidth);
+            Ext.fly(window).removeListener('resize', resizeHandler);
         });
     },
 
