@@ -9,12 +9,11 @@ Ext.define('Admin.view.BaseFeedbackWindow', {
     cls: 'admin-feedback-window',
     backgroundColor: 'admin-feedback-window-white',
     defaults: { margin: '0 0 20 0' },
-    mask: true,
+    modal: true,
     autoDestroy: true,
 
     initComponent: function () {
         var me = this;
-        me.showMask();
         me.setFullWidth();
         me.doHide();
         me.addClass(me.backgroundColor);
@@ -39,10 +38,6 @@ Ext.define('Admin.view.BaseFeedbackWindow', {
             }
         ];
         me.callParent(arguments);
-    },
-
-    showMask: function() {
-        Ext.fly(document.getElementsByTagName('html')[0]).mask();
     },
 
     doAnimate: function() {
@@ -75,8 +70,7 @@ Ext.define('Admin.view.BaseFeedbackWindow', {
     },
 
     doShow: function () {
-        var me = this;
-        me.show();
+        this.show();
     },
 
     doHide: function () {
@@ -85,7 +79,6 @@ Ext.define('Admin.view.BaseFeedbackWindow', {
     },
 
     doClose: function () {
-        Ext.fly(document.getElementsByTagName('html')[0]).unmask();
         this.destroy();
     }
 

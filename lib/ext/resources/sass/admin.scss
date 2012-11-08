@@ -4,14 +4,15 @@ $include-default: false;
 
 // Insert your custom variables here.
 @import "admin/variables/core";
-@import "admin/variables/button";
 @import "admin/variables/panel";
+@import "admin/variables/button";
 @import "admin/variables/grid";
 @import "admin/variables/toolbar";
 @import "admin/variables/form";
 @import "admin/variables/boundlist";
 
 @import "admin/css/core";
+@import "admin/css/window";
 @import "admin/css/panel";
 @import "admin/css/grid";
 @import "admin/css/toolbar";
@@ -19,8 +20,7 @@ $include-default: false;
 @import "admin/css/form";
 @import "admin/css/feedback-window";
 @import "admin/css/boundlist";
-
-@import "admin/selected-item";
+@import "admin/css/selected-item";
 
 @import 'ext4/default/all';
 

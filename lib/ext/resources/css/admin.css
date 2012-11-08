@@ -63,6 +63,22 @@ h6 {
 p {
   margin: 0 0 10px !important; }
 
+/* line 1, ../sass/admin/css/_window.scss */
+.admin-window {
+  background-color: #ffffff; }
+
+/* line 5, ../sass/admin/css/_window.scss */
+.admin-window-header {
+  background-color: #141414; }
+
+/* line 9, ../sass/admin/css/_window.scss */
+.admin-window-header h1 {
+  color: #fff !important;
+  font-size: 18px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 28px !important; }
+
 /* line 1, ../sass/admin/css/_panel.scss */
 .admin-std-panel {
   padding: 20px; }
@@ -251,6 +267,18 @@ p {
   background-color: #141414;
   color: #fff !important; }
 
+/* line 21, ../sass/admin/css/_feedback-window.scss */
+.admin-window-header {
+  background-color: #141414; }
+
+/* line 25, ../sass/admin/css/_feedback-window.scss */
+.admin-window-header h1 {
+  color: #fff !important;
+  font-size: 18px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 28px !important; }
+
 /* line 1, ../sass/admin/css/_boundlist.scss */
 .x-boundlist-selected {
   color: #fff !important; }
@@ -268,70 +296,70 @@ p {
   background-color: #1c609e !important;
   color: #fff !important; }
 
-/* line 1, ../sass/admin/_selected-item.scss */
+/* line 1, ../sass/admin/css/_selected-item.scss */
 .admin-selected-item-box {
   float: left;
   display: inline-block; }
 
-/* line 6, ../sass/admin/_selected-item.scss */
+/* line 6, ../sass/admin/css/_selected-item.scss */
 .admin-selected-item-box.gradient {
   background-color: #eeeeee; }
 
-/* line 10, ../sass/admin/_selected-item.scss */
+/* line 10, ../sass/admin/css/_selected-item.scss */
 .admin-selected-item-box p {
   margin: 0 !important; }
 
-/* line 15, ../sass/admin/_selected-item.scss */
+/* line 15, ../sass/admin/css/_selected-item.scss */
 .admin-selected-item-box.large .right a:hover,
 .admin-selected-item-box.small .right a:hover {
   border: 1px solid #d1d1d1; }
 
-/* line 19, ../sass/admin/_selected-item.scss */
+/* line 19, ../sass/admin/css/_selected-item.scss */
 .admin-selected-item-box .left {
   float: left; }
 
-/* line 23, ../sass/admin/_selected-item.scss */
+/* line 23, ../sass/admin/css/_selected-item.scss */
 .admin-selected-item-box .center {
   float: left;
   border: 0 none !important;
   border-right: 1px solid #F0F0F0 !important; }
 
-/* line 29, ../sass/admin/_selected-item.scss */
+/* line 29, ../sass/admin/css/_selected-item.scss */
 .admin-selected-item-box .right {
   float: left; }
 
 /* Large */
-/* line 34, ../sass/admin/_selected-item.scss */
+/* line 34, ../sass/admin/css/_selected-item.scss */
 .admin-selected-item-box.large {
   padding: 6px;
   margin: 0 12px 12px 0; }
 
-/* line 42, ../sass/admin/_selected-item.scss */
+/* line 42, ../sass/admin/css/_selected-item.scss */
 .admin-selected-item-box.large .left img {
   width: 32px;
   height: 32px; }
 
-/* line 47, ../sass/admin/_selected-item.scss */
+/* line 47, ../sass/admin/css/_selected-item.scss */
 .admin-selected-item-box.large .center {
   margin-right: 10px;
   padding: 0 11px; }
 
-/* line 52, ../sass/admin/_selected-item.scss */
+/* line 52, ../sass/admin/css/_selected-item.scss */
 .admin-selected-item-box.large .center h2 {
   margin: 0;
   font-size: 14px;
   font-weight: normal; }
 
-/* line 58, ../sass/admin/_selected-item.scss */
+/* line 58, ../sass/admin/css/_selected-item.scss */
 .admin-selected-item-box.large .center p {
   margin: 0;
   color: #888; }
 
-/* line 63, ../sass/admin/_selected-item.scss */
+/* line 63, ../sass/admin/css/_selected-item.scss */
 .admin-selected-item-box.large .right {
   margin: 6px 6px 0 0; }
 
-/* line 67, ../sass/admin/_selected-item.scss */
+/* line 67, ../sass/admin/css/_selected-item.scss */
 .admin-selected-item-box.large .right a {
   width: 24px;
   height: 24px;
@@ -340,36 +368,36 @@ p {
   background: transparent url(../../../../example/images/navigate_cross-24px.png) no-repeat -2px; }
 
 /* Small */
-/* line 76, ../sass/admin/_selected-item.scss */
+/* line 76, ../sass/admin/css/_selected-item.scss */
 .admin-selected-item-box.small {
   margin: 0 7px 7px 0;
   padding: 3px; }
 
-/* line 84, ../sass/admin/_selected-item.scss */
+/* line 84, ../sass/admin/css/_selected-item.scss */
 .admin-selected-item-box.small .left img {
   width: 20px;
   height: 20px; }
 
-/* line 89, ../sass/admin/_selected-item.scss */
+/* line 89, ../sass/admin/css/_selected-item.scss */
 .admin-selected-item-box.small .center {
   margin-right: 5px;
   padding: 0 6px; }
 
-/* line 94, ../sass/admin/_selected-item.scss */
+/* line 94, ../sass/admin/css/_selected-item.scss */
 .admin-selected-item-box.small .center h2 {
   font-size: 11px;
   font-weight: normal;
   margin: 3px 0 0 0; }
 
-/* line 100, ../sass/admin/_selected-item.scss */
+/* line 100, ../sass/admin/css/_selected-item.scss */
 .admin-selected-item-box.small .center p {
   margin: 0; }
 
-/* line 104, ../sass/admin/_selected-item.scss */
+/* line 104, ../sass/admin/css/_selected-item.scss */
 .admin-selected-item-box.small .right {
   margin: 2px 3px 0 0; }
 
-/* line 108, ../sass/admin/_selected-item.scss */
+/* line 108, ../sass/admin/css/_selected-item.scss */
 .admin-selected-item-box.small .right a {
   width: 16px;
   height: 16px;

@@ -3,7 +3,8 @@ Ext.application({
     appFolder: 'app',
     requires: [
         'Admin.view.BaseGridPanel',
-        'Admin.view.BaseFeedbackWindow'
+        'Admin.view.BaseFeedbackWindow',
+        'Admin.view.BaseWindow'
     ],
     launch: function () {
         Ext.create('Ext.container.Viewport', {
