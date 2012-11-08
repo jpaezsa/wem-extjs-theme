@@ -71,7 +71,6 @@ Ext.define('Admin.view.BaseFeedbackWindow', {
 
     setFullWidth: function () {
         var me = this;
-        console.log('resize');
         me.setWidth(Ext.getBody().getWidth());
     },
 
