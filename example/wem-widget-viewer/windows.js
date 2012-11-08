@@ -1,4 +1,3 @@
-
 function createWindowConfigContainer() {
     return Ext.create('Ext.container.Container', {
         cls: 'admin-std-panel',
@@ -12,66 +11,43 @@ function createWindowConfigContainer() {
             },
             {
                 xtype: 'container',
-                layout: {
-                    type: 'table',
-                    columns: 3,
-                    tdAttrs: {
-                        valign: 'top',
-                        width: 150
-                    }
-                },
+
                 items: [
                     {
-                        xtype: 'container',
-                        items: [
-                            {
-                                xtype: 'checkbox',
-                                itemId: 'maskCheckbox',
-                                boxLabel: 'Mask'
-                            },
-                            {
-                                xtype: 'checkbox',
-                                itemId: 'anchorCheckbox',
-                                boxLabel: 'Show at anchor'
-                            }
-                        ]
-
+                        xtype: 'component',
+                        html: '<h3>Feedback</h3>'
                     },
                     {
                         xtype: 'radiogroup',
-                        fieldLabel: 'Color',
-                        labelWidth: 40,
+                        fieldLabel: 'Background Color',
+                        labelWidth: 110,
                         width: 300,
                         itemId: 'colorRadioGroup',
                         columns: 1,
                         vertical: true,
                         items: [
-                            { boxLabel: 'White', name: 'colorRadiobutton', inputValue: 'admin-std-window-white', checked: true },
-                            { boxLabel: 'Enonic Black (for text)', name: 'colorRadiobutton', inputValue: 'admin-std-window-dark-black' },
-                            { boxLabel: 'Dark Purple (for text)', name: 'colorRadiobutton', inputValue: 'admin-std-window-dark-purple' }
+                            { boxLabel: 'White', name: 'colorRadiobutton', inputValue: 'admin-feedback-window-white', checked: true },
+                            { boxLabel: 'Enonic Black (for text)', name: 'colorRadiobutton', inputValue: 'admin-feedback-window-dark-black' },
+                            { boxLabel: 'Dark Purple (for text)', name: 'colorRadiobutton', inputValue: 'admin-feedback-window-dark-purple' }
                         ]
                     }
                 ]
             },
             {
                 xtype: 'button',
-                text: 'Open Window',
+                text: 'Show Feedback',
                 scale: 'small',
                 handler: function(btn) {
-                    var useMask = Ext.ComponentQuery.query('#maskCheckbox', btn.up())[0].getValue();
-                    var backgroundCls = Ext.ComponentQuery.query('#colorRadioGroup', btn.up())[0].getValue()['colorRadiobutton'];
-                    var showAtAnchor = Ext.ComponentQuery.query('#anchorCheckbox', btn.up())[0].getValue();
+                    var selectedBackgroundColor = Ext.ComponentQuery.query('#colorRadioGroup', btn.up())[0].getValue()['colorRadiobutton'];
 
-                    if (!Ext.getCmp('testAdminWindow')) {
-                        var win = new Admin.view.BaseWindow({
-                            id: 'testAdminWindow',
-                            title: 'Window 1 Title',
-                            backgroundCls: backgroundCls,
-                            mask: useMask,
-                            anchor: showAtAnchor ? btn : null
+                    if (!Ext.getCmp('testFeedbackWindow')) {
+                        var feedbackWindow = new Admin.view.BaseFeedbackWindow({
+                            id: 'testFeedbackWindow',
+                            title: 'Feedback Title',
+                            backgroundColor: selectedBackgroundColor
                         });
 
-                        win.doShow();
+                        feedbackWindow.doShow();
                     }
                 }
             }
