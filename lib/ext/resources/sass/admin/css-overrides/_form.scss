@@ -14,22 +14,28 @@
 /**
  * Trigger and Spinner
  */
+.x-form-trigger-input-cell input {
+  border-right: none !important;
+}
+
+// Trigger
 .x-form-arrow-trigger,
 .x-form-date-trigger,
 .x-form-time-trigger {
   background-image: url("../themes/images/default/form/admin-trigger.gif") !important;
   background-repeat: no-repeat;
-  border-width: 1px 1px 1px medium !important;
+  border-width: $form-field-border-width $form-field-border-width $form-field-border-width medium !important;
   border-style: solid solid solid none !important;
   border-color: $admin-field-border-color $admin-field-border-color $admin-field-border-color !important;
   border-left: none !important;
 }
 
+// Spinner
 .x-form-trigger-wrap .x-form-spinner-up,
 .x-form-trigger-wrap .x-form-spinner-down {
   background-image: url("../themes/images/default/form/admin-spinner.gif") !important;
   border-top: none !important;
-  border-right: 1px solid $admin-field-border-color !important;
+  border-right: $form-field-border-width solid $admin-field-border-color !important;
   border-bottom: none !important;
   border-left: none !important;
 }
@@ -40,9 +46,14 @@
   border-bottom: 1px solid $admin-field-border-color !important;
 }
 
+// Disabled
+.x-item-disabled .x-form-arrow-trigger {
+  opacity: .3;
+}
+
 // Focused
 .x-form-trigger-wrap-focus .x-form-trigger {
-  border-width: 1px 1px 1px medium !important;
+  border-width: $form-field-border-width $form-field-border-width $form-field-border-width medium !important;
   border-style: solid solid solid none !important;
   border-color: $admin-field-focus-border-color $admin-field-focus-border-color $admin-field-focus-border-color !important;
 }
@@ -57,15 +68,14 @@
 .x-form-invalid .x-form-arrow-trigger,
 .x-form-invalid .x-form-date-trigger,
 .x-form-invalid .x-form-time-trigger {
-  border-width: 1px 1px 1px medium !important;
+  border-width: $form-field-border-width $form-field-border-width $form-field-border-width medium !important;
   border-style: solid solid solid none !important;
   border-color: $admin-field-invalid-border-color $admin-field-invalid-border-color $admin-field-invalid-border-color !important;
 }
 
-.x-item-disabled .x-form-arrow-trigger {
-  opacity: .3;
+.x-form-invalid-field, textarea.x-form-invalid-field {
+  background-image: none !important;
 }
-.x-form-trigger-input-cell input {
-  border-right: none !important;
-}
+
+
 

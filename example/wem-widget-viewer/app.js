@@ -21,10 +21,6 @@ Ext.application({
                         }
                     },
                     items: [
-                        {
-                            xtype: 'component',
-                            html: '<h1>Admin Widgets</h1>'
-                        },
                         /*
                         createSelectedItemContainer(),
                         createTypographyContainer(),
@@ -33,6 +29,7 @@ Ext.application({
                         createGridsContainer(),
                         createTreePanel(),
                         */
+                        createWindowConfigContainer(),
                         createFormWidgets()
                     ]
                 }
