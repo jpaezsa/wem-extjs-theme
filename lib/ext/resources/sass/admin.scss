@@ -11,14 +11,14 @@ $include-default: false;
 @import "admin/variables/form";
 @import "admin/variables/boundlist";
 
-@import "admin/css-overrides/core";
-@import "admin/css-overrides/panel";
-@import "admin/css-overrides/grid";
-@import "admin/css-overrides/toolbar";
-@import "admin/css-overrides/splitter";
-@import "admin/css-overrides/form";
-@import "admin/css-overrides/feedback-window";
-@import "admin/css-overrides/boundlist";
+@import "admin/css/core";
+@import "admin/css/panel";
+@import "admin/css/grid";
+@import "admin/css/toolbar";
+@import "admin/css/splitter";
+@import "admin/css/form";
+@import "admin/css/feedback-window";
+@import "admin/css/boundlist";
 
 @import "admin/selected-item";
 
