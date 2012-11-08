@@ -5,7 +5,7 @@ $boundlist-background-color: #fff !default;
 $boundlist-border-color: $admin-black !default;
 
 // Item colors
-$boundlist-item-over-background-color: $admin-light-grey !default;
-$boundlist-item-selected-background-color: $admin-blue !default;
+$boundlist-item-over-background-color: $admin-blue !default;
+$boundlist-item-selected-background-color: darken($admin-blue, 20) !default;
 
 $boundlist-item-padding: 8px 4px !default;
