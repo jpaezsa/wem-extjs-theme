@@ -41,7 +41,7 @@ Ext.define('Admin.view.BaseFeedbackPanel', {
                 xtype: 'component',
                 flex: 1,
                 autoEl: {
-                    tag: 'h1',
+                    tag: 'h3',
                     html: title
 
                 }
