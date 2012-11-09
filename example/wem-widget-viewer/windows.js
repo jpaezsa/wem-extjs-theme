@@ -2,12 +2,12 @@ function createWindowConfigContainer() {
     return Ext.create('Ext.container.Container', {
         cls: 'admin-std-panel',
         defaults: {
-            margin: '0 10 0 0'
+            margin: ITEM_MARGINS
         },
         items: [
             {
                 xtype: 'component',
-                html: '<h2>Windows</h2>'
+                html: '<h2>Window</h2>'
             },
             {
                 xtype: 'container',

@@ -1,7 +1,7 @@
 function createFormWidgets() {
     return Ext.create('Ext.container.Container', {
         defaults: {
-            margin: '0 10 0 0'
+            margin: ITEM_MARGINS
         },
         items: [
             {
@@ -20,10 +20,6 @@ function createFormWidgets() {
                     margin: '0 0 10 0'
                 },
                 items: [
-                    {
-                        xtype: 'label',
-                        text: 'Plain Label'
-                    },
                     {
                         fieldLabel: 'TextField',
                         xtype: 'textfield',

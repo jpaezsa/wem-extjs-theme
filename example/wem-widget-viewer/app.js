@@ -22,14 +22,12 @@ Ext.application({
                         }
                     },
                     items: [
-                        /*
                         createSelectedItemContainer(),
                         createTypographyContainer(),
                         createButtonsContainer(),
                         createWindowConfigContainer(),
                         createGridsContainer(),
                         createTreePanel(),
-                        */
                         createWindowConfigContainer(),
                         createFormWidgets()
                     ]

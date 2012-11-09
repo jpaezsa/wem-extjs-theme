@@ -17,6 +17,9 @@ function createTreeStore () {
 
 function createTreePanel () {
     return Ext.create('Ext.container.Container', {
+        defaults: {
+            margin: ITEM_MARGINS
+        },
         items: [
             {
                 xtype: 'component',

@@ -22,7 +22,7 @@ function createSimpsonsStore (storeId) {
 function createGridsContainer() {
     return Ext.create('Ext.container.Container', {
         defaults: {
-            margin: '0 0 10 0'
+            margin: ITEM_MARGINS
         },
         items: [
             {

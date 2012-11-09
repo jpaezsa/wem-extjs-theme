@@ -1,7 +1,8 @@
 function createSelectedItemContainer() {
     return Ext.create('Ext.container.Container', {
         defaults: {
-            border: false
+            border: false,
+            margin: ITEM_MARGINS
         },
         items: [
             {
