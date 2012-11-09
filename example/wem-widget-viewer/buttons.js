@@ -81,14 +81,14 @@ function createButtonsContainer() {
                     },
                     {
                         xtype: 'button',
-                        ui: 'grey',
-                        text: 'Grey',
+                        ui: 'red',
+                        text: 'Red',
                         scale: 'small'
                     },
                     {
                         xtype: 'button',
-                        ui: 'red',
-                        text: 'Red',
+                        ui: 'grey',
+                        text: 'Grey',
                         scale: 'small'
                     }
                 ]

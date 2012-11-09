@@ -10,6 +10,7 @@ function createFormWidgets() {
             },
             {
                 xtype: 'form',
+                width: 620,
 
                 id: 'form-widgets',
                 border: false,

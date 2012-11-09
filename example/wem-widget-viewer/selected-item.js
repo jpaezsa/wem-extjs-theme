@@ -13,7 +13,7 @@ function createSelectedItemContainer() {
                 html: selectedItemLargeBoxHtml
             },
             {
-                html: selectedItemSmallBoxHtml
+                html: selectedItemSmallBoxHtml + selectedItemSmallBoxHtml + selectedItemSmallBoxHtml
             }
         ]
     });

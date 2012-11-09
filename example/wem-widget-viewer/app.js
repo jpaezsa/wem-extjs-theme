@@ -16,19 +16,15 @@ Ext.application({
                     autoScroll: true,
                     border: false,
                     defaults: {
-                        padding: '15 30',
-                        style: {
-                            borderBottom: '1px solid #ccc'
-                        }
+                        padding: '15 30'
                     },
                     items: [
                         createSelectedItemContainer(),
+                        createWindowConfigContainer(),
                         createTypographyContainer(),
-                        createButtonsContainer(),
-                        createWindowConfigContainer(),
                         createGridsContainer(),
+                        createButtonsContainer(),
                         createTreePanel(),
-                        createWindowConfigContainer(),
                         createFormWidgets()
                     ]
                 }
