@@ -16,12 +16,12 @@ Ext.define('Admin.view.BaseWindow', {
         if (!me.items) {
             me.items = [];
         }
-        me.createHeader();
+        me.insertHeader();
 
         me.callParent(arguments);
     },
 
-    createHeader: function () {
+    insertHeader: function () {
         var me = this;
         Ext.Array.insert(this.items, 0, [
             {
