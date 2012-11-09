@@ -44,9 +44,9 @@ Ext.define('Example.view.BrowsePanel', {
             flex: 2
         },
         {
-            flex: 1,
             region: 'center',
-            xtype: 'exampleDetailsPanel'
+            xtype: 'exampleDetailsPanel',
+            flex: 1
         }
     ]
 

@@ -249,35 +249,27 @@ p {
 .x-form-invalid-field, textarea.x-form-invalid-field {
   background-image: none !important; }
 
-/* line 1, ../sass/admin/css/_feedback-window.scss */
-.admin-feedback-window {
-  padding: 40px; }
+/* line 1, ../sass/admin/css/_feedback-panel.scss */
+.admin-feedback-panel {
+  border: none !important; }
 
-/* line 5, ../sass/admin/css/_feedback-window.scss */
-.admin-feedback-window-white {
+/* line 5, ../sass/admin/css/_feedback-panel.scss */
+.admin-feedback-panel-white {
   background-color: #ffffff; }
 
-/* line 9, ../sass/admin/css/_feedback-window.scss */
-.admin-feedback-window-dark-purple {
+/* line 9, ../sass/admin/css/_feedback-panel.scss */
+.admin-feedback-panel-dark-purple {
   background-color: #5133ab;
   color: #fff !important; }
 
-/* line 14, ../sass/admin/css/_feedback-window.scss */
-.admin-feedback-window-dark-black {
+/* line 14, ../sass/admin/css/_feedback-panel.scss */
+.admin-feedback-panel-dark-black {
   background-color: #141414;
   color: #fff !important; }
 
-/* line 21, ../sass/admin/css/_feedback-window.scss */
-.admin-window-header {
-  background-color: #141414; }
-
-/* line 25, ../sass/admin/css/_feedback-window.scss */
-.admin-window-header h1 {
-  color: #fff !important;
-  font-size: 18px !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  line-height: 28px !important; }
+/* line 19, ../sass/admin/css/_feedback-panel.scss */
+.admin-feedback-dock {
+  border-top: 0 !important; }
 
 /* line 1, ../sass/admin/css/_boundlist.scss */
 .x-boundlist-selected {

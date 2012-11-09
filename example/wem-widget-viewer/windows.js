@@ -27,10 +27,9 @@ function createWindowConfigContainer() {
                                 items: [
                                     {
                                         xtype: 'component',
-                                        html: 'Custom item ... Content goes here'
+                                        html: '<p>Mixed collection. Add items here</p><p>Windows are usually appended to a screen</p>'
                                     }
                                 ]
-
                             });
                             window.doShow();
                         }
@@ -43,32 +42,20 @@ function createWindowConfigContainer() {
                         xtype: 'container',
                         items: [
                             {
-                                xtype: 'radiogroup',
-                                fieldLabel: 'Background Color',
-                                labelWidth: 110,
-                                width: 300,
-                                itemId: 'colorRadioGroup',
-                                columns: 1,
-                                vertical: true,
-                                items: [
-                                    { boxLabel: 'White', name: 'colorRadiobutton', inputValue: 'admin-feedback-window-white', checked: true },
-                                    { boxLabel: 'Enonic Black (for text)', name: 'colorRadiobutton', inputValue: 'admin-feedback-window-dark-black' },
-                                    { boxLabel: 'Dark Purple (for text)', name: 'colorRadiobutton', inputValue: 'admin-feedback-window-dark-purple' }
-                                ]
-                            },
-                            {
                                 xtype: 'button',
                                 text: 'Feedback',
                                 scale: 'small',
                                 handler: function (btn) {
-                                    var selectedBackgroundColor = Ext.ComponentQuery.query('#colorRadioGroup',
-                                        btn.up())[0].getValue()['colorRadiobutton'];
-
                                     if (!Ext.getCmp('testFeedbackWindow')) {
-                                        var feedbackWindow = new Admin.view.BaseFeedbackWindow({
+                                        var feedbackWindow = new Admin.view.BaseFeedbackPanel({
                                             id: 'testFeedbackWindow',
-                                            title: 'Title',
-                                            backgroundColor: selectedBackgroundColor
+                                            feedbackTitle: 'Feedback Title',
+                                            items: [
+                                                {
+                                                    xtype: 'component',
+                                                    html: '<p>Mixed collection. Add items here</p><p>For global feedback, append to viewport or body element</p>'
+                                                }
+                                            ]
                                         });
                                         feedbackWindow.doShow();
                                     }
@@ -77,9 +64,7 @@ function createWindowConfigContainer() {
                         ]
                     },
                 ]
-
             }
-
         ]
     });
 }
