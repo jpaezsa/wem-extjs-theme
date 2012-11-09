@@ -176,22 +176,32 @@ p {
  */
 /* line 4, ../sass/admin/css/_form.scss */
 .x-fieldset {
-  border-top: 1px solid #aaaaaa !important;
-  margin-bottom: 10px; }
+  border-top: 1px solid #aaaaaa !important; }
 
 /* line 9, ../sass/admin/css/_form.scss */
+.x-fieldset-with-title .x-tool,
+.x-fieldset-header-checkbox {
+  margin-right: 0 !important; }
+
+/* line 15, ../sass/admin/css/_form.scss */
+.x-fieldset-with-title .x-tool,
+.x-fieldset-header-checkbox,
 .x-fieldset-header-text {
   border-bottom: 1px solid #aaaaaa;
-  margin-bottom: 7px; }
+  margin-bottom: 7px !important; }
+
+/* line 20, ../sass/admin/css/_form.scss */
+.x-fieldset-header .x-fieldset-header-text {
+  padding-left: 7px !important; }
 
 /**
  * Trigger and Spinner
  */
-/* line 17, ../sass/admin/css/_form.scss */
+/* line 26, ../sass/admin/css/_form.scss */
 .x-form-trigger-input-cell input {
   border-right: none !important; }
 
-/* line 24, ../sass/admin/css/_form.scss */
+/* line 33, ../sass/admin/css/_form.scss */
 .x-form-arrow-trigger,
 .x-form-date-trigger,
 .x-form-time-trigger {
@@ -202,7 +212,7 @@ p {
   border-color: #aaaaaa #aaaaaa #aaaaaa !important;
   border-left: none !important; }
 
-/* line 35, ../sass/admin/css/_form.scss */
+/* line 44, ../sass/admin/css/_form.scss */
 .x-form-trigger-wrap .x-form-spinner-up,
 .x-form-trigger-wrap .x-form-spinner-down {
   background-image: url("../themes/images/default/form/admin-spinner.gif") !important;
@@ -211,33 +221,33 @@ p {
   border-bottom: none !important;
   border-left: none !important; }
 
-/* line 42, ../sass/admin/css/_form.scss */
+/* line 51, ../sass/admin/css/_form.scss */
 .x-form-trigger-wrap .x-form-spinner-up {
   border-top: 1px solid #aaaaaa !important; }
 
-/* line 45, ../sass/admin/css/_form.scss */
+/* line 54, ../sass/admin/css/_form.scss */
 .x-form-trigger-wrap .x-form-spinner-down {
   border-bottom: 1px solid #aaaaaa !important; }
 
-/* line 50, ../sass/admin/css/_form.scss */
+/* line 59, ../sass/admin/css/_form.scss */
 .x-item-disabled .x-form-arrow-trigger {
   opacity: .3; }
 
-/* line 55, ../sass/admin/css/_form.scss */
+/* line 64, ../sass/admin/css/_form.scss */
 .x-form-trigger-wrap-focus .x-form-trigger {
   border-width: 1px 1px 1px medium !important;
   border-style: solid solid solid none !important;
   border-color: #141414 #141414 #141414 !important; }
 
-/* line 60, ../sass/admin/css/_form.scss */
+/* line 69, ../sass/admin/css/_form.scss */
 .x-form-trigger-wrap-focus .x-form-spinner-up {
   border-bottom: none !important; }
 
-/* line 63, ../sass/admin/css/_form.scss */
+/* line 72, ../sass/admin/css/_form.scss */
 .x-form-trigger-wrap-focus .x-form-spinner-down {
   border-top: none !important; }
 
-/* line 70, ../sass/admin/css/_form.scss */
+/* line 79, ../sass/admin/css/_form.scss */
 .x-form-invalid .x-form-arrow-trigger,
 .x-form-invalid .x-form-date-trigger,
 .x-form-invalid .x-form-time-trigger {
@@ -245,7 +255,7 @@ p {
   border-style: solid solid solid none !important;
   border-color: #cc3300 #cc3300 #cc3300 !important; }
 
-/* line 76, ../sass/admin/css/_form.scss */
+/* line 85, ../sass/admin/css/_form.scss */
 .x-form-invalid-field, textarea.x-form-invalid-field {
   background-image: none !important; }
 

@@ -115,7 +115,7 @@ function createFormWidgets() {
                         title: 'Collapsible Fieldset',
                         collapsible: true,
                         items: [
-                            { xtype: 'checkbox', boxLabel: 'Checkbox 1', disabled: true, checked: true },
+                            { xtype: 'checkbox', boxLabel: 'Checkbox 1' },
                             { xtype: 'checkbox', boxLabel: 'Checkbox 2' }
                         ]
                     },

@@ -3,14 +3,23 @@
  */
 .x-fieldset {
   border-top: 1px solid $admin-field-border-color !important;
-  margin-bottom: 10px;
 }
 
+.x-fieldset-with-title .x-tool,
+.x-fieldset-header-checkbox {
+  margin-right: 0 !important;
+}
+
+.x-fieldset-with-title .x-tool,
+.x-fieldset-header-checkbox,
 .x-fieldset-header-text {
   border-bottom: 1px solid $admin-field-border-color;
-  margin-bottom: 7px;
+  margin-bottom: 7px !important;
 }
 
+.x-fieldset-header .x-fieldset-header-text {
+  padding-left: 7px !important;
+}
 /**
  * Trigger and Spinner
  */
