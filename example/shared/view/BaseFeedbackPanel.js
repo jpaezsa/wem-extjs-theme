@@ -15,12 +15,13 @@ Ext.define('Admin.view.BaseFeedbackPanel', {
     defaults: {
         margin: '0 0 20 0'
     },
+
     initComponent: function () {
         var me = this;
         if (!me.items) {
             me.items = [];
         }
-        me.insertTitle();
+        me.insertTitle(me.feedbackTitle);
         me.insertDockedItems();
 
         me.setFullWidth();
@@ -30,7 +31,7 @@ Ext.define('Admin.view.BaseFeedbackPanel', {
         me.callParent(arguments);
     },
 
-    insertTitle: function () {
+    insertTitle: function (title) {
         var me = this;
         if (me.feedbackTitle === '') {
             return;
@@ -41,7 +42,7 @@ Ext.define('Admin.view.BaseFeedbackPanel', {
                 flex: 1,
                 autoEl: {
                     tag: 'h1',
-                    html: me.feedbackTitle
+                    html: title
 
                 }
             }

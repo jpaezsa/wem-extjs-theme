@@ -24,6 +24,7 @@ function createWindowConfigContainer() {
                             var window = new Admin.view.BaseWindow({
                                 id: 'testWindow',
                                 title: 'Window Title',
+                                iconCls: 'icon-content-24',
                                 items: [
                                     {
                                         xtype: 'component',

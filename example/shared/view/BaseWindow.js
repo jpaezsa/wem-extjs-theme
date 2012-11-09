@@ -1,6 +1,7 @@
 Ext.define('Admin.view.BaseWindow', {
     extend: 'Ext.container.Container',
     alias: 'widget.baseWindow',
+    iconCls: '',
     title: '',
     width: 640,
     height: 420,
@@ -27,12 +28,14 @@ Ext.define('Admin.view.BaseWindow', {
             {
                 xtype: 'container',
                 cls: 'admin-window-header',
-                padding: 5,
+                padding: '5 0 5 5',
                 layout: {
                     type: 'hbox',
                     align: 'stretch'
                 },
-
+                defaults: {
+                    margin: '0 5 0 0'
+                },
                 // It should be possible to add custom buttons here.
                 items: [
                     me.createTitle(me.title),
@@ -49,9 +52,10 @@ Ext.define('Admin.view.BaseWindow', {
         return {
             xtype: 'component',
             flex: 1,
+            cls: me.iconCls,
             autoEl: {
                 tag: 'h1',
-                html: title
+                html: title,
             }
         }
     },

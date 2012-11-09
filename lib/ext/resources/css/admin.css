@@ -76,7 +76,7 @@ p {
   color: #fff !important;
   font-size: 18px !important;
   margin: 0 !important;
-  padding: 0 !important;
+  padding: 0 0 0 27px !important;
   line-height: 28px !important; }
 
 /* line 1, ../sass/admin/css/_panel.scss */
@@ -268,16 +268,6 @@ p {
   background-color: #ffffff; }
 
 /* line 9, ../sass/admin/css/_feedback-panel.scss */
-.admin-feedback-panel-dark-purple {
-  background-color: #5133ab;
-  color: #fff !important; }
-
-/* line 14, ../sass/admin/css/_feedback-panel.scss */
-.admin-feedback-panel-dark-black {
-  background-color: #141414;
-  color: #fff !important; }
-
-/* line 19, ../sass/admin/css/_feedback-panel.scss */
 .admin-feedback-dock {
   border-top: 0 !important; }
 
