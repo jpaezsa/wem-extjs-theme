@@ -10,21 +10,28 @@ Ext.define('Admin.view.BaseWindow', {
     cls: 'admin-window',
     shadow: false,
     autoDestroy: true,
+    buttons: [],
 
     initComponent: function () {
         var me = this;
-
         if (!me.items) {
             me.items = [];
         }
-        me.insertHeader();
-
+        me.insertHeader(me.title);
         me.callParent(arguments);
     },
 
-    insertHeader: function () {
+    insertHeader: function (title) {
         var me = this;
-        Ext.Array.insert(this.items, 0, [
+        var headerItems = [];
+
+        headerItems.push(me.createTitle(title));
+        Ext.Array.each(me.buttons, function (b, i) {
+            headerItems.push(me.buttons[i]);
+        });
+        headerItems.push(me.createCloseButton());
+
+        Ext.Array.insert(me.items, 0, [
             {
                 xtype: 'container',
                 cls: 'admin-window-header',
@@ -36,12 +43,7 @@ Ext.define('Admin.view.BaseWindow', {
                 defaults: {
                     margin: '0 5 0 0'
                 },
-                // It should be possible to add custom buttons here.
-                items: [
-                    me.createTitle(me.title),
-                    me.createInsertButton(),
-                    me.createCloseButton()
-                ]
+                items: headerItems
             }
         ]);
         me.doLayout();
@@ -55,16 +57,8 @@ Ext.define('Admin.view.BaseWindow', {
             cls: me.iconCls,
             autoEl: {
                 tag: 'h1',
-                html: title,
+                html: title
             }
-        }
-    },
-
-    createInsertButton: function () {
-        var me = this;
-        return {
-            xtype: 'button',
-            text: 'Insert (5)'
         }
     },
 
@@ -91,12 +85,6 @@ Ext.define('Admin.view.BaseWindow', {
 
     doClose: function () {
         this.destroy();
-    },
-
-    listeners: {
-        render: function (container) {
-
-        }
     }
 
 });

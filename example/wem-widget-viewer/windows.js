@@ -25,10 +25,26 @@ function createWindowConfigContainer() {
                                 id: 'testWindow',
                                 title: 'Window Title',
                                 iconCls: 'icon-content-24',
+                                buttons: [
+                                    {
+                                        xtype: 'button',
+                                        text: 'Insert (5)',
+                                        handler: function () {
+                                            alert('Inserted 5 items');
+                                        }
+                                    },
+                                    {
+                                        xtype: 'button',
+                                        text: 'Do something else',
+                                        handler: function () {
+                                            alert('Did something else instead');
+                                        }
+                                    }
+                                ],
                                 items: [
                                     {
                                         xtype: 'component',
-                                        html: '<p>Mixed collection. Add items here</p><p>Windows are usually appended to a screen</p>'
+                                        html: '<p>Mixed collection. Add items here</p><ul><li>Add custom buttons using the buttons configuration</li></ul>'
                                     }
                                 ]
                             });
