@@ -9,12 +9,17 @@
 
 .admin-filter-panel .x-fieldset {
   border: none !important;
+  margin-bottom: 10px !important;
 }
 
 .admin-filter-panel .x-fieldset-header {
   color: #000000 !important;
   font-size: 15px !important;
   padding: 0 0 0 0 !important;
+}
+
+.admin-filter-panel .x-fieldset-header-text {
+  border: none !important;
 }
 
 .admin-filter-panel .x-fieldset-body {

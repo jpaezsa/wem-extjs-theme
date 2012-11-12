@@ -89,15 +89,20 @@ p {
 
 /* line 10, ../sass/admin/css/_panel.scss */
 .admin-filter-panel .x-fieldset {
-  border: none !important; }
+  border: none !important;
+  margin-bottom: 10px !important; }
 
-/* line 14, ../sass/admin/css/_panel.scss */
+/* line 15, ../sass/admin/css/_panel.scss */
 .admin-filter-panel .x-fieldset-header {
   color: #000000 !important;
   font-size: 15px !important;
   padding: 0 0 0 0 !important; }
 
-/* line 20, ../sass/admin/css/_panel.scss */
+/* line 21, ../sass/admin/css/_panel.scss */
+.admin-filter-panel .x-fieldset-header-text {
+  border: none !important; }
+
+/* line 25, ../sass/admin/css/_panel.scss */
 .admin-filter-panel .x-fieldset-body {
   padding-left: 10px; }
 
