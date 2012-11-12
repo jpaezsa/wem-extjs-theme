@@ -11,33 +11,39 @@ Ext.define('Example.view.GridPanel', {
             items: [
                 {
                     flex: 1,
+                    text: 'Company',
                     sortable: true,
                     dataIndex: 'company',
                     renderer: me.nameRenderer
                 },
                 {
                     width: 135,
+                    text: 'Status',
                     sortable: true,
                     dataIndex: 'status',
                     renderer: me.statusRenderer
                 },
                 {
                     width: 75,
+                    text: 'Price',
                     sortable: true,
                     dataIndex: 'price'
                 },
                 {
                     width: 75,
+                    text: 'Change',
                     sortable: true,
                     dataIndex: 'change'
                 },
                 {
                     width: 75,
+                    text: 'Percent Change',
                     sortable: true,
                     dataIndex: 'pctChange'
                 },
                 {
                     width: 85,
+                    text: 'Last Change',
                     sortable: true,
                     xtype: 'datecolumn',
                     dataIndex: 'lastChange'

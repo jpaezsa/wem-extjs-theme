@@ -64,7 +64,7 @@ Ext.define('Admin.plugins.GridToolbarPlugin', {
 
     createOrderByButton: function () {
         var me = this;
-        var menuItems = me.createSortByMenuItems();
+        var menuItems = me.createOrderByMenuItems();
         return Ext.create('Ext.button.Cycle', {
             showText: true,
             prependText: 'Order by ',
@@ -87,7 +87,7 @@ Ext.define('Admin.plugins.GridToolbarPlugin', {
         });
     },
 
-    createSortByMenuItems: function () {
+    createOrderByMenuItems: function () {
         var me = this;
         var gridColumns = me.toolbar.gridPanel.columns;
         var menuItems = [];

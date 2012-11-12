@@ -20,7 +20,9 @@
 .x-fieldset-header .x-fieldset-header-text {
   padding-left: 7px !important;
 }
+
 /**
+ * Combo box
  * Trigger and Spinner
  */
 .x-form-trigger-input-cell input {
@@ -86,5 +88,15 @@
   background-image: none !important;
 }
 
+/**
+ * Date picker
+ * Currently it is not possible to override anything in the datepicker object.
+ */
+.x-datepicker-header {
+  background-color: #fff !important;
+  background-image: none !important;
+}
 
-
+.x-datepicker-month button .x-btn-inner {
+  color: $color !important;
+}

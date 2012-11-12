@@ -11,12 +11,14 @@ $admin-black: #141414;
 $admin-blue: #4294DE; /*1B58B8*/
 $admin-light-grey: #eeeeee;
 
+$admin-selected-color: $admin-blue;
+$admin-over-color: $admin-light-grey;
+
 /**
  * @var {string} $font-family 
  * The default font-family to be used throughout the theme.
  */
 
-//$font-family: "Helvetica Neue",Helvetica,Arial,sans-serif !default;
-$font-family: Arial,sans-serif !default;
+$font-family: Tahoma, Geneva, Verdana !default;
 $font-size  : 12px !default;
 $color: $admin-black !default;
