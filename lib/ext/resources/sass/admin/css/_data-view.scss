@@ -1,0 +1,19 @@
+.admin-data-view {
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.admin-data-view .admin-data-view-cell {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 10px;
+}
+
+.admin-data-view.admin-data-view-over {
+  background-color: $admin-over-color;
+}
+
+.admin-data-view.x-item-selected {
+  background-color: $admin-selected-color;
+  color: #fff;
+}
