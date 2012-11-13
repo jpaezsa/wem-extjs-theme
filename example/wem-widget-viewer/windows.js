@@ -1,6 +1,6 @@
 function createWindowConfigContainer() {
     return Ext.create('Ext.container.Container', {
-        cls: 'admin-std-panel',
+        cls: 'admin-panel',
         defaults: {
             margin: ITEM_MARGINS
         },

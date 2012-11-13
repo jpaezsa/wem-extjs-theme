@@ -5,7 +5,7 @@ Ext.define('Admin.view.BaseGridPanel', {
         'Admin.plugins.GridToolbarPlugin'
     ],
     deferRowRender: true,
-    cls: 'admin-std-grid',
+    cls: 'admin-grid',
     viewConfig: {
         stripeRows: true
     },

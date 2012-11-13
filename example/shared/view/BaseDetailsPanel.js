@@ -3,12 +3,12 @@ Ext.define('Admin.view.BaseDetailsPanel', {
     alias: 'widget.baseDetailsPanel',
     autoScroll: true,
     defaults: {
-        cls: 'admin-std-panel'
+        cls: 'admin-panel'
     },
     initComponent: function () {
         this.tbar = {
             xtype: 'toolbar',
-            cls: 'admin-std-white-toolbar',
+            cls: 'admin-white-toolbar',
             items: [
                 {
                     xtype: 'tbtext',

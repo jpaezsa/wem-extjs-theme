@@ -77,7 +77,7 @@ function getFormWidgets() {
          {type:'print'}
          ],
          */
-        cls: 'admin-std-panel',
+        cls: 'admin-panel',
         border: false,
 
         defaults: {

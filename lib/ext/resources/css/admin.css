@@ -88,7 +88,7 @@ td.x-table-layout-cell {
   line-height: 28px !important; }
 
 /* line 1, ../sass/admin/css/_panel.scss */
-.admin-std-panel {
+.admin-panel {
   padding: 20px; }
 
 /* line 6, ../sass/admin/css/_panel.scss */
@@ -160,21 +160,21 @@ td.x-table-layout-cell {
   background-color: #4294de !important; }
 
 /* line 46, ../sass/admin/css/_grid.scss */
-.admin-std-grid .x-panel-body-default {
+.admin-grid .x-panel-body-default {
   border: none !important; }
 
 /* line 1, ../sass/admin/css/_toolbar.scss */
-.admin-std-white-toolbar {
+.admin-white-toolbar {
   background-color: #ffffff !important;
   padding: 6px 12px !important; }
 
 /* line 5, ../sass/admin/css/_toolbar.scss */
-.x-toolbar.admin-std-white-toolbar {
+.x-toolbar.admin-white-toolbar {
   border: none !important; }
 
 /* line 10, ../sass/admin/css/_toolbar.scss */
-.x-toolbar.admin-std-white-toolbar,
-.x-toolbar.admin-std-white-toolbar .x-toolbar-text {
+.x-toolbar.admin-white-toolbar,
+.x-toolbar.admin-white-toolbar .x-toolbar-text {
   font-size: 12px !important;
   color: #000000 !important; }
 
