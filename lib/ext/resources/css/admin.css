@@ -14,6 +14,36 @@
  * The default font-family to be used throughout the theme.
  */
 /**
+ * @var {color} $base-color
+ * The base color to be used throughout the theme.
+ */
+/**
+ * Admin Colors
+ */
+/*1B58B8*/
+/**
+ * Admin Font Sizes
+ */
+/**
+ * @var {string} $font-family 
+ * The default font-family to be used throughout the theme.
+ */
+/**
+ * @var {color} $base-color
+ * The base color to be used throughout the theme.
+ */
+/**
+ * Admin Colors
+ */
+/*1B58B8*/
+/**
+ * Admin Font Sizes
+ */
+/**
+ * @var {string} $font-family 
+ * The default font-family to be used throughout the theme.
+ */
+/**
  * Fieldsets
  */
 /**
@@ -53,7 +83,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 11, ../sass/admin/css/_core.scss */
 h1 {
-  font-size: 36px !important;
+  font-size: 34px !important;
   line-height: 40px; }
 
 /* line 16, ../sass/admin/css/_core.scss */
@@ -63,31 +93,27 @@ h2 {
 
 /* line 21, ../sass/admin/css/_core.scss */
 h3 {
-  font-size: 24px !important;
+  font-size: 26px !important;
   line-height: 40px; }
 
 /* line 26, ../sass/admin/css/_core.scss */
 h4 {
-  font-size: 18px !important;
+  font-size: 22px !important;
   line-height: 20px; }
 
 /* line 31, ../sass/admin/css/_core.scss */
 h5 {
-  font-size: 12px !important;
+  font-size: 18px !important;
   line-height: 20px; }
 
 /* line 36, ../sass/admin/css/_core.scss */
 h6 {
-  font-size: 12px !important;
+  font-size: 14px !important;
   line-height: 20px; }
 
 /* line 41, ../sass/admin/css/_core.scss */
 p {
   margin: 0 0 10px !important; }
-
-/* line 45, ../sass/admin/css/_core.scss */
-td.x-table-layout-cell {
-  font-size: 12px; }
 
 /**
  * @var {color} $base-color
@@ -131,21 +157,23 @@ td.x-table-layout-cell {
 /* line 10, ../sass/admin/css/_panel.scss */
 .admin-filter-panel .x-fieldset {
   border: none !important;
+  padding: 0 !important;
   margin-bottom: 10px !important; }
 
-/* line 15, ../sass/admin/css/_panel.scss */
+/* line 16, ../sass/admin/css/_panel.scss */
 .admin-filter-panel .x-fieldset-header {
   color: #000000 !important;
   font-size: 15px !important;
-  padding: 0 0 0 0 !important; }
+  padding: 0 0 !important; }
 
-/* line 21, ../sass/admin/css/_panel.scss */
-.admin-filter-panel .x-fieldset-header-text {
-  border: none !important; }
+/* line 22, ../sass/admin/css/_panel.scss */
+.admin-filter-panel .x-fieldset-header .x-fieldset-header-text {
+  border: none !important;
+  padding: 0 0 !important; }
 
-/* line 25, ../sass/admin/css/_panel.scss */
+/* line 27, ../sass/admin/css/_panel.scss */
 .admin-filter-panel .x-fieldset-body {
-  padding-left: 10px; }
+  margin-left: 10px; }
 
 /**
  * @var {color} $base-color
@@ -164,50 +192,51 @@ td.x-table-layout-cell {
  */
 /* line 4, ../sass/admin/css/_grid.scss */
 .x-grid-row .x-grid-cell {
+  font-size: 11px !important;
   vertical-align: middle !important; }
 
-/* line 9, ../sass/admin/css/_grid.scss */
+/* line 10, ../sass/admin/css/_grid.scss */
 .x-grid-row-selected .x-grid-cell,
 .x-grid-row-selected .x-grid-cell-special {
   color: white !important; }
 
-/* line 15, ../sass/admin/css/_grid.scss */
+/* line 16, ../sass/admin/css/_grid.scss */
 .x-grid-row-over .x-grid-cell-special {
   background-color: #eeeeee; }
 
-/* line 20, ../sass/admin/css/_grid.scss */
+/* line 21, ../sass/admin/css/_grid.scss */
 .x-grid-row .x-grid-cell-special,
 .x-grid-row-alt .x-grid-cell-special {
   background-color: white !important;
   background-image: none !important;
   border-right: none !important; }
 
-/* line 26, ../sass/admin/css/_grid.scss */
+/* line 27, ../sass/admin/css/_grid.scss */
 .x-grid-row-alt .x-grid-cell-special {
   /*background-color: $grid-row-cell-alt-background !important;*/ }
 
-/* line 30, ../sass/admin/css/_grid.scss */
+/* line 31, ../sass/admin/css/_grid.scss */
 .x-grid-cell-row-checker .x-grid-cell-inner {
   padding-left: 15px !important;
   padding-right: 15px !important; }
 
-/* line 34, ../sass/admin/css/_grid.scss */
+/* line 35, ../sass/admin/css/_grid.scss */
 .x-grid-row-checker, .x-column-header-checkbox .x-column-header-text {
   background-image: url("../themes/images/default/grid/admin-unchecked.gif") !important; }
 
-/* line 37, ../sass/admin/css/_grid.scss */
+/* line 38, ../sass/admin/css/_grid.scss */
 .x-grid-row-selected .x-grid-row-checker, .x-grid-row-checked .x-grid-row-checker {
   background-image: url("../themes/images/default/grid/admin-checked.gif") !important; }
 
-/* line 41, ../sass/admin/css/_grid.scss */
+/* line 42, ../sass/admin/css/_grid.scss */
 .x-grid-row-over .x-grid-cell-special {
   background-color: #efefef !important; }
 
-/* line 44, ../sass/admin/css/_grid.scss */
+/* line 45, ../sass/admin/css/_grid.scss */
 .x-grid-row-selected .x-grid-cell-special {
   background-color: #4294de !important; }
 
-/* line 49, ../sass/admin/css/_grid.scss */
+/* line 50, ../sass/admin/css/_grid.scss */
 .admin-grid .x-panel-body-default {
   border: none !important; }
 
@@ -232,6 +261,21 @@ td.x-table-layout-cell {
   border-top: 1px solid #EBE7E7 !important;
   border-bottom: 1px solid #EBE7E7 !important; }
 
+/**
+ * @var {color} $base-color
+ * The base color to be used throughout the theme.
+ */
+/**
+ * Admin Colors
+ */
+/*1B58B8*/
+/**
+ * Admin Font Sizes
+ */
+/**
+ * @var {string} $font-family 
+ * The default font-family to be used throughout the theme.
+ */
 /**
  * @var {color} $base-color
  * The base color to be used throughout the theme.
@@ -418,111 +462,97 @@ td.x-table-layout-cell {
 /* line 3, ../sass/admin/css/_selected-grid-item.scss */
 .admin-selected-item-box {
   float: left;
-  display: inline-block; }
-
-/* line 8, ../sass/admin/css/_selected-grid-item.scss */
-.admin-selected-item-box.gradient {
+  display: inline-block;
   background-color: #eeeeee; }
 
-/* line 12, ../sass/admin/css/_selected-grid-item.scss */
+/* line 9, ../sass/admin/css/_selected-grid-item.scss */
 .admin-selected-item-box p {
+  font-size: 11px;
   margin: 0 !important; }
 
-/* line 17, ../sass/admin/css/_selected-grid-item.scss */
+/* line 15, ../sass/admin/css/_selected-grid-item.scss */
 .admin-selected-item-box.large .right a:hover,
 .admin-selected-item-box.small .right a:hover {
   border: 1px solid #d1d1d1; }
 
-/* line 21, ../sass/admin/css/_selected-grid-item.scss */
+/* line 19, ../sass/admin/css/_selected-grid-item.scss */
 .admin-selected-item-box .left {
   float: left; }
 
-/* line 25, ../sass/admin/css/_selected-grid-item.scss */
+/* line 23, ../sass/admin/css/_selected-grid-item.scss */
 .admin-selected-item-box .center {
   float: left;
   border: 0 none !important;
   border-right: 1px solid #F0F0F0 !important; }
 
-/* line 31, ../sass/admin/css/_selected-grid-item.scss */
+/* line 29, ../sass/admin/css/_selected-grid-item.scss */
 .admin-selected-item-box .right {
   float: left; }
 
 /* Large */
-/* line 36, ../sass/admin/css/_selected-grid-item.scss */
+/* line 34, ../sass/admin/css/_selected-grid-item.scss */
 .admin-selected-item-box.large {
   padding: 10px;
   margin: 0 12px 12px 0; }
 
-/* line 44, ../sass/admin/css/_selected-grid-item.scss */
+/* line 42, ../sass/admin/css/_selected-grid-item.scss */
 .admin-selected-item-box.large .left img {
   width: 32px;
   height: 32px; }
 
-/* line 49, ../sass/admin/css/_selected-grid-item.scss */
+/* line 47, ../sass/admin/css/_selected-grid-item.scss */
 .admin-selected-item-box.large .center {
   margin-right: 10px;
   padding: 0 11px; }
 
-/* line 54, ../sass/admin/css/_selected-grid-item.scss */
-.admin-selected-item-box.large .center h2 {
-  margin: 0;
-  font-size: 14px;
-  font-weight: normal; }
-
-/* line 60, ../sass/admin/css/_selected-grid-item.scss */
+/* line 52, ../sass/admin/css/_selected-grid-item.scss */
 .admin-selected-item-box.large .center p {
   margin: 0;
   color: #888; }
 
-/* line 65, ../sass/admin/css/_selected-grid-item.scss */
+/* line 57, ../sass/admin/css/_selected-grid-item.scss */
 .admin-selected-item-box.large .right {
   margin: 6px 6px 0 0; }
 
-/* line 69, ../sass/admin/css/_selected-grid-item.scss */
+/* line 61, ../sass/admin/css/_selected-grid-item.scss */
 .admin-selected-item-box.large .right a {
   width: 24px;
   height: 24px;
   display: block;
   border: 1px solid transparent;
-  background: transparent url(../../../../example/images/navigate_cross-24px.png) no-repeat -2px; }
+  background: transparent url(../../../../example/resources/images/navigate_cross-24px.png) no-repeat -2px; }
 
 /* Small */
-/* line 78, ../sass/admin/css/_selected-grid-item.scss */
+/* line 70, ../sass/admin/css/_selected-grid-item.scss */
 .admin-selected-item-box.small {
   margin: 0 7px 7px 0;
   padding: 5px; }
 
-/* line 86, ../sass/admin/css/_selected-grid-item.scss */
+/* line 78, ../sass/admin/css/_selected-grid-item.scss */
 .admin-selected-item-box.small .left img {
   width: 20px;
   height: 20px; }
 
-/* line 91, ../sass/admin/css/_selected-grid-item.scss */
+/* line 83, ../sass/admin/css/_selected-grid-item.scss */
 .admin-selected-item-box.small .center {
   margin-right: 5px;
   padding: 0 6px; }
 
-/* line 96, ../sass/admin/css/_selected-grid-item.scss */
-.admin-selected-item-box.small .center h2 {
-  font-size: 11px;
-  font-weight: normal;
-  margin: 3px 0 0 0; }
-
-/* line 102, ../sass/admin/css/_selected-grid-item.scss */
+/* line 88, ../sass/admin/css/_selected-grid-item.scss */
 .admin-selected-item-box.small .center p {
   margin: 0; }
 
-/* line 106, ../sass/admin/css/_selected-grid-item.scss */
+/* line 92, ../sass/admin/css/_selected-grid-item.scss */
 .admin-selected-item-box.small .right {
   margin: 2px 3px 0 0; }
 
-/* line 110, ../sass/admin/css/_selected-grid-item.scss */
+/* line 96, ../sass/admin/css/_selected-grid-item.scss */
 .admin-selected-item-box.small .right a {
   width: 16px;
   height: 16px;
   display: block;
   border: 1px solid transparent;
-  background: transparent url(../../../../example/images/navigate_cross-16px.png) no-repeat -1px; }
+  background: transparent url(../../../../example/resources/images/navigate_cross-16px.png) no-repeat -1px; }
 
 /**
  * @var {color} $base-color
@@ -2348,7 +2378,7 @@ tr.x-container:before {
 
 /* line 639, ../themes/stylesheets/ext4/default/widgets/_button.scss */
 .x-btn-red-small .x-btn-inner {
-  font-size: 15px;
+  font-size: 12px;
   font-weight: normal;
   font-family: Tahoma, Geneva, Verdana;
   color: white;
@@ -2644,7 +2674,7 @@ tr.x-container:before {
 
 /* line 639, ../themes/stylesheets/ext4/default/widgets/_button.scss */
 .x-btn-grey-small .x-btn-inner {
-  font-size: 15px;
+  font-size: 12px;
   font-weight: normal;
   font-family: Tahoma, Geneva, Verdana;
   color: #141414;
@@ -2892,7 +2922,7 @@ tr.x-container:before {
 
 /* line 25, ../themes/stylesheets/ext4/default/widgets/_boundlist.scss */
 .x-boundlist-item {
-  padding: 8px 4px;
+  padding: 10px 5px;
   user-select: none;
   -o-user-select: none;
   -ms-user-select: none;
@@ -3190,7 +3220,7 @@ tr.x-container:before {
 
 /* line 639, ../themes/stylesheets/ext4/default/widgets/_button.scss */
 .x-btn-default-small .x-btn-inner {
-  font-size: 15px;
+  font-size: 12px;
   font-weight: normal;
   font-family: Tahoma, Geneva, Verdana;
   color: white;
@@ -3484,7 +3514,7 @@ tr.x-container:before {
 
 /* line 639, ../themes/stylesheets/ext4/default/widgets/_button.scss */
 .x-btn-default-medium .x-btn-inner {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: normal;
   font-family: Tahoma, Geneva, Verdana;
   color: white;
@@ -3778,7 +3808,7 @@ tr.x-container:before {
 
 /* line 639, ../themes/stylesheets/ext4/default/widgets/_button.scss */
 .x-btn-default-large .x-btn-inner {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: normal;
   font-family: Tahoma, Geneva, Verdana;
   color: white;
@@ -4067,7 +4097,7 @@ tr.x-container:before {
 
 /* line 639, ../themes/stylesheets/ext4/default/widgets/_button.scss */
 .x-btn-default-toolbar-small .x-btn-inner {
-  font-size: 15px;
+  font-size: 12px;
   font-weight: normal;
   font-family: Tahoma, Geneva, Verdana;
   color: #333333;
@@ -4352,7 +4382,7 @@ tr.x-container:before {
 
 /* line 639, ../themes/stylesheets/ext4/default/widgets/_button.scss */
 .x-btn-default-toolbar-medium .x-btn-inner {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: normal;
   font-family: Tahoma, Geneva, Verdana;
   color: #333333;
@@ -4637,7 +4667,7 @@ tr.x-container:before {
 
 /* line 639, ../themes/stylesheets/ext4/default/widgets/_button.scss */
 .x-btn-default-toolbar-large .x-btn-inner {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: normal;
   font-family: Tahoma, Geneva, Verdana;
   color: #333333;

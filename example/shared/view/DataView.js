@@ -15,7 +15,7 @@ Ext.define('Admin.view.DataView', {
             '   <div class="admin-data-view">',
             '       <div class="admin-data-view-cell"><img src="../resources/images/cubes_blue.png"/></div>',
             '       <div class="admin-data-view-cell">',
-            '           <h5>{text}</h5>',
+            '           <h6>{text}</h6>',
             '           <div>{description}</div>',
             '       </div>',
             '   </div>',
