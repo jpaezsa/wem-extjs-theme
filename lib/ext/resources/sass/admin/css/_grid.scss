@@ -2,6 +2,7 @@
 @import "../variables/grid";
 
 .x-grid-row .x-grid-cell {
+  font-size: $admin-font-size-small !important;
   vertical-align: middle !important;
 }
 

@@ -9,19 +9,21 @@
 
 .admin-filter-panel .x-fieldset {
   border: none !important;
+  padding: 0 !important;
   margin-bottom: 10px !important;
 }
 
 .admin-filter-panel .x-fieldset-header {
   color: #000000 !important;
   font-size: 15px !important;
-  padding: 0 0 0 0 !important;
+  padding: 0 0 !important;
 }
 
-.admin-filter-panel .x-fieldset-header-text {
+.admin-filter-panel .x-fieldset-header .x-fieldset-header-text {
   border: none !important;
+  padding: 0 0 !important;
 }
 
 .admin-filter-panel .x-fieldset-body {
-  padding-left: 10px;
+  margin-left: 10px;
 }
