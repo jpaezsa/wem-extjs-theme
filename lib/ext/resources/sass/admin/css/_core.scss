@@ -2,6 +2,10 @@ a {
   color: #0070de;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
 h1 {
   font-size: 36px !important;
   line-height: 40px;
@@ -34,4 +38,8 @@ h6 {
 
 p {
   margin: 0 0 10px !important;
+}
+
+td.x-table-layout-cell {
+  font-size: $font-size;
 }
