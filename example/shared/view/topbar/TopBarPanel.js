@@ -162,8 +162,8 @@ Ext.define('Admin.view.topbar.TopBarPanel', {
             },
             { xtype: 'tbspacer', flex: 5 },
             'sitename/path/to/press-releases',
-            { xtype: 'tbspacer', flex: 5 },
-            {
+            { xtype: 'tbspacer', flex: 5 }
+            /*{
                 text: 'Add edit item to menu',
                 cls: 'red',
                 margins: '0 6 0 0',
@@ -188,7 +188,7 @@ Ext.define('Admin.view.topbar.TopBarPanel', {
                         text2: 'Added dynamically'
                     });
                 }
-            }
+            }*/
         ];
 
         this.callParent(arguments);
