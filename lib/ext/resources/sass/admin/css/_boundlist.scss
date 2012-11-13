@@ -1,3 +1,6 @@
+@import "../variables/core";
+@import "../variables/boundlist";
+
 .x-boundlist-selected {
   color: $admin-selected-font-color !important;
 }
