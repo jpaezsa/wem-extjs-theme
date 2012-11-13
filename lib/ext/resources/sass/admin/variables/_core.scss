@@ -11,8 +11,20 @@ $admin-black: #141414;
 $admin-blue: #4294DE; /*1B58B8*/
 $admin-light-grey: #eeeeee;
 
-$admin-selected-color: $admin-blue;
-$admin-over-color: $admin-light-grey;
+// Data views
+$admin-selected-background-color: $admin-blue;
+$admin-over-background-color: $admin-light-grey;
+
+/**
+ * Admin Font Sizes
+ */
+$admin-font-size-default: 12px;
+$admin-font-size-1: 12px;
+$admin-font-size-2: 12px;
+$admin-font-size-3: 18px;
+$admin-font-size-4: 24px;
+$admin-font-size-5: 30px;
+$admin-font-size-6: 36px;
 
 /**
  * @var {string} $font-family 
@@ -20,5 +32,5 @@ $admin-over-color: $admin-light-grey;
  */
 
 $font-family: Tahoma, Geneva, Verdana !default;
-$font-size  : 12px !default;
+$font-size: $admin-font-size-default !default;
 $color: $admin-black !default;

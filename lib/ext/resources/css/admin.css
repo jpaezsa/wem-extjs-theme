@@ -7,6 +7,9 @@
  */
 /*1B58B8*/
 /**
+ * Admin Font Sizes
+ */
+/**
  * @var {string} $font-family 
  * The default font-family to be used throughout the theme.
  */
@@ -50,7 +53,7 @@ h3 {
 
 /* line 24, ../sass/admin/css/_core.scss */
 h4 {
-  font-size: 18 !important;
+  font-size: 18px !important;
   line-height: 20px; }
 
 /* line 29, ../sass/admin/css/_core.scss */
