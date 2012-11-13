@@ -7,15 +7,15 @@ var FILTER = {
     lastModified: ['Today', 'Yesterday', '< 1 week', '< 1 month']
 };
 
-var selectedItemLargeBoxHtml = '<div class="admin-selected-item-box gradient large clearfix" id="selected-item-box-user:enonic:mer"><div class="left">' +
+var selectedItemLargeBoxHtml = '<div class="admin-selected-item-box large clearfix" id="selected-item-box-user:enonic:mer"><div class="left">' +
                                '<img alt="Morten Eriksen" src="../resources/images/user_enonic_mer.png"></div>' +
-                               '<div class="center"><h6>Morten &Oslash;. Eriksen</h6><p style="font-size:11px">enonic\\mer</p></div>' +
+                               '<div class="center"><h6>Morten &Oslash;. Eriksen</h6><p>enonic\\mer</p></div>' +
                                '<div class="right"><a href="javascript:;" class="remove-selection" id="remove-from-selection-button-user:enonic:mer"></a></div></div>';
 
-var selectedItemSmallBoxHtml = '<div class="admin-selected-item-box gradient small clearfix" id="selected-item-box-user:enonic:mer">' +
+var selectedItemSmallBoxHtml = '<div class="admin-selected-item-box small clearfix" id="selected-item-box-user:enonic:mer">' +
                                '<div class="admin-selected-item-box left">' +
                                '<img alt="Morten &Oslash;. Eriksen" src="../resources/images/user_enonic_mer.png"></div>' +
-                               '<div class="admin-selected-item-box center"><h6>Morten &Oslash;. Eriksen</h6></div>' +
+                               '<div class="admin-selected-item-box center">Morten &Oslash;. Eriksen</div>' +
                                '<div class="admin-selected-item-box right"><a href="javascript:;" class="remove-selection" id="remove-from-selection-button-user:enonic:mer"></a></div></div>';
 
 
