@@ -9,6 +9,7 @@ Ext.define('Example.view.BrowsePanel', {
     tbar: [
         {
             text: 'New',
+            scale: 'medium',
             xtype: 'splitbutton',
             menu: new Ext.menu.Menu({
                 items: [
@@ -18,20 +19,25 @@ Ext.define('Example.view.BrowsePanel', {
             })
         },
         {
-            text: 'Edit'
+            text: 'Edit',
+            scale: 'medium'
         },
         {
-            text: 'Open'
+            text: 'Open',
+            scale: 'medium'
         },
         {
             text: 'Delete',
+            scale: 'medium',
             disabled: true
         },
         {
-            text: 'Duplicate'
+            text: 'Duplicate',
+            scale: 'medium'
         },
         {
-            text: 'Move'
+            text: 'Move',
+            scale: 'medium'
         }
     ],
     defaults: {
