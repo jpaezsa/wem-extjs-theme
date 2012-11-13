@@ -57,14 +57,14 @@ Ext.define('Example.view.GridPanel', {
     nameRenderer: function (value) {
         return Ext.String.format('<img src="../resources/images/cubes_blue.png" style="width:32px;height:32px;display:block;float:left;margin-right:10px"/>' +
                                  '<div style="float:left;">' +
-                                 '  <h5>' + value + '</h5>' +
+                                 '  <h6>' + value + '</h6>' +
                                  '  <div>there/is/a/path/for/that</div>' +
                                  '</div>', value, value);
     },
 
     statusRenderer: function (value) {
         var icon = getStatusIcon(value);
-        return Ext.String.format('<span style="display:inline-block;float:left;margin-right:5px;font-size:18px">' + icon + '</span> ' +
+        return Ext.String.format('<span style="display:inline-block;float:left;margin-right:5px;font-size:17px">' + icon + '</span> ' +
                                  '<span style="display:inline-block;float:left;margin-top:1px">' + value + '</span>', value, value);
     },
     loadMask: true,
