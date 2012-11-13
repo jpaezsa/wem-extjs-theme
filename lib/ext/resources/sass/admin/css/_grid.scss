@@ -32,9 +32,11 @@
   padding-left: 15px !important;
   padding-right: 15px !important;
 }
+
 .x-grid-row-checker, .x-column-header-checkbox .x-column-header-text {
   background-image: url("../themes/images/default/grid/admin-unchecked.gif") !important;
 }
+
 .x-grid-row-selected .x-grid-row-checker, .x-grid-row-checked .x-grid-row-checker {
   background-image: url("../themes/images/default/grid/admin-checked.gif") !important;
 }
@@ -42,11 +44,19 @@
 .x-grid-row-over .x-grid-cell-special {
   background-color: #efefef !important;
 }
+
 .x-grid-row-selected .x-grid-cell-special {
   background-color: $grid-row-cell-selected-background-color !important;
 }
 
 // Admin
-.admin-grid .x-panel-body-default {
-  border: none !important;
+.admin-grid {
+
+  .x-toolbar-default {
+    background-color: #FFF;
+  }
+
+  .x-panel-body-default {
+    border: none !important;
+  }
 }
