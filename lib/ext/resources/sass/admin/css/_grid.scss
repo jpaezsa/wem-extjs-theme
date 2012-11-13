@@ -4,7 +4,7 @@
 
 .x-grid-row-selected .x-grid-cell,
 .x-grid-row-selected .x-grid-cell-special {
-  color: #fff !important;
+  color: $admin-selected-font-color !important;
 }
 
 // Special / Checkbox

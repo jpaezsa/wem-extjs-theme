@@ -1,13 +1,8 @@
 .x-boundlist-selected {
-  color: #fff !important;
+  color: $admin-selected-font-color !important;
 }
-
-/*.x-boundlist-item {
-  padding: 8px 4px !important;
-}
-*/
 
 .x-boundlist-selected.x-boundlist-item-over {
   background-color: $boundlist-item-selected-background-color !important;
-  color: #fff !important;
+  color: $admin-selected-font-color !important;
 }
