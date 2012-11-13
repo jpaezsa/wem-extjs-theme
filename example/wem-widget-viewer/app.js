@@ -19,7 +19,8 @@ Ext.application({
                         padding: '15 30'
                     },
                     items: [
-                        createSelectedItemContainer(),
+                        createDataView(),
+                        createSelectedGridItemContainer(),
                         createWindowConfigContainer(),
                         createTypographyContainer(),
                         createGridsContainer(),

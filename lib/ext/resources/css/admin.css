@@ -30,38 +30,46 @@ a {
   color: #0070de; }
 
 /* line 5, ../sass/admin/css/_core.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal; }
+
+/* line 9, ../sass/admin/css/_core.scss */
 h1 {
   font-size: 36px !important;
   line-height: 40px; }
 
-/* line 10, ../sass/admin/css/_core.scss */
+/* line 14, ../sass/admin/css/_core.scss */
 h2 {
   font-size: 30px !important;
   line-height: 40px; }
 
-/* line 15, ../sass/admin/css/_core.scss */
+/* line 19, ../sass/admin/css/_core.scss */
 h3 {
   font-size: 24px !important;
   line-height: 40px; }
 
-/* line 20, ../sass/admin/css/_core.scss */
+/* line 24, ../sass/admin/css/_core.scss */
 h4 {
   font-size: 18 !important;
   line-height: 20px; }
 
-/* line 25, ../sass/admin/css/_core.scss */
+/* line 29, ../sass/admin/css/_core.scss */
 h5 {
   font-size: 12px !important;
   line-height: 20px; }
 
-/* line 30, ../sass/admin/css/_core.scss */
+/* line 34, ../sass/admin/css/_core.scss */
 h6 {
   font-size: 12px !important;
   line-height: 20px; }
 
-/* line 35, ../sass/admin/css/_core.scss */
+/* line 39, ../sass/admin/css/_core.scss */
 p {
   margin: 0 0 10px !important; }
+
+/* line 43, ../sass/admin/css/_core.scss */
+td.x-table-layout-cell {
+  font-size: 12px; }
 
 /* line 1, ../sass/admin/css/_window.scss */
 .admin-window {
@@ -303,70 +311,70 @@ p {
   background-color: #4294de !important;
   color: #fff !important; }
 
-/* line 1, ../sass/admin/css/_selected-item.scss */
+/* line 1, ../sass/admin/css/_selected-grid-item.scss */
 .admin-selected-item-box {
   float: left;
   display: inline-block; }
 
-/* line 6, ../sass/admin/css/_selected-item.scss */
+/* line 6, ../sass/admin/css/_selected-grid-item.scss */
 .admin-selected-item-box.gradient {
   background-color: #eeeeee; }
 
-/* line 10, ../sass/admin/css/_selected-item.scss */
+/* line 10, ../sass/admin/css/_selected-grid-item.scss */
 .admin-selected-item-box p {
   margin: 0 !important; }
 
-/* line 15, ../sass/admin/css/_selected-item.scss */
+/* line 15, ../sass/admin/css/_selected-grid-item.scss */
 .admin-selected-item-box.large .right a:hover,
 .admin-selected-item-box.small .right a:hover {
   border: 1px solid #d1d1d1; }
 
-/* line 19, ../sass/admin/css/_selected-item.scss */
+/* line 19, ../sass/admin/css/_selected-grid-item.scss */
 .admin-selected-item-box .left {
   float: left; }
 
-/* line 23, ../sass/admin/css/_selected-item.scss */
+/* line 23, ../sass/admin/css/_selected-grid-item.scss */
 .admin-selected-item-box .center {
   float: left;
   border: 0 none !important;
   border-right: 1px solid #F0F0F0 !important; }
 
-/* line 29, ../sass/admin/css/_selected-item.scss */
+/* line 29, ../sass/admin/css/_selected-grid-item.scss */
 .admin-selected-item-box .right {
   float: left; }
 
 /* Large */
-/* line 34, ../sass/admin/css/_selected-item.scss */
+/* line 34, ../sass/admin/css/_selected-grid-item.scss */
 .admin-selected-item-box.large {
-  padding: 6px;
+  padding: 10px;
   margin: 0 12px 12px 0; }
 
-/* line 42, ../sass/admin/css/_selected-item.scss */
+/* line 42, ../sass/admin/css/_selected-grid-item.scss */
 .admin-selected-item-box.large .left img {
   width: 32px;
   height: 32px; }
 
-/* line 47, ../sass/admin/css/_selected-item.scss */
+/* line 47, ../sass/admin/css/_selected-grid-item.scss */
 .admin-selected-item-box.large .center {
   margin-right: 10px;
   padding: 0 11px; }
 
-/* line 52, ../sass/admin/css/_selected-item.scss */
+/* line 52, ../sass/admin/css/_selected-grid-item.scss */
 .admin-selected-item-box.large .center h2 {
   margin: 0;
   font-size: 14px;
   font-weight: normal; }
 
-/* line 58, ../sass/admin/css/_selected-item.scss */
+/* line 58, ../sass/admin/css/_selected-grid-item.scss */
 .admin-selected-item-box.large .center p {
   margin: 0;
   color: #888; }
 
-/* line 63, ../sass/admin/css/_selected-item.scss */
+/* line 63, ../sass/admin/css/_selected-grid-item.scss */
 .admin-selected-item-box.large .right {
   margin: 6px 6px 0 0; }
 
-/* line 67, ../sass/admin/css/_selected-item.scss */
+/* line 67, ../sass/admin/css/_selected-grid-item.scss */
 .admin-selected-item-box.large .right a {
   width: 24px;
   height: 24px;
@@ -375,42 +383,62 @@ p {
   background: transparent url(../../../../example/images/navigate_cross-24px.png) no-repeat -2px; }
 
 /* Small */
-/* line 76, ../sass/admin/css/_selected-item.scss */
+/* line 76, ../sass/admin/css/_selected-grid-item.scss */
 .admin-selected-item-box.small {
   margin: 0 7px 7px 0;
-  padding: 3px; }
+  padding: 5px; }
 
-/* line 84, ../sass/admin/css/_selected-item.scss */
+/* line 84, ../sass/admin/css/_selected-grid-item.scss */
 .admin-selected-item-box.small .left img {
   width: 20px;
   height: 20px; }
 
-/* line 89, ../sass/admin/css/_selected-item.scss */
+/* line 89, ../sass/admin/css/_selected-grid-item.scss */
 .admin-selected-item-box.small .center {
   margin-right: 5px;
   padding: 0 6px; }
 
-/* line 94, ../sass/admin/css/_selected-item.scss */
+/* line 94, ../sass/admin/css/_selected-grid-item.scss */
 .admin-selected-item-box.small .center h2 {
   font-size: 11px;
   font-weight: normal;
   margin: 3px 0 0 0; }
 
-/* line 100, ../sass/admin/css/_selected-item.scss */
+/* line 100, ../sass/admin/css/_selected-grid-item.scss */
 .admin-selected-item-box.small .center p {
   margin: 0; }
 
-/* line 104, ../sass/admin/css/_selected-item.scss */
+/* line 104, ../sass/admin/css/_selected-grid-item.scss */
 .admin-selected-item-box.small .right {
   margin: 2px 3px 0 0; }
 
-/* line 108, ../sass/admin/css/_selected-item.scss */
+/* line 108, ../sass/admin/css/_selected-grid-item.scss */
 .admin-selected-item-box.small .right a {
   width: 16px;
   height: 16px;
   display: block;
   border: 1px solid transparent;
   background: transparent url(../../../../example/images/navigate_cross-16px.png) no-repeat -1px; }
+
+/* line 1, ../sass/admin/css/_data-view.scss */
+.admin-data-view {
+  background-color: #ffffff;
+  cursor: pointer; }
+
+/* line 6, ../sass/admin/css/_data-view.scss */
+.admin-data-view .admin-data-view-cell {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 10px; }
+
+/* line 12, ../sass/admin/css/_data-view.scss */
+.admin-data-view.admin-data-view-over {
+  background-color: #eeeeee; }
+
+/* line 16, ../sass/admin/css/_data-view.scss */
+.admin-data-view.x-item-selected {
+  background-color: #4294de;
+  color: #fff; }
 
 /**
  * @var {string} $prefix 
@@ -5626,13 +5654,13 @@ table.x-datepicker-inner {
   overflow: hidden;
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
-  padding: 4px 4px 4px;
+  padding: 5px 10px 5px;
   white-space: nowrap; }
 
 /* line 287, ../themes/stylesheets/ext4/default/widgets/_grid.scss */
 .x-grid-with-row-lines .x-grid-cell-inner {
   line-height: 13px;
-  padding-bottom: 5px; }
+  padding-bottom: 6px; }
 
 /* line 293, ../themes/stylesheets/ext4/default/widgets/_grid.scss */
 .x-action-col-cell .x-grid-cell-inner {
