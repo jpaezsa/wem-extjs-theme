@@ -17,7 +17,7 @@ Ext.define('Admin.view.BaseGridPanel', {
         if (me.getSelectionModel().$className === 'Ext.selection.CheckboxModel') {
             me.tbar = {
                 xtype: 'toolbar',
-                cls: 'admin-std-white-toolbar',
+                cls: 'admin-white-toolbar',
                 store: me.store,
                 gridPanel: me,
                 plugins: ['gridToolbarPlugin']
