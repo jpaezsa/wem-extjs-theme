@@ -11,6 +11,7 @@ Ext.define('Admin.view.BaseGridPanel', {
     },
     hideHeaders: true,
     loadMask: true,
+    border: false,
 
     initComponent: function () {
         var me = this;

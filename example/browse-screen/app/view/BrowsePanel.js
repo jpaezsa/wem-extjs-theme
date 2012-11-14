@@ -6,6 +6,7 @@ Ext.define('Example.view.BrowsePanel', {
         'Example.view.DetailsPanel'
     ],
     layout: 'border',
+    border: false,
     tbar: [
         {
             text: 'New',

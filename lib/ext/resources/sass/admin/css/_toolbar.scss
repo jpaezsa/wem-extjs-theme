@@ -1,16 +1,18 @@
 .admin-toolbar {
-  border-left-style: none !important;
-  border-top-style: none !important;
-  border-right-style: none !important;
+  border-left-width: 0 !important;
+  border-top-width: 0 !important;
+  border-right-width: 0 !important;
+}
+
+.admin-toolbar.x-docked-top {
+  border-bottom-width: 1px !important;
 }
 
 .admin-white-toolbar {
+  @extend .admin-toolbar;
+
   background-color: #ffffff !important;
   padding: 6px 12px !important;
-}
-
-.x-toolbar.admin-white-toolbar {
-  border: none !important;
 }
 
 .x-toolbar.admin-white-toolbar,
