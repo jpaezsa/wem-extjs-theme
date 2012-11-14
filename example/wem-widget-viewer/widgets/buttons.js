@@ -105,6 +105,42 @@ function createButtonsContainer () {
                         items: [
                             {
                                 xtype: 'component',
+                                html: '<h5>Icon</h5>'
+                            },
+                            {
+                                xtype: 'container',
+                                defaults: {
+                                    margin: '0 5 0 0'
+                                },
+                                items: [
+                                    {
+                                        xtype: 'button',
+                                        text: 'Small',
+                                        scale: 'small',
+                                        iconCls: 'icon-masks-16'
+                                    },
+                                    {
+                                        xtype: 'button',
+                                        text: 'Medium',
+                                        scale: 'medium',
+                                        iconCls: 'icon-masks-24'
+                                    },
+                                    {
+                                        xtype: 'button',
+                                        text: 'Large',
+                                        scale: 'large',
+                                        iconCls: 'icon-masks-32'
+                                    },
+                                ]
+                            }
+                        ]
+                    },
+
+                    {
+                        xtype: 'container',
+                        items: [
+                            {
+                                xtype: 'component',
                                 html: '<h5>Menu Button</h5>'
                             },
                             {

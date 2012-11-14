@@ -55,7 +55,7 @@ Ext.define('Example.view.GridPanel', {
     },
 
     nameRenderer: function (value) {
-        return Ext.String.format('<img src="../resources/images/cubes_blue.png" style="width:32px;height:32px;display:block;float:left;margin-right:10px"/>' +
+        return Ext.String.format('<img src="../resources/images/icons/32x32/cubes_blue.png" style="width:32px;height:32px;display:block;float:left;margin-right:10px"/>' +
                                  '<div style="float:left;">' +
                                  '  <h6>' + value + '</h6>' +
                                  '  <div>there/is/a/path/for/that</div>' +
