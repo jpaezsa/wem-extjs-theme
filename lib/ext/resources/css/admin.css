@@ -565,7 +565,7 @@ p {
 /* line 87, ../sass/admin/css/_selected-grid-item.scss */
 .admin-selected-item-box.small .center {
   margin-right: 5px;
-  padding: 0 6px; }
+  padding: 1px 6px; }
 
 /* line 92, ../sass/admin/css/_selected-grid-item.scss */
 .admin-selected-item-box.small .center p {
