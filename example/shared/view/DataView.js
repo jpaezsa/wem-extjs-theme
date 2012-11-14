@@ -13,7 +13,7 @@ Ext.define('Admin.view.DataView', {
         var tpl = new Ext.XTemplate(
             '<tpl for=".">',
             '   <div class="admin-data-view">',
-            '       <div class="admin-data-view-cell"><img src="../resources/images/cubes_blue.png"/></div>',
+            '       <div class="admin-data-view-cell"><img src="{icon}"/></div>',
             '       <div class="admin-data-view-cell">',
             '           <h6>{text}</h6>',
             '           <div>{description}</div>',
@@ -21,7 +21,6 @@ Ext.define('Admin.view.DataView', {
             '   </div>',
             '</tpl>'
         );
-
         me.tpl = tpl;
         me.emptyText = 'No items available';
 

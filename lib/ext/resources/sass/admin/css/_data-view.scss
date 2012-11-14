@@ -11,11 +11,18 @@
   padding: 10px;
 }
 
+.admin-data-view-cell div {
+  font-size: $admin-font-size-small;
+}
+
+// over
 .admin-data-view.admin-data-view-over {
   background-color: $admin-over-background-color;
 }
 
+// selected
 .admin-data-view.x-item-selected {
   background-color: $admin-selected-background-color;
   color: $admin-selected-font-color;
 }
+

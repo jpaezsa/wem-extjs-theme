@@ -581,10 +581,14 @@ p {
   padding: 10px; }
 
 /* line 14, ../sass/admin/css/_data-view.scss */
+.admin-data-view-cell div {
+  font-size: 11px; }
+
+/* line 19, ../sass/admin/css/_data-view.scss */
 .admin-data-view.admin-data-view-over {
   background-color: #eeeeee; }
 
-/* line 18, ../sass/admin/css/_data-view.scss */
+/* line 24, ../sass/admin/css/_data-view.scss */
 .admin-data-view.x-item-selected {
   background-color: #4294de;
   color: white; }
