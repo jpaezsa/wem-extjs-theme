@@ -36,6 +36,10 @@ $form-field-padding: 4px 9px !default;
 // Background
 $form-field-background-image: '' !default;
 
+// Toolbar
+$form-toolbar-field-height: $form-field-height !default;
+
+
 /**
  * @class Ext.form.field.Checkbox
  */
@@ -52,7 +56,6 @@ $form-radio-image: 'form/admin-radio.gif' !default;
  */
 $form-trigger-width: 23px !default;
 $form-trigger-height: $form-field-height !default;
-// $form-toolbar-trigger-height: $form-toolbar-field-height !default;
 
 $form-trigger-border-bottom-width: 1px !default;
 $form-trigger-border-bottom-style: solid !default;
@@ -65,3 +68,4 @@ $form-trigger-border-bottom-color-focus-over: null !default;
 $form-trigger-border-bottom-color-pressed: null !default;
 
 $form-trigger-icon-background-position: 7px 6px !default;
+
