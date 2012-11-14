@@ -11,14 +11,14 @@ function createWindowConfigContainer() {
             },
             {
                 xtype: 'container',
+                defaults: {
+                    margin: '0 5 0 0'
+                },
                 items: [
-                    {
-                        xtype: 'component',
-                        html: '<h3>Window</h3>'
-                    },
+
                     {
                         xtype: 'button',
-                        text: 'Show',
+                        text: 'Snow Window',
                         scale: 'small',
                         handler: function (btn) {
                             var window = new Admin.view.BaseWindow({
@@ -52,37 +52,30 @@ function createWindowConfigContainer() {
                         }
                     },
                     {
-                        xtype: 'component',
-                        html: '<h3>Feedback</h3>'
-                    },
-                    {
-                        xtype: 'container',
-                        items: [
-                            {
-                                xtype: 'button',
-                                text: 'Feedback',
-                                scale: 'small',
-                                handler: function (btn) {
-                                    if (!Ext.getCmp('testFeedbackWindow')) {
-                                        var feedbackWindow = new Admin.view.BaseFeedbackPanel({
-                                            id: 'testFeedbackWindow',
-                                            feedbackTitle: 'Something has happened',
-                                            height: 180,
-                                            contentWidth: 420,
-                                            items: [
-                                                {
-                                                    xtype: 'component',
-                                                    html: '<div>Like this text component, add items here. Use <i>contentWidth</i> to set the width of the panel\'s content</div>',
-                                                    margins: '0 0 10 0'
-                                                }
-                                            ]
-                                        });
-                                        feedbackWindow.doShow();
-                                    }
-                                }
+                        xtype: 'button',
+                        text: 'Feedback',
+                        scale: 'small',
+                        handler: function (btn) {
+                            if (!Ext.getCmp('testFeedbackWindow')) {
+                                var feedbackWindow = new Admin.view.BaseFeedbackPanel({
+                                    id: 'testFeedbackWindow',
+                                    feedbackTitle: 'Something has happened',
+                                    height: 180,
+                                    contentWidth: 420,
+                                    items: [
+                                        {
+                                            xtype: 'component',
+                                            html: '<div>Like this text component, add items here. Use <i>contentWidth</i> to set the width of the panel\'s content</div>',
+                                            margins: '0 0 10 0'
+                                        }
+                                    ]
+                                });
+                                feedbackWindow.doShow();
                             }
-                        ]
-                    },
+                        }
+                    }
+
+
                 ]
             }
         ]
