@@ -158,98 +158,48 @@ p {
     line-height: 28px !important;
 }
 
-/* line 1, ../sass/admin/css/_panel.scss */
-.admin-panel {
+/* line 3, ../sass/admin/css/_panel.scss */
+.admin-panel .x-panel-body, .admin-filter .x-panel-body {
     padding: 20px;
 }
 
-/* line 8, ../sass/admin/css/_panel.scss */
-.admin-filter .x-panel-body-default {
+/* line 13, ../sass/admin/css/_panel.scss */
+.admin-filter .x-panel-body {
     background-color: #efefef !important;
     border-top-style: none;
     border-left-style: none;
     border-bottom-style: none;
 }
 
-/* line 15, ../sass/admin/css/_panel.scss */
+/* line 20, ../sass/admin/css/_panel.scss */
 .admin-filter .x-fieldset {
     border: none !important;
     padding: 0 !important;
     margin-bottom: 10px !important;
 }
 
-/* line 21, ../sass/admin/css/_panel.scss */
+/* line 26, ../sass/admin/css/_panel.scss */
 .admin-filter .x-fieldset-header {
     color: #000000 !important;
     font-size: 15px !important;
     padding: 0 0 0 0 !important;
+    margin-bottom: 5px !important;
 }
 
-/* line 26, ../sass/admin/css/_panel.scss */
+/* line 32, ../sass/admin/css/_panel.scss */
 .admin-filter .x-fieldset-header .x-fieldset-header-text {
     border: none !important;
     padding: 0 0 !important;
 }
 
-/* line 32, ../sass/admin/css/_panel.scss */
+/* line 38, ../sass/admin/css/_panel.scss */
 .admin-filter .x-fieldset-body {
     padding-left: 10px;
 }
 
-/* line 36, ../sass/admin/css/_panel.scss */
-.admin-filter .facet-header {
-    font-weight: normal;
-    font-size: 15px;
-    color: #141414;
-    text-transform: capitalize;
-    margin: 10px 0 5px;
-}
-
-/* line 44, ../sass/admin/css/_panel.scss */
-.admin-filter .facet-box {
-    margin-left: 15px;
-}
-
-/* line 47, ../sass/admin/css/_panel.scss */
-.admin-filter .facet-box .count {
-    margin-left: 3px;
-}
-
-/* line 52, ../sass/admin/css/_panel.scss */
-.admin-filter label {
-    font-size: 13px;
-    color: #777;
-}
-
-/* line 58, ../sass/admin/css/_panel.scss */
-.admin-filter .facet-single-select-item,
-.admin-filter .facet-multi-select-item {
-    color: #141414;
-}
-
-/* line 64, ../sass/admin/css/_panel.scss */
-.admin-filter .facet-selected label {
-    font-weight: bold;
-}
-
-/* line 70, ../sass/admin/css/_panel.scss */
-.admin-detail {
-    /* invert back and front colors here */
-}
-
-/* line 72, ../sass/admin/css/_panel.scss */
-.admin-detail .x-panel-header-default {
-    background-color: white;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-}
-
-/* line 79, ../sass/admin/css/_panel.scss */
-.admin-detail .x-panel-header-text-default {
-    color: #444444;
+/* line 46, ../sass/admin/css/_panel.scss */
+.admin-detail .x-panel-body {
+    border: none !important;
 }
 
 /**
@@ -324,34 +274,34 @@ p {
 }
 
 /* line 55, ../sass/admin/css/_grid.scss */
-.admin-grid .x-toolbar-default {
-    background-color: #FFF;
-}
-
-/* line 59, ../sass/admin/css/_grid.scss */
-.admin-grid .x-panel-body-default {
+.admin-grid .x-panel-body {
     border: none !important;
 }
 
+/* line 59, ../sass/admin/css/_grid.scss */
+.admin-grid .admin-white-toolbar {
+    border-bottom-style: none !important;
+}
+
 /* line 1, ../sass/admin/css/_toolbar.scss */
-.admin-toolbar {
-    border-left-style: none !important;
-    border-top-style: none !important;
-    border-right-style: none !important;
+.admin-toolbar, .admin-white-toolbar {
+    border-left-width: 0 !important;
+    border-top-width: 0 !important;
+    border-right-width: 0 !important;
 }
 
 /* line 7, ../sass/admin/css/_toolbar.scss */
+.admin-toolbar.x-docked-top, .x-docked-top.admin-white-toolbar {
+    border-bottom-width: 1px !important;
+}
+
+/* line 11, ../sass/admin/css/_toolbar.scss */
 .admin-white-toolbar {
     background-color: #ffffff !important;
     padding: 6px 12px !important;
 }
 
-/* line 12, ../sass/admin/css/_toolbar.scss */
-.x-toolbar.admin-white-toolbar {
-    border: none !important;
-}
-
-/* line 17, ../sass/admin/css/_toolbar.scss */
+/* line 19, ../sass/admin/css/_toolbar.scss */
 .x-toolbar.admin-white-toolbar,
 .x-toolbar.admin-white-toolbar .x-toolbar-text {
     font-size: 12px !important;
@@ -360,7 +310,9 @@ p {
 
 /* line 1, ../sass/admin/css/_splitter.scss */
 .x-splitter-default {
-    background-color: #EBE7E7;
+    background-color: #ffffff;
+    border-top: 1px solid #EBE7E7 !important;
+    border-bottom: 1px solid #EBE7E7 !important;
 }
 
 /**
@@ -525,6 +477,14 @@ p {
 /* line 103, ../sass/admin/css/_form.scss */
 .x-datepicker-month button .x-btn-inner {
     color: #141414 !important;
+}
+
+/*
+ *  Inputs
+ */
+/* line 110, ../sass/admin/css/_form.scss */
+.x-form-text, textarea.x-form-field {
+    background: none #FFF !important;
 }
 
 /* line 1, ../sass/admin/css/_feedback-panel.scss */

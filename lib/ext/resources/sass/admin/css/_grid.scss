@@ -52,11 +52,11 @@
 // Admin
 .admin-grid {
 
-  .x-toolbar-default {
-    background-color: #FFF;
+  .x-panel-body {
+    border: none !important;
   }
 
-  .x-panel-body-default {
-    border: none !important;
+  .admin-white-toolbar {
+    border-bottom-style: none !important;
   }
 }

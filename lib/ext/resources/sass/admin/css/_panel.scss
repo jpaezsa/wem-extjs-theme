@@ -1,11 +1,16 @@
 .admin-panel {
-  padding: 20px;
+
+  .x-panel-body {
+    padding: 20px;
+  }
+
 }
 
 // Filter panel
 .admin-filter {
+  @extend .admin-panel;
 
-  .x-panel-body-default {
+  .x-panel-body {
     background-color: #efefef !important;
     border-top-style: none;
     border-left-style: none;
@@ -22,6 +27,7 @@
     color: #000000 !important;
     font-size: 15px !important;
     padding: 0 0 0 0 !important;
+    margin-bottom: 5px !important;
 
     .x-fieldset-header-text {
       border: none !important;
@@ -33,51 +39,12 @@
     padding-left: 10px;
   }
 
-  .facet-header {
-    font-weight: normal;
-    font-size: $font-size + 3;
-    color: $color;
-    text-transform: capitalize;
-    margin: 10px 0 5px;
-  }
-
-  .facet-box {
-    margin-left: 15px;
-
-    .count {
-      margin-left: 3px;
-    }
-  }
-
-  label {
-    font-size: $font-size + 1;
-    color: #777;
-  }
-
-  .facet-single-select-item,
-  .facet-multi-select-item {
-    color: $color;
-  }
-
-  .facet-selected {
-
-    label {
-      font-weight: bold;
-    }
-  }
 }
 
 .admin-detail {
-/* invert back and front colors here */
-  .x-panel-header-default {
-    background-color: $panel-header-color;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    @include box-shadow(none);
-  }
 
-  .x-panel-header-text-default {
-    color: $panel-header-background-color;
+  .x-panel-body {
+    border: none !important;
   }
 
 }
