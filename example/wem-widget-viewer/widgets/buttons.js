@@ -1,4 +1,59 @@
-function createButtonsContainer() {
+function getCycleButton (scale) {
+    return {
+        xtype: 'cycle',
+        scale: scale.toLowerCase(),
+        showText: true,
+        prependText: scale +' Cycle',
+        menu: {
+            items: [
+                {
+                    text: 'JSON',
+                    checked: true
+                },
+                {
+                    text: 'XML'
+                },
+                {
+                    text: 'Text'
+                }
+            ]
+        }
+    };
+}
+
+function getMenuButton (scale) {
+    return {
+        xtype: 'button',
+        text: scale + ' w/menu',
+        scale: scale.toLowerCase(),
+        menu: [
+            {text: 'Item 1'},
+            {text: 'Item 2'},
+            {text: 'Item 3'},
+            {text: 'Item 4'}
+        ]
+    };
+}
+
+function getSplitButton (scale) {
+    return {
+        xtype: 'splitbutton',
+        text: scale + ' Split',
+        scale: scale,
+        menu: new Ext.menu.Menu({
+            items: [
+                {
+                    text: 'Item 1'
+                },
+                {
+                    text: 'Item 2'
+                }
+            ]
+        })
+    };
+}
+
+function createButtonsContainer () {
     return Ext.create('Ext.container.Container', {
         defaults: {
             margin: ITEM_MARGINS
@@ -58,39 +113,9 @@ function createButtonsContainer() {
                                     margin: '0 5 0 0'
                                 },
                                 items: [
-                                    {
-                                        xtype: 'button',
-                                        text: 'Small w/menu',
-                                        scale: 'small',
-                                        menu: [
-                                            {text: 'Item 1'},
-                                            {text: 'Item 2'},
-                                            {text: 'Item 3'},
-                                            {text: 'Item 4'}
-                                        ]
-                                    },
-                                    {
-                                        xtype: 'button',
-                                        text: 'Medium w/menu',
-                                        scale: 'medium',
-                                        menu: [
-                                            {text: 'Item 1'},
-                                            {text: 'Item 2'},
-                                            {text: 'Item 3'},
-                                            {text: 'Item 4'}
-                                        ]
-                                    },
-                                    {
-                                        xtype: 'button',
-                                        text: 'Large w/menu',
-                                        scale: 'large',
-                                        menu: [
-                                            {text: 'Item 1'},
-                                            {text: 'Item 2'},
-                                            {text: 'Item 3'},
-                                            {text: 'Item 4'}
-                                        ]
-                                    }
+                                    getMenuButton('Small'),
+                                    getMenuButton('Medium'),
+                                    getMenuButton('Large')
                                 ]
                             }
                         ]
@@ -109,66 +134,9 @@ function createButtonsContainer() {
                                     margin: '0 5 0 0'
                                 },
                                 items: [
-                                    {
-                                        xtype: 'cycle',
-                                        scale: 'small',
-                                        showText: true,
-                                        prependText: 'Small Cycle',
-                                        menu: {
-                                            items: [
-                                                {
-                                                    text: 'JSON',
-                                                    checked: true
-                                                },
-                                                {
-                                                    text: 'XML'
-                                                },
-                                                {
-                                                    text: 'Text'
-                                                }
-                                            ]
-                                        }
-                                    },
-                                    {
-                                        xtype: 'cycle',
-                                        scale: 'medium',
-                                        showText: true,
-                                        prependText: 'Medium Cycle ',
-                                        menu: {
-                                            items: [
-                                                {
-                                                    text: 'JSON',
-                                                    checked: true
-                                                },
-                                                {
-                                                    text: 'XML'
-                                                },
-                                                {
-                                                    text: 'Text'
-                                                }
-                                            ]
-                                        }
-                                    },
-                                    {
-                                        xtype: 'cycle',
-                                        scale: 'large',
-                                        showText: true,
-                                        prependText: 'Large Cycle ',
-                                        menu: {
-                                            items: [
-                                                {
-                                                    text: 'JSON',
-                                                    checked: true
-                                                },
-                                                {
-                                                    text: 'XML'
-                                                },
-                                                {
-                                                    text: 'Text'
-                                                }
-                                            ]
-                                        }
-                                    },
+                                    getCycleButton('Small'),
+                                    getCycleButton('Medium'),
+                                    getCycleButton('Large')
                                 ]
                             }
                         ]
@@ -187,51 +155,9 @@ function createButtonsContainer() {
                                     margin: '0 5 0 0'
                                 },
                                 items: [
-                                    {
-                                        xtype: 'splitbutton',
-                                        text: 'Small Split',
-                                        scale: 'small',
-                                        menu: new Ext.menu.Menu({
-                                            items: [
-                                                {
-                                                    text: 'Item 1'
-                                                },
-                                                {
-                                                    text: 'Item 2'
-                                                }
-                                            ]
-                                        })
-                                    },
-                                    {
-                                        xtype: 'splitbutton',
-                                        text: 'Medium Split',
-                                        scale: 'medium',
-                                        menu: new Ext.menu.Menu({
-                                            items: [
-                                                {
-                                                    text: 'Item 1'
-                                                },
-                                                {
-                                                    text: 'Item 2'
-                                                }
-                                            ]
-                                        })
-                                    },
-                                    {
-                                        xtype: 'splitbutton',
-                                        text: 'Large Split',
-                                        scale: 'large',
-                                        menu: new Ext.menu.Menu({
-                                            items: [
-                                                {
-                                                    text: 'Item 1'
-                                                },
-                                                {
-                                                    text: 'Item 2'
-                                                }
-                                            ]
-                                        })
-                                    }
+                                    getSplitButton('small'),
+                                    getSplitButton('medium'),
+                                    getSplitButton('large')
                                 ]
                             }
                         ]
