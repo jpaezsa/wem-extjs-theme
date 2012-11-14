@@ -31,9 +31,19 @@ Ext.define('Admin.plugins.GridToolbarPlugin', {
             me.doSort();
         });
 
-        me.updateResultCount(me.toolbar.store.getCount());
+        if (Ext.isFunction(me.toolbar.store.getCount)) {
+            me.updateResultCount(me.toolbar.store.getCount());
+        } else if (Ext.isString(me.toolbar.store)) {
+            me.toolbar.store = Ext.StoreManager.lookup(me.toolbar.store);
+        }
 
-        // TODO: Listen for store changes
+        if (me.toolbar.store) {
+            me.toolbar.store.on('load', function (store) {
+                me.updateResultCount(me.toolbar.store.getCount());
+            });
+
+            // TODO: Listen for other store changes
+        }
     },
 
     createSelectAllButton: function () {
