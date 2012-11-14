@@ -6,7 +6,6 @@ Ext.define('Admin.view.DataView', {
     itemSelector: 'div.admin-data-view',
     trackOver: true,
     overItemCls: 'admin-data-view-over',
-    width: 640,
 
     initComponent: function () {
         var me = this;
