@@ -66,16 +66,15 @@ function createWindowConfigContainer() {
                                     if (!Ext.getCmp('testFeedbackWindow')) {
                                         var feedbackWindow = new Admin.view.BaseFeedbackPanel({
                                             id: 'testFeedbackWindow',
-                                            feedbackTitle: 'Choose a Simpson',
-                                            height: 420,
+                                            feedbackTitle: 'Something has happened',
+                                            height: 180,
                                             contentWidth: 420,
                                             items: [
                                                 {
                                                     xtype: 'component',
                                                     html: '<div>Like this text component, add items here. Use <i>contentWidth</i> to set the width of the panel\'s content</div>',
                                                     margins: '0 0 10 0'
-                                                },
-                                                createDataViewForFeedback()
+                                                }
                                             ]
                                         });
                                         feedbackWindow.doShow();

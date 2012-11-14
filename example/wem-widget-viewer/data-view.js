@@ -26,7 +26,7 @@ function createDataView() {
             {
                 xtype: 'component',
                 html: '<h2>Data View</h2>' +
-                      '<div>Simple data view (temporary name). Can be used when a grid is not needed.</div>' +
+                      '<div>Simple generic data view (temporary name). Can be used when a grid is not needed. Example: The user store selector</div>' +
                       '<div>Fields: iconCls, text, description</div>'
             },
             new Admin.view.DataView({

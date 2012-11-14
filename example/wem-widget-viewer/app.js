@@ -19,11 +19,11 @@ Ext.application({
                         padding: '15 30'
                     },
                     items: [
-                        createDataView(),
                         createSelectedGridItemContainer(),
                         createWindowConfigContainer(),
                         createTypographyContainer(),
                         createGridsContainer(),
+                        createDataView(),
                         createButtonsContainer(),
                         createTreePanel(),
                         createFormWidgets()
