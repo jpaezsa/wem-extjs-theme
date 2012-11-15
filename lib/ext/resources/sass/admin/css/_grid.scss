@@ -59,4 +59,16 @@
   .admin-white-toolbar {
     border-bottom-style: none !important;
   }
+
+  .admin-grid-thumbnail {
+    width: 32px;
+    height: 32px;
+    display: block;
+    float: left;
+    margin-right: 10px
+  }
+
+  .admin-grid-description {
+    float: left;
+  }
 }
