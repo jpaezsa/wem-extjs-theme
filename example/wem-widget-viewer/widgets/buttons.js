@@ -3,7 +3,7 @@ function getCycleButton (scale) {
         xtype: 'cycle',
         scale: scale.toLowerCase(),
         showText: true,
-        prependText: scale +' Cycle',
+        prependText: scale + ' Cycle',
         menu: {
             items: [
                 {
@@ -51,6 +51,42 @@ function getSplitButton (scale) {
             ]
         })
     };
+}
+
+function getIconButtonsContainer (iconAlign) {
+    return {
+        xtype: 'container',
+        margin: '5 0 0 0',
+        defaults: {
+            margin: '0 5 0 0'
+        },
+        items: [
+            {
+                xtype: 'button',
+                text: 'Small',
+                scale: 'small',
+                iconCls: 'icon-masks-16',
+                iconAlign: iconAlign
+
+            },
+            {
+                xtype: 'button',
+                text: 'Medium',
+                scale: 'medium',
+                iconCls: 'icon-masks-24',
+                iconAlign: iconAlign
+            },
+            {
+                xtype: 'button',
+                text: 'Large',
+                scale: 'large',
+                iconCls: 'icon-masks-32',
+                iconAlign: iconAlign
+            }
+        ]
+    };
+
+
 }
 
 function createButtonsContainer () {
@@ -102,37 +138,16 @@ function createButtonsContainer () {
 
                     {
                         xtype: 'container',
+
                         items: [
                             {
                                 xtype: 'component',
                                 html: '<h5>Icon</h5>'
                             },
-                            {
-                                xtype: 'container',
-                                defaults: {
-                                    margin: '0 5 0 0'
-                                },
-                                items: [
-                                    {
-                                        xtype: 'button',
-                                        text: 'Small',
-                                        scale: 'small',
-                                        iconCls: 'icon-masks-16'
-                                    },
-                                    {
-                                        xtype: 'button',
-                                        text: 'Medium',
-                                        scale: 'medium',
-                                        iconCls: 'icon-masks-24'
-                                    },
-                                    {
-                                        xtype: 'button',
-                                        text: 'Large',
-                                        scale: 'large',
-                                        iconCls: 'icon-masks-32'
-                                    },
-                                ]
-                            }
+                            getIconButtonsContainer('left'),
+                            getIconButtonsContainer('right'),
+                            getIconButtonsContainer('top'),
+                            getIconButtonsContainer('bottom')
                         ]
                     },
 
