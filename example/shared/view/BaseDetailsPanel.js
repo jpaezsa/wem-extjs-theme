@@ -24,7 +24,7 @@ Ext.define('Admin.view.BaseDetailsPanel', {
                 {
                     xtype: 'button',
                     text: 'Live',
-                    ui: 'red',
+                    ui: 'blue',
                     scale: 'small'
                 }
             ]

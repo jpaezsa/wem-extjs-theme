@@ -31,16 +31,22 @@ $include-default: false;
 @import "admin/widgets/button/red-small";
 @import "admin/widgets/button/red-medium";
 @import "admin/widgets/button/red-large";
+
 @import "admin/widgets/button/grey-small";
 @import "admin/widgets/button/grey-medium";
 @import "admin/widgets/button/grey-large";
+
+@import "admin/widgets/button/blue-toolbar-small";
+@import "admin/widgets/button/blue-toolbar-medium";
+@import "admin/widgets/button/blue-toolbar-large";
+
 @import "admin/widgets/button/red-toolbar-small";
 @import "admin/widgets/button/red-toolbar-medium";
-//@import "admin/widgets/button/red-toolbar-large";
+@import "admin/widgets/button/red-toolbar-large";
+
 @import "admin/widgets/button/grey-toolbar-small";
 @import "admin/widgets/button/grey-toolbar-medium";
-//@import "admin/widgets/button/grey-toolbar-large";
-
+@import "admin/widgets/button/grey-toolbar-large";
 
 // You may remove any of the following modules that you
 // do not use in order to create a smaller css file.
