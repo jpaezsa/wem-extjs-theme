@@ -19,6 +19,7 @@ function createToolbarContainer() {
                     {
                         xtype: 'button',
                         ui: 'red',
+                        iconCls: 'icon-warning-voltage-16',
                         text: 'Red TB Button'
                     },
                     {
