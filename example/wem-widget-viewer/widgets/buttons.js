@@ -85,8 +85,6 @@ function getIconButtonsContainer (iconAlign) {
             }
         ]
     };
-
-
 }
 
 function createButtonsContainer () {
@@ -239,6 +237,34 @@ function createButtonsContainer () {
                                         text: 'Grey',
                                         scale: 'small'
                                     }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        xtype: 'container',
+                        items: [
+                            {
+                                xtype: 'component',
+                                html: '<h5>Toggle enabled</h5>'
+                            },
+                            {
+                                xtype: 'container',
+                                defaults: {
+                                    margin: '0 5 0 0'
+                                },
+                                items: [
+                                    {
+                                        xtype: 'button',
+                                        text: 'Toggle',
+                                        scale: 'small',
+                                        enableToggle: true,
+                                        listeners: {
+                                            toggle: function (btn, pressed) {
+                                                btn.setText( pressed ? 'Pressed' : 'Toggle');
+                                            }
+                                        }
+                                    },
                                 ]
                             }
                         ]
