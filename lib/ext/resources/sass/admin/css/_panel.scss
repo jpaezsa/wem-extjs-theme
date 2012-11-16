@@ -1,51 +1,50 @@
 .admin-panel {
 
-  .x-panel-body {
-    padding: 20px;
-  }
+    .x-panel-body {
+        padding: 20px;
+    }
 
 }
 
 // Filter panel
 .admin-filter {
-  @extend .admin-panel;
+    @extend .admin-panel;
 
-  .x-panel-body {
-    background-color: #efefef !important;
-    border-top-style: none;
-    border-left-style: none;
-    border-bottom-style: none;
-  }
-
-  .x-fieldset {
-    border: none !important;
-    padding: 0 !important;
-    margin-bottom: 10px !important;
-  }
-
-  .x-fieldset-header {
-    color: #000000 !important;
-    font-size: 15px !important;
-    padding: 0 0 0 0 !important;
-    margin-bottom: 5px !important;
-    text-transform: capitalize;
-
-    .x-fieldset-header-text {
-      border: none !important;
-      padding: 0 0 !important;
+    .x-panel-body {
+        background-color: #efefef !important;
+        border-top-style: none;
+        border-left-style: none;
+        border-bottom-style: none;
     }
-  }
 
-  .x-fieldset-body {
-    padding-left: 10px;
-  }
+    .x-fieldset {
+        border: none !important;
+        padding: 0 !important;
+        margin-bottom: 15px !important;
+    }
+
+    .x-fieldset-header {
+        color: #000000 !important;
+        font-size: 15px !important;
+        padding: 0 !important;
+        text-transform: capitalize;
+
+        .x-fieldset-header-text {
+            border: none !important;
+            padding: 0 0 !important;
+        }
+    }
+
+    .x-fieldset-body {
+        padding-left: 10px;
+    }
 
 }
 
 .admin-detail {
 
-  .x-panel-body {
-    border: none !important;
-  }
+    .x-panel-body {
+        border: none !important;
+    }
 
 }

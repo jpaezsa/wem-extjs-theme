@@ -44,6 +44,15 @@
   border-left: none !important;
 }
 
+.admin-search-trigger .x-form-trigger {
+    background-image: url("../themes/images/default/form/admin-search-trigger.gif") !important;
+    background-repeat: no-repeat;
+    border-width: $form-field-border-width $form-field-border-width $form-field-border-width medium !important;
+    border-style: solid solid solid none !important;
+    border-color: $admin-field-border-color $admin-field-border-color $admin-field-border-color !important;
+    border-left: none !important;
+}
+
 // Spinner
 .x-form-trigger-wrap .x-form-spinner-up,
 .x-form-trigger-wrap .x-form-spinner-down {
@@ -112,5 +121,5 @@
  *  Inputs
  */
 .x-form-text, textarea.x-form-field {
-  background: none #FFF !important;
+  background: none #fff !important;
 }

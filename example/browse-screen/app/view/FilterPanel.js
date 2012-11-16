@@ -6,8 +6,9 @@ Ext.define('Example.view.FilterPanel', {
 
         me.items = [
             {
-                xtype: 'textfield',
-                emptyText: 'Content Search',
+                xtype: 'trigger',
+                emptyText: 'Search',
+                cls: 'admin-search-trigger',
                 width: '100%',
                 margin: '0 0 20 0'
             },
