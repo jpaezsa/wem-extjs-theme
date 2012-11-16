@@ -88,7 +88,12 @@ Ext.define('Admin.view.BaseFeedbackPanel', {
         var me = this;
         return {
             xtype: 'button',
-            text: 'Confirm'
+            text: 'Confirm',
+            // TODO: Should be customizable
+            handler: function (btn) {
+                alert('Got it!');
+                me.doClose();
+            }
         };
     },
 
@@ -111,12 +116,11 @@ Ext.define('Admin.view.BaseFeedbackPanel', {
         });
     },
 
-    doAnimate: function() {
+    doFadeIn: function() {
         this.getEl().animate({
-            duration: 150,
-            easing: 'easeOut',
+            duration: 110,
             to: {
-                left: 0
+                opacity: 1
             }
         });
     },
@@ -128,7 +132,8 @@ Ext.define('Admin.view.BaseFeedbackPanel', {
 
         me.addListener('render', function () {
             Ext.fly(window).addListener('resize', resizeHandler);
-            me.doAnimate();
+            me.getEl().setStyle('opacity', 0);
+            me.doFadeIn();
         });
 
 
@@ -147,7 +152,6 @@ Ext.define('Admin.view.BaseFeedbackPanel', {
     },
 
     doHide: function () {
-        this.x = -this.width;
         this.hide();
     },
 
