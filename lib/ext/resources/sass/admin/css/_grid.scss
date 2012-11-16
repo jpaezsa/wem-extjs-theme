@@ -4,6 +4,7 @@
 .x-grid-row .x-grid-cell {
   font-size: $admin-font-size-small !important;
   vertical-align: middle !important;
+  border: none !important;
 }
 
 .x-grid-row-selected .x-grid-cell,

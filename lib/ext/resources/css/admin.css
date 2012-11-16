@@ -233,20 +233,21 @@ p {
 .x-grid-row .x-grid-cell {
     font-size: 11px !important;
     vertical-align: middle !important;
+    border: none !important;
 }
 
-/* line 10, ../sass/admin/css/_grid.scss */
+/* line 11, ../sass/admin/css/_grid.scss */
 .x-grid-row-selected .x-grid-cell,
 .x-grid-row-selected .x-grid-cell-special {
     color: white !important;
 }
 
-/* line 16, ../sass/admin/css/_grid.scss */
+/* line 17, ../sass/admin/css/_grid.scss */
 .x-grid-row-over .x-grid-cell-special {
     background-color: #eeeeee;
 }
 
-/* line 21, ../sass/admin/css/_grid.scss */
+/* line 22, ../sass/admin/css/_grid.scss */
 .x-grid-row .x-grid-cell-special,
 .x-grid-row-alt .x-grid-cell-special {
     background-color: white !important;
@@ -254,48 +255,48 @@ p {
     border-right: none !important;
 }
 
-/* line 27, ../sass/admin/css/_grid.scss */
+/* line 28, ../sass/admin/css/_grid.scss */
 .x-grid-row-alt .x-grid-cell-special {
     /*background-color: $grid-row-cell-alt-background !important;*/
 }
 
-/* line 31, ../sass/admin/css/_grid.scss */
+/* line 32, ../sass/admin/css/_grid.scss */
 .x-grid-cell-row-checker .x-grid-cell-inner {
     padding-left: 15px !important;
     padding-right: 15px !important;
 }
 
-/* line 36, ../sass/admin/css/_grid.scss */
+/* line 37, ../sass/admin/css/_grid.scss */
 .x-grid-row-checker, .x-column-header-checkbox .x-column-header-text {
     background-image: url("../themes/images/default/grid/admin-unchecked.gif") !important;
 }
 
-/* line 40, ../sass/admin/css/_grid.scss */
+/* line 41, ../sass/admin/css/_grid.scss */
 .x-grid-row-selected .x-grid-row-checker, .x-grid-row-checked .x-grid-row-checker {
     background-image: url("../themes/images/default/grid/admin-checked.gif") !important;
 }
 
-/* line 44, ../sass/admin/css/_grid.scss */
+/* line 45, ../sass/admin/css/_grid.scss */
 .x-grid-row-over .x-grid-cell-special {
     background-color: #efefef !important;
 }
 
-/* line 48, ../sass/admin/css/_grid.scss */
+/* line 49, ../sass/admin/css/_grid.scss */
 .x-grid-row-selected .x-grid-cell-special {
     background-color: #4294de !important;
 }
 
-/* line 55, ../sass/admin/css/_grid.scss */
+/* line 56, ../sass/admin/css/_grid.scss */
 .admin-grid .x-panel-body {
     border: none !important;
 }
 
-/* line 59, ../sass/admin/css/_grid.scss */
+/* line 60, ../sass/admin/css/_grid.scss */
 .admin-grid .admin-white-toolbar {
     border-bottom-style: none !important;
 }
 
-/* line 63, ../sass/admin/css/_grid.scss */
+/* line 64, ../sass/admin/css/_grid.scss */
 .admin-grid .admin-grid-thumbnail {
     width: 32px;
     height: 32px;
@@ -304,7 +305,7 @@ p {
     margin-right: 10px;
 }
 
-/* line 71, ../sass/admin/css/_grid.scss */
+/* line 72, ../sass/admin/css/_grid.scss */
 .admin-grid .admin-grid-description {
     float: left;
 }
