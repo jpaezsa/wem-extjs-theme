@@ -10491,8 +10491,8 @@ textarea.x-form-invalid-field {
 /* line 2, ../themes/stylesheets/ext4/default/widgets/form/_fieldset.scss */
 .x-fieldset {
   border: none;
-  padding: 0 10px;
-  margin-bottom: 0 10px;
+  padding: 0 5px;
+  margin-bottom: 0 5px;
   display: block;
   /* preserve margins in IE */
   position: relative; }
@@ -10502,7 +10502,7 @@ textarea.x-form-invalid-field {
   padding-top: 0; }
   /* line 16, ../themes/stylesheets/ext4/default/widgets/form/_fieldset.scss */
   .x-ie .x-fieldset .x-fieldset-body {
-    padding-top: 0 10px; }
+    padding-top: 0 5px; }
 
 /* line 21, ../themes/stylesheets/ext4/default/widgets/form/_fieldset.scss */
 .x-fieldset-header-checkbox {
@@ -10511,7 +10511,7 @@ textarea.x-form-invalid-field {
 /* line 25, ../themes/stylesheets/ext4/default/widgets/form/_fieldset.scss */
 .x-fieldset-header {
   font: 15px/14px bold Tahoma, Geneva, Verdana;
-  color: #616161;
+  color: #444444;
   padding: 0 0 9px 0;
   overflow: hidden; }
   /* line 31, ../themes/stylesheets/ext4/default/widgets/form/_fieldset.scss */
