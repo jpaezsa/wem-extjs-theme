@@ -147,37 +147,37 @@ p {
   line-height: 28px !important;
   background-repeat: no-repeat; }
 
-/* line 3, ../sass/admin/css/_panel.scss */
-.admin-panel .x-panel-body {
+/* line 1, ../sass/admin/css/_panel.scss */
+.admin-panel {
   padding: 20px; }
 
-/* line 12, ../sass/admin/css/_panel.scss */
+/* line 8, ../sass/admin/css/_panel.scss */
 .admin-filter .x-panel-body {
   padding: 20px 0 0 20px;
   background-color: #efefef !important;
   border-top-style: none;
   border-left-style: none;
   border-bottom-style: none; }
-/* line 20, ../sass/admin/css/_panel.scss */
+/* line 16, ../sass/admin/css/_panel.scss */
 .admin-filter .x-fieldset {
   border: none !important;
   padding: 0 !important;
   margin-bottom: 15px !important; }
-/* line 26, ../sass/admin/css/_panel.scss */
+/* line 22, ../sass/admin/css/_panel.scss */
 .admin-filter .x-fieldset-header {
   color: #000000 !important;
   font-size: 15px !important;
   padding: 0 !important;
   text-transform: capitalize; }
-  /* line 32, ../sass/admin/css/_panel.scss */
+  /* line 28, ../sass/admin/css/_panel.scss */
   .admin-filter .x-fieldset-header .x-fieldset-header-text {
     border: none !important;
     padding: 0 0 !important; }
-/* line 38, ../sass/admin/css/_panel.scss */
+/* line 34, ../sass/admin/css/_panel.scss */
 .admin-filter .x-fieldset-body {
   padding-left: 10px; }
 
-/* line 46, ../sass/admin/css/_panel.scss */
+/* line 42, ../sass/admin/css/_panel.scss */
 .admin-detail .x-panel-body {
   border: none !important; }
 
