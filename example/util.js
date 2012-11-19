@@ -23,7 +23,7 @@ function createFilterCheckbox (label, inputValue) {
     var title = 'title="' + label + '"';
     return {
         xtype: 'checkboxfield',
-        boxLabel: Ext.String.ellipsis(label, 17, false),
+        boxLabel: Ext.String.ellipsis(label, 22, false),
         name: label,
         inputValue: inputValue,
         inputAttrTpl: title,

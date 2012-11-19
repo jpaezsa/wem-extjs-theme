@@ -8,9 +8,9 @@
 
 // Filter panel
 .admin-filter {
-    @extend .admin-panel;
 
     .x-panel-body {
+        padding: 20px 0 0 20px;
         background-color: #efefef !important;
         border-top-style: none;
         border-left-style: none;
