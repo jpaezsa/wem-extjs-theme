@@ -42,7 +42,7 @@ function createDataView() {
 
 }
 
-function createDataViewForFeedback() {
+function createDataViewForConfirm() {
     return new Admin.view.DataView({
         store: Ext.data.StoreManager.lookup('testDataViewStore'),
         autoScroll: true

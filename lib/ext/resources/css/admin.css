@@ -473,17 +473,13 @@ p {
 .x-form-text, textarea.x-form-field {
   background: none #fff !important; }
 
-/* line 1, ../sass/admin/css/_feedback-panel.scss */
-.admin-feedback-panel {
+/* line 1, ../sass/admin/css/_confirmation-dialog.scss */
+.admin-confirmation-dialog {
   border: none !important; }
 
-/* line 5, ../sass/admin/css/_feedback-panel.scss */
-.admin-feedback-panel-white {
+/* line 5, ../sass/admin/css/_confirmation-dialog.scss */
+.admin-confirmation-dialog-white {
   background-color: #ffffff; }
-
-/* line 9, ../sass/admin/css/_feedback-panel.scss */
-.admin-feedback-dock {
-  border-top: 0 !important; }
 
 /**
  * @var {color} $base-color

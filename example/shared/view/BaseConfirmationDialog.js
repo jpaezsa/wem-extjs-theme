@@ -4,10 +4,10 @@
 // In order to V center the panel we need to know the height of the panel.
 // As we do not know the height (has dynamic content) we need to wait til after layout in order to start showing the panel.
 
-Ext.define('Admin.view.BaseFeedbackPanel', {
+Ext.define('Admin.view.BaseConfirmationDialog', {
     extend: 'Ext.panel.Panel',
-    alias: 'widget.baseFeedbackPanel',
-    feedbackTitle: '',
+    alias: 'widget.baseConfirmationDialog',
+    headerText: '',
     modal: true,
     floating: true,
     shadow: false,
@@ -16,7 +16,7 @@ Ext.define('Admin.view.BaseFeedbackPanel', {
     bodyPadding: 20,
     border: false,
     bodyBorder: false,
-    cls: 'admin-feedback-panel',
+    cls: 'admin-confirmation-dialog',
     layout: {
         type: 'vbox',
         pack: 'center',
@@ -32,7 +32,7 @@ Ext.define('Admin.view.BaseFeedbackPanel', {
 
         me.setWidthForItems();
 
-        me.insertTitle(me.feedbackTitle);
+        me.insertHeader(me.headerText);
         me.insertDockedItems();
 
         me.setFullWidth();
@@ -42,9 +42,9 @@ Ext.define('Admin.view.BaseFeedbackPanel', {
         me.callParent(arguments);
     },
 
-    insertTitle: function (title) {
+    insertHeader: function (headerText) {
         var me = this;
-        if (me.feedbackTitle === '') {
+        if (headerText === '') {
             return;
         }
         Ext.Array.insert(me.items, 0, [
@@ -52,7 +52,7 @@ Ext.define('Admin.view.BaseFeedbackPanel', {
                 xtype: 'component',
                 autoEl: {
                     tag: 'h3',
-                    html: title,
+                    html: headerText,
                     style: {
                         width: me.contentWidth
                     }
@@ -67,8 +67,8 @@ Ext.define('Admin.view.BaseFeedbackPanel', {
         me.dockedItems = [{
             xtype: 'container',
             dock: 'bottom',
-            cls: 'admin-feedback-panel-white',
-            padding: '20 20 20 ' + leftPadding,
+            cls: 'admin-confirmation-dialog-white',
+            padding: '5 20 20 ' + leftPadding,
             layout: {
                 type: 'hbox',
                 pack: 'center',
@@ -91,7 +91,7 @@ Ext.define('Admin.view.BaseFeedbackPanel', {
             text: 'Confirm',
             // TODO: Should be customizable
             handler: function (btn) {
-                alert('Got it!');
+                alert('Handle confirm');
                 me.doClose();
             }
         };

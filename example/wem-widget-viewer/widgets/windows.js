@@ -18,12 +18,13 @@ function createWindowConfigContainer() {
 
                     {
                         xtype: 'button',
-                        text: 'Snow Window',
+                        text: 'Regular Window',
                         scale: 'small',
                         handler: function (btn) {
                             var window = new Admin.view.BaseWindow({
                                 id: 'testWindow',
                                 title: 'Window Title',
+                                width: 720,
                                 iconCls: 'icon-content-24',
                                 buttons: [
                                     {
@@ -53,24 +54,24 @@ function createWindowConfigContainer() {
                     },
                     {
                         xtype: 'button',
-                        text: 'Feedback',
+                        text: 'Confirmation Dialog',
                         scale: 'small',
                         handler: function (btn) {
-                            if (!Ext.getCmp('testFeedbackWindow')) {
-                                var feedbackWindow = new Admin.view.BaseFeedbackPanel({
-                                    id: 'testFeedbackWindow',
-                                    feedbackTitle: 'Something has happened',
-                                    height: 180,
-                                    contentWidth: 420,
+                            if (!Ext.getCmp('testConfirmationDialog')) {
+                                var confirmationWindow = new Admin.view.BaseConfirmationDialog({
+                                    id: 'testConfirmationDialog',
+                                    headerText: 'Continue?',
+                                    contentWidth: 520,
+                                    height: 200,
                                     items: [
                                         {
                                             xtype: 'component',
-                                            html: '<div>Like this text component, add items here. Use <i>contentWidth</i> to set the width of the panel\'s content</div>',
+                                            html: '<div>Use this dialog when telling the user to confirm an action. <br/>Supports a mixed collection of ExtJS items like this text component. Use <i>contentWidth</i> to adjust the width of the window\'s content</div>',
                                             margins: '0 0 10 0'
                                         }
                                     ]
                                 });
-                                feedbackWindow.doShow();
+                                confirmationWindow.doShow();
                             }
                         }
                     }
