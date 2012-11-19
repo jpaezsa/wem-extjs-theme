@@ -65,7 +65,7 @@ function getIconButtonsContainer (iconAlign) {
                 xtype: 'button',
                 text: 'Small',
                 scale: 'small',
-                iconCls: 'icon-masks-16',
+                iconCls: 'icon-test-16',
                 iconAlign: iconAlign
 
             },
@@ -73,14 +73,14 @@ function getIconButtonsContainer (iconAlign) {
                 xtype: 'button',
                 text: 'Medium',
                 scale: 'medium',
-                iconCls: 'icon-masks-24',
+                iconCls: 'icon-test-24',
                 iconAlign: iconAlign
             },
             {
                 xtype: 'button',
                 text: 'Large',
                 scale: 'large',
-                iconCls: 'icon-masks-32',
+                iconCls: 'icon-test-32',
                 iconAlign: iconAlign
             }
         ]
