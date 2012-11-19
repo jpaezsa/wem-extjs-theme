@@ -74,11 +74,16 @@
         float: left;
     }
 
-    .admin-grid-description div {
+    .admin-grid-description h6 {
+        margin-bottom: 1px !important;
+    }
+
+    .admin-grid-description p {
+        margin: 0 !important;
         color: $admin-medium-grey;
     }
 
-    .x-grid-row-selected .admin-grid-description div {
+    .x-grid-row-selected .admin-grid-description p {
         color: #fff !important;
     }
 
