@@ -279,6 +279,47 @@ p {
 .admin-grid .x-grid-row-selected .admin-grid-description p {
   color: #fff !important; }
 
+/**
+ * @var {color} $base-color
+ * The base color to be used throughout the theme.
+ */
+/**
+ * Admin Colors
+ */
+/*1B58B8*/
+/**
+ * Admin Font Sizes
+ */
+/**
+ * @var {string} $font-family 
+ * The default font-family to be used throughout the theme.
+ */
+/* line 5, ../sass/admin/css/_tree.scss */
+.admin-tree .x-grid-cell .x-grid-cell-inner {
+  line-height: 32px; }
+/* line 9, ../sass/admin/css/_tree.scss */
+.admin-tree .x-grid-cell .x-grid-cell-inner .x-tree-icon {
+  height: 32px;
+  width: 32px; }
+/* line 14, ../sass/admin/css/_tree.scss */
+.admin-tree .x-grid-cell-first .x-grid-cell-inner {
+  font-weight: bold; }
+/* line 23, ../sass/admin/css/_tree.scss */
+.admin-tree .x-tree-elbow,
+.admin-tree .x-tree-elbow-end,
+.admin-tree .x-tree-elbow-plus,
+.admin-tree .x-tree-elbow-end-plus,
+.admin-tree .x-tree-elbow-empty,
+.admin-tree .x-tree-elbow-line {
+  margin-top: 6px;
+  margin-bottom: 6px; }
+/* line 28, ../sass/admin/css/_tree.scss */
+.admin-tree .admin-white-toolbar {
+  border-bottom-style: none !important; }
+/* line 32, ../sass/admin/css/_tree.scss */
+.admin-tree .x-panel-body {
+  border: none !important; }
+
 /* line 1, ../sass/admin/css/_toolbar.scss */
 .x-toolbar .x-form-item-label {
   line-height: 20px !important; }

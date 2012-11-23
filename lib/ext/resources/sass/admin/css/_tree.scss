@@ -1,0 +1,35 @@
+@import "../variables/core";
+@import "../variables/grid";
+
+.admin-tree {
+  .x-grid-cell .x-grid-cell-inner {
+    line-height: 32px;
+  }
+
+  .x-grid-cell .x-grid-cell-inner .x-tree-icon {
+    height: 32px;
+    width: 32px;
+  }
+
+  .x-grid-cell-first .x-grid-cell-inner {
+    font-weight: bold;
+  }
+
+  .x-tree-elbow,
+  .x-tree-elbow-end,
+  .x-tree-elbow-plus,
+  .x-tree-elbow-end-plus,
+  .x-tree-elbow-empty,
+  .x-tree-elbow-line {
+    margin-top: 6px;
+    margin-bottom: 6px;
+  }
+
+  .admin-white-toolbar {
+    border-bottom-style: none !important;
+  }
+
+  .x-panel-body {
+    border: none !important;
+  }
+}
