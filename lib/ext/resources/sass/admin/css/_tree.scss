@@ -23,6 +23,8 @@
   .x-tree-elbow-line {
     margin-top: 6px;
     margin-bottom: 6px;
+  /* float left to appear before name renderer output */
+    float: left;
   }
 
   .admin-white-toolbar {
@@ -31,5 +33,10 @@
 
   .x-panel-body {
     border: none !important;
+  }
+
+  .x-grid-cell-inner .x-tree-icon {
+  /* name renderer is responsible for icon */
+    display: none;
   }
 }
