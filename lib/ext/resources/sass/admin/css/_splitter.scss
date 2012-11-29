@@ -1,5 +1,11 @@
-.x-splitter-default {
+.x-splitter-horizontal {
   background-color: #ffffff;
   border-top: 1px solid #EBE7E7 !important;
   border-bottom: 1px solid #EBE7E7 !important;
+}
+
+.x-splitter-vertical {
+  background-color: #ffffff;
+  border-left: 1px solid #EBE7E7 !important;
+  border-right: 1px solid #EBE7E7 !important;
 }
