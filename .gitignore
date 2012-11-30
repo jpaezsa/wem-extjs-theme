@@ -6,3 +6,4 @@ temp/
 *.ipr
 .idea
 .sass-cache
+admin.css
