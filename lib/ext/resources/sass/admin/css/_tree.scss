@@ -27,6 +27,21 @@
     float: left;
   }
 
+  .admin-tree-thumbnail {
+    height: 32px;
+    width: 32px;
+  }
+
+  .admin-tree-title {
+    font-weight: bold;
+    line-height: 16px;
+  }
+
+  .admin-tree-description {
+    line-height: 16px;
+    font-weight: normal;
+  }
+
   .admin-white-toolbar {
     border-bottom-style: none !important;
   }
