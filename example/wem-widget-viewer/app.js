@@ -61,7 +61,7 @@ Ext.application({
             ]
         });
 
-        WemWidgets.createCombo()
+        WemWidgets.createCombo();
     }
 });
 
@@ -119,6 +119,6 @@ WemWidgets.createCombo = function () {
     toolbar.add(combo);
     toolbar.doLayout();
 
-    combo.setValue(0);
+    combo.setValue(6);
 };
 

@@ -26,25 +26,32 @@ $button-large-font-weight: normal !default;
 
 
 // Defaults
+$button-over-color: lighten($admin-button-default-background-color, 10);
+$button-disabled-color: lighten($admin-button-default-background-color, 20);
+
 $button-default-color: #ffffff !default;
-$button-default-base-color-over: lighten($admin-button-default-background-color, 10) !default;
+$button-default-base-color-over: $button-over-color !default;
 $button-default-base-color-focus: $button-default-base-color-over !default;
 $button-default-base-color-pressed: $button-default-base-color-over !default;
+$button-default-base-color-disabled: $button-disabled-color !default; //F7F7F7
 
 $button-default-border-color: $admin-button-default-background-color !default;
-$button-default-border-color-over: lighten($admin-button-default-background-color, 10) !default;
+$button-default-border-color-over: $button-over-color !default;
 $button-default-border-color-focus: $admin-button-default-background-color !default;
 $button-default-border-color-pressed: $admin-button-default-background-color !default;
+$button-default-border-color-disabled: $button-disabled-color !default; //F7F7F7
 
 $button-default-background-color: $admin-button-default-background-color !default;
 $button-default-background-color-over: $button-default-base-color-over !default;
 $button-default-background-color-focus: $button-default-background-color-over !default;
 $button-default-background-color-pressed: $button-default-base-color-pressed !default;
+$button-default-background-color-disabled: $button-default-base-color-pressed !default;
 
-$button-default-background-gradient: '';
-$button-default-background-gradient-over: '' !default;
-$button-default-background-gradient-focus: '' !default;
-$button-default-background-gradient-pressed: '' !default;
+$button-default-background-gradient: null;
+$button-default-background-gradient-over: null !default;
+$button-default-background-gradient-focus: null !default;
+$button-default-background-gradient-pressed: null !default;
+$button-default-background-gradient-disabled: null !default;
 
 // Toolbar button
 $button-toolbar-base-color: #efefef;

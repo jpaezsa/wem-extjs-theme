@@ -268,6 +268,44 @@ function createButtonsContainer () {
                                 ]
                             }
                         ]
+                    },
+                    {
+                        xtype: 'container',
+                        items: [
+                            {
+                                xtype: 'component',
+                                html: '<h5>Disabled</h5>'
+                            },
+                            {
+                                xtype: 'container',
+                                defaults: {
+                                    margin: '0 5 0 0'
+                                },
+                                items: [
+                                    {
+                                        xtype: 'button',
+                                        text: 'Disabled Button',
+                                        scale: 'small',
+                                        disabled: true
+                                    },
+                                    {
+                                        xtype: 'button',
+                                        ui: 'red',
+                                        text: 'Disabled Button',
+                                        scale: 'small',
+                                        disabled: true
+                                    },
+                                    {
+                                        xtype: 'button',
+                                        ui: 'grey',
+                                        text: 'Disabled Button',
+                                        scale: 'small',
+                                        disabled: true
+                                    }
+
+                                ]
+                            }
+                        ]
                     }
                 ]
             }
