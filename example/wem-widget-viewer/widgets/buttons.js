@@ -53,6 +53,17 @@ function getSplitButton (scale) {
     };
 }
 
+function getDisabledButton (scale, ui) {
+    return {
+        xtype: 'button',
+        text: 'Disabled ' + scale + ' button',
+        ui: ui,
+        disabled: true,
+        scale: scale.toLowerCase()
+    };
+}
+
+
 function getIconButtonsContainer (iconAlign) {
     return {
         xtype: 'container',
@@ -282,27 +293,15 @@ function createButtonsContainer () {
                                     margin: '0 5 0 0'
                                 },
                                 items: [
-                                    {
-                                        xtype: 'button',
-                                        text: 'Disabled Button',
-                                        scale: 'small',
-                                        disabled: true
-                                    },
-                                    {
-                                        xtype: 'button',
-                                        ui: 'red',
-                                        text: 'Disabled Button',
-                                        scale: 'small',
-                                        disabled: true
-                                    },
-                                    {
-                                        xtype: 'button',
-                                        ui: 'grey',
-                                        text: 'Disabled Button',
-                                        scale: 'small',
-                                        disabled: true
-                                    }
-
+                                    getDisabledButton('small', 'default'),
+                                    getDisabledButton('small', 'red'),
+                                    getDisabledButton('small', 'grey'),
+                                    getDisabledButton('medium', 'default'),
+                                    getDisabledButton('medium', 'red'),
+                                    getDisabledButton('medium', 'grey'),
+                                    getDisabledButton('large', 'default'),
+                                    getDisabledButton('large', 'red'),
+                                    getDisabledButton('large', 'grey')
                                 ]
                             }
                         ]
