@@ -47,18 +47,18 @@ $button-default-background-color-focus: $button-default-background-color-over !d
 $button-default-background-color-pressed: $button-default-base-color-pressed !default;
 $button-default-background-color-disabled: $button-default-base-color-pressed !default;
 
-$button-default-background-gradient: null;
-$button-default-background-gradient-over: null !default;
-$button-default-background-gradient-focus: null !default;
-$button-default-background-gradient-pressed: null !default;
-$button-default-background-gradient-disabled: null !default;
+$button-default-background-gradient: '';
+$button-default-background-gradient-over: '' !default;
+$button-default-background-gradient-focus: '' !default;
+$button-default-background-gradient-pressed: '' !default;
+$button-default-background-gradient-disabled: '' !default;
 
 // Toolbar button
 $button-toolbar-base-color: #efefef;
 $button-toolbar-border-color-over: #bababa !default;
 $button-toolbar-background-color-over: #ffffff !default;
 
-$button-toolbar-background-gradient: null !default;
+$button-toolbar-background-gradient: '' !default;
 $button-toolbar-background-gradient-over: '' !default;
 $button-toolbar-background-gradient-focus: '';
 $button-toolbar-background-gradient-pressed: '' !default;

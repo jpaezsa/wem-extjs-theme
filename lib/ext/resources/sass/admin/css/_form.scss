@@ -114,9 +114,41 @@
   color: $color !important;
 }
 
-/*
+/**
  *  Inputs
  */
 .x-form-text, textarea.x-form-field {
   background: none #fff !important;
+}
+
+
+/**
+ * Content Manager Form Components
+ */
+.admin-formitemset-block {
+    border: 1px solid $admin-light-grey !important;
+    border-radius: 3px;
+}
+
+.admin-formitemset-block .header {
+    border-bottom: 1px solid $admin-light-grey
+}
+
+.admin-sortable-insert-helper-below {
+    border-bottom: 2px solid orange !important;
+}
+
+.admin-sortable-insert-helper-above {
+    border-top: 2px solid orange !important;
+}
+
+.admin-text-button {
+    color: #0070DE;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.admin-drag-handle {
+    color: #59008c;
+    cursor: move;
 }
