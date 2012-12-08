@@ -5,3 +5,7 @@
 .x-btn-arrow-right {
     padding-right: 18px !important;
 }
+
+.x-btn-split-right, .x-btn-over .x-btn-split-right {
+    background: url("../themes/images/default/button/admin-s-arrow.png") no-repeat scroll right center transparent !important;
+}

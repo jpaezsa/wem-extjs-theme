@@ -74,7 +74,6 @@ function getIconButtonsContainer (iconAlign) {
         items: [
             {
                 xtype: 'button',
-                text: 'Small',
                 scale: 'small',
                 iconCls: 'icon-test-16',
                 iconAlign: iconAlign
@@ -82,14 +81,12 @@ function getIconButtonsContainer (iconAlign) {
             },
             {
                 xtype: 'button',
-                text: 'Medium',
                 scale: 'medium',
                 iconCls: 'icon-test-24',
                 iconAlign: iconAlign
             },
             {
                 xtype: 'button',
-                text: 'Large',
                 scale: 'large',
                 iconCls: 'icon-test-32',
                 iconAlign: iconAlign

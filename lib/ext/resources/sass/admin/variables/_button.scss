@@ -1,5 +1,7 @@
 @import "../variables/core";
 
+$button-split-size: 28px !default;
+
 // Default color
 $admin-button-default-background-color: #2C76E9;
 // Alternative colors
@@ -8,19 +10,19 @@ $admin-button-grey: #cccccc;
 
 // Small
 $button-small-border-radius: 0 !default;
-$button-small-padding: 5px 16px !default;
+$button-small-padding: 6px 16px !default;
 $button-small-font-size: $admin-font-size-default !default;
 $button-small-font-weight: normal !default;
 
 // Medium
 $button-medium-border-radius: 0 !default;
-$button-medium-padding: 5px 17px !default;
+$button-medium-padding: 6px 12px !default;
 $button-medium-font-size: $admin-font-size-1 !default;
 $button-medium-font-weight: normal !default;
 
 // Large
 $button-large-border-radius: 0 !default;
-$button-large-padding: 5px 20px !default;
+$button-large-padding: 6px 12px !default;
 $button-large-font-size: $admin-font-size-1 !default;
 $button-large-font-weight: normal !default;
 
