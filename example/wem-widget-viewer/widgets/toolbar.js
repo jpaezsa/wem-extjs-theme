@@ -18,6 +18,11 @@ function createToolbarContainer() {
                     },
                     {
                         xtype: 'button',
+                        text: 'Default TB Button (disabled)',
+                        disabled: true
+                    },
+                    {
+                        xtype: 'button',
                         ui: 'red',
                         iconCls: 'icon-warning-voltage-16',
                         text: 'Red TB Button'

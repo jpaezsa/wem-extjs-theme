@@ -56,9 +56,22 @@ $button-default-background-gradient-pressed: '' !default;
 $button-default-background-gradient-disabled: '' !default;
 
 // Toolbar button
-$button-toolbar-base-color: #efefef;
-$button-toolbar-border-color-over: #bababa !default;
-$button-toolbar-background-color-over: #ffffff !default;
+$button-toolbar-base-color: $admin-light-grey;
+
+$button-toolbar-color: #777 !default;
+$button-toolbar-color-over: #333 !default;
+
+$button-toolbar-border-color-over: $admin-light-grey !default;
+$button-toolbar-border-color-pressed: $admin-light-grey !default;
+
+$button-toolbar-background-color-over: $admin-light-grey !default;
+$button-toolbar-background-color-pressed: $admin-light-grey !default;
+
+/*
+$button-toolbar-color-focus: $button-toolbar-color-over;
+$button-toolbar-color-pressed: $button-toolbar-color !default;
+$button-toolbar-color-disabled: lighten($button-toolbar-color, 35) !default;
+*/
 
 $button-toolbar-background-gradient: '' !default;
 $button-toolbar-background-gradient-over: '' !default;
