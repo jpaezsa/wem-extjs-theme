@@ -179,8 +179,15 @@ p {
 /* line 32, ../sass/admin/css/_panel.scss */
 .admin-filter .x-fieldset-body {
   padding-left: 10px; }
+/* line 36, ../sass/admin/css/_panel.scss */
+.admin-filter .x-fieldset-body label {
+  color: #777 !important; }
+/* line 41, ../sass/admin/css/_panel.scss */
+.admin-filter .x-fieldset-body .x-form-cb-checked label,
+.admin-filter .x-fieldset-body label:hover {
+  color: #333 !important; }
 
-/* line 40, ../sass/admin/css/_panel.scss */
+/* line 50, ../sass/admin/css/_panel.scss */
 .admin-detail .x-panel-body {
   border: none !important; }
 
@@ -2194,7 +2201,7 @@ tr.x-container:before {
 /* line 306, ../themes/stylesheets/ext4/default/layout/_layout.scss */
 .x-box-menu-right {
   float: right;
-  padding-right: 2px; }
+  padding-right: 0; }
 
 /* line 311, ../themes/stylesheets/ext4/default/layout/_layout.scss */
 .x-column {
@@ -12687,14 +12694,14 @@ textarea.x-form-invalid-field {
 .x-toolbar {
   font-size: 11px;
   border: 1px solid;
-  padding: 2px 0 2px 2px; }
+  padding: 0 0 0 0; }
   /* line 9, ../themes/stylesheets/ext4/default/widgets/_toolbar.scss */
   .x-toolbar .x-form-item-label {
     font-size: 11px;
     line-height: 15px; }
   /* line 14, ../themes/stylesheets/ext4/default/widgets/_toolbar.scss */
   .x-toolbar .x-toolbar-item {
-    margin: 0 2px 0 0; }
+    margin: 0 0 0 0; }
   /* line 18, ../themes/stylesheets/ext4/default/widgets/_toolbar.scss */
   .x-toolbar .x-toolbar-text {
     margin-left: 4px;
@@ -12739,10 +12746,10 @@ textarea.x-form-invalid-field {
 
 /* line 70, ../themes/stylesheets/ext4/default/widgets/_toolbar.scss */
 .x-toolbar-vertical {
-  padding: 2px 2px 0 2px; }
+  padding: 0 0 0 0; }
   /* line 73, ../themes/stylesheets/ext4/default/widgets/_toolbar.scss */
   .x-toolbar-vertical .x-toolbar-item {
-    margin: 0 0 2px 0; }
+    margin: 0 0 0 0; }
   /* line 77, ../themes/stylesheets/ext4/default/widgets/_toolbar.scss */
   .x-toolbar-vertical .x-toolbar-text {
     margin-top: 4px;
