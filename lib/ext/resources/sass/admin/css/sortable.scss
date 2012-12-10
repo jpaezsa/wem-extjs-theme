@@ -10,7 +10,7 @@
     height: 1px;
     line-height: 0;
     overflow: visible;
-    border-bottom: 1px dotted green;
+    border-bottom: 2px solid green;
 }
 
 @mixin drop-indicator-bullet {
@@ -28,6 +28,6 @@
 
 .admin-drop-indicator:after {
     @include drop-indicator-bullet;
-    left: -8px;
+    right: -8px;
     top: -1px;
 }
