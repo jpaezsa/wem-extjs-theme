@@ -1,0 +1,33 @@
+// TODO: Remove when we got a proper drag handler gfx
+.admin-drag-handle {
+    color: #59008c;
+    cursor: move;
+}
+
+// Drop indicator
+.admin-drop-indicator {
+    position: absolute;
+    height: 1px;
+    line-height: 0;
+    overflow: visible;
+    border-bottom: 1px dotted green;
+}
+
+@mixin drop-indicator-bullet {
+    content: '•';
+    font-size: 16px;
+    color: green;
+    position: absolute;
+}
+
+.admin-drop-indicator:before {
+    @include drop-indicator-bullet;
+    left: -8px;
+    top: -1px;
+}
+
+.admin-drop-indicator:after {
+    @include drop-indicator-bullet;
+    left: -8px;
+    top: -1px;
+}

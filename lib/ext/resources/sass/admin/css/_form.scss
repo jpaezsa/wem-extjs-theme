@@ -134,21 +134,8 @@
     border-bottom: 1px solid $admin-light-grey
 }
 
-.admin-sortable-insert-helper-below {
-    border-bottom: 2px solid orange !important;
-}
-
-.admin-sortable-insert-helper-above {
-    border-top: 2px solid orange !important;
-}
-
 .admin-text-button {
     color: #0070DE;
     text-decoration: underline;
     cursor: pointer;
-}
-
-.admin-drag-handle {
-    color: #59008c;
-    cursor: move;
 }
