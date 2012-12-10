@@ -1,6 +1,5 @@
-To be themed
--------------
+Components:
+- Window: Improve std layout and colors. Right now it is "boxy". What about a more plain look?
 
-Menu
-- According to guidelines in Wiki
-
+Colors:
+- Button: Hover and focus styles
