@@ -119,6 +119,6 @@ WemWidgets.createCombo = function () {
     toolbar.add(combo);
     toolbar.doLayout();
 
-    combo.setValue(6);
+    combo.setValue(5);
 };
 

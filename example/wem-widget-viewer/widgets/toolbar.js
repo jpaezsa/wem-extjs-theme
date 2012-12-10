@@ -11,6 +11,9 @@ function createToolbarContainer() {
             },
             {
                 xtype: 'toolbar',
+                defaults: {
+                    scale: 'medium'
+                },
                 items: [
                     {
                         xtype: 'button',
@@ -20,6 +23,26 @@ function createToolbarContainer() {
                         xtype: 'button',
                         text: 'Default TB Button (disabled)',
                         disabled: true
+                    },
+                    {
+                        xtype: 'button',
+                        text: 'TB Menu Button',
+                        menu: [
+                            {text: 'Item 1'},
+                            {text: 'Item 2'},
+                            {text: 'Item 3'},
+                            {text: 'Item 4'}
+                        ]
+                    },
+                    {
+                        xtype: 'splitbutton',
+                        text: 'TB Split Button',
+                        menu: [
+                            {text: 'Item 1'},
+                            {text: 'Item 2'},
+                            {text: 'Item 3'},
+                            {text: 'Item 4'}
+                        ]
                     },
                     {
                         xtype: 'button',

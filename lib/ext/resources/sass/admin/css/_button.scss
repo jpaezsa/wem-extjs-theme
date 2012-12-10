@@ -9,3 +9,9 @@
 .x-btn-split-right, .x-btn-over .x-btn-split-right {
     background: url("../themes/images/default/button/admin-s-arrow.png") no-repeat scroll right center transparent !important;
 }
+
+// Toolbar menu button and split button (TODO: scale large)
+.x-btn-default-toolbar-medium .x-btn-arrow,
+.x-toolbar .x-btn-split-right {
+    background-image: url("../themes/images/default/button/admin-arrow-dark.png") !important;
+}
