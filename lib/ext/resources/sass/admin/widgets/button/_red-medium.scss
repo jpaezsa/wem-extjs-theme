@@ -16,7 +16,7 @@
   
   $background-color: $admin-button-red,
   $background-color-over: lighten($admin-button-red, 10),
-  $background-color-focus: $admin-button-red,
+  $background-color-focus: lighten($admin-button-red, 10),
   $background-color-pressed: $admin-button-red,
   $background-color-disabled: $admin-button-red,
   

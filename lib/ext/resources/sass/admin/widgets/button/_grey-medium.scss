@@ -16,7 +16,7 @@
   
   $background-color: $admin-button-grey,
   $background-color-over: lighten($admin-button-grey, 10),
-  $background-color-focus: $admin-button-grey,
+  $background-color-focus: lighten($admin-button-grey, 10),
   $background-color-pressed: $admin-button-grey,
   $background-color-disabled: $admin-button-grey,
   
