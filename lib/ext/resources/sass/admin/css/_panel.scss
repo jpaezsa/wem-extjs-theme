@@ -1,54 +1,52 @@
 .admin-panel {
-    padding: 20px;
+  padding: 20px;
 }
 
 // Filter panel
 .admin-filter {
 
-    .x-panel-body {
-        padding: 20px;
-        background-color: $admin-light-grey !important;
-        border-style: none;
+  .x-panel-body {
+    padding: 20px;
+    background-color: $admin-light-grey !important;
+    border-style: none;
+  }
+
+  .admin-facet-group {
+    border: none !important;
+    padding: 0 !important;
+    margin-bottom: 15px !important;
+
+    h2 {
+      color: #000000 !important;
+      font-size: 15px !important;
+      padding: 0 !important;
+      text-transform: capitalize;
     }
 
-    .x-fieldset {
-        border: none !important;
-        padding: 0 !important;
-        margin-bottom: 15px !important;
-    }
+    .admin-facet {
+      padding-left: 10px;
 
-    .x-fieldset-header {
-        color: #000000 !important;
-        font-size: 15px !important;
-        padding: 0 !important;
-        text-transform: capitalize;
-
-        .x-fieldset-header-text {
-            border: none !important;
-            padding: 0 0 !important;
-        }
-    }
-
-    .x-fieldset-body {
-        padding-left: 10px;
-    }
-
-    .x-fieldset-body label {
+      label {
         color: #777 !important;
+      }
+
+      &.checked {
+
+        label {
+          color: #333 !important;
+        }
+      }
+
     }
 
-    .x-fieldset-body .x-form-cb-checked label,
-    .x-fieldset-body label:hover  {
-
-        color: #333 !important;
-    }
+  }
 
 }
 
 .admin-detail {
 
-    .x-panel-body {
-        border: none !important;
-    }
+  .x-panel-body {
+    border: none !important;
+  }
 
 }
