@@ -4,7 +4,8 @@ Ext.application({
     requires: [
         'Admin.view.BaseGridPanel',
         'Admin.view.BaseConfirmationDialog',
-        'Admin.view.BaseWindow'
+        'Admin.view.BaseWindow',
+        'Admin.view.FeedbackBox'
     ],
     launch: function () {
         Ext.create('Ext.container.Viewport', {
@@ -119,6 +120,6 @@ WemWidgets.createCombo = function () {
     toolbar.add(combo);
     toolbar.doLayout();
 
-    combo.setValue(5);
+    combo.setValue(2);
 };
 

@@ -1,0 +1,27 @@
+.admin-notification-window {
+    opacity: 0.9;
+    padding: 20px;
+    position: relative;
+    background: #008197;
+}
+
+.admin-notification-window,
+.admin-notification-window td {
+    color: #fff;
+}
+
+.admin-notification-window h3 {
+    margin-top: 0;
+}
+
+.admin-notification-window table {
+    width: 100%;
+}
+
+.admin-notification-window span.link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: underline;
+}

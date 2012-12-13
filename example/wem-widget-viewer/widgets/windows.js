@@ -15,10 +15,10 @@ function createWindowConfigContainer() {
                     margin: '0 5 0 0'
                 },
                 items: [
-
+                    // Window
                     {
                         xtype: 'button',
-                        text: 'Regular Window',
+                        text: 'Window',
                         scale: 'small',
                         handler: function (btn) {
                             var window = new Admin.view.BaseWindow({
@@ -52,9 +52,10 @@ function createWindowConfigContainer() {
                             window.doShow();
                         }
                     },
+                    // Confirmation
                     {
                         xtype: 'button',
-                        text: 'Confirmation Dialog',
+                        text: 'Confirmation',
                         scale: 'small',
                         handler: function (btn) {
                             if (!Ext.getCmp('testConfirmationDialog')) {
@@ -73,6 +74,21 @@ function createWindowConfigContainer() {
                                 });
                                 confirmationWindow.doShow();
                             }
+                        }
+                    },
+                    // Feedback
+                    {
+                        xtype: 'button',
+                        text: 'Feedback',
+                        handler: function () {
+                            var feedbackBox = Ext.ComponentQuery.query('feedbackBox')[0];
+                            if (!feedbackBox) {
+                                feedbackBox = Ext.create('widget.feedbackBox');
+                            }
+                            feedbackBox.doShow('User was updated',
+                                'The user enonic\\esu was successfully updated. Do you want notify Erik now?',
+                                {notifyUser: true});
+
                         }
                     }
 
