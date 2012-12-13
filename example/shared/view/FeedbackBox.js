@@ -70,7 +70,7 @@ Ext.define('Admin.view.FeedbackBox', {
             }
         ).animate(
             {
-                duration: 844000,
+                duration: 4000,
                 from: {
                     opacity: 1
                 },
