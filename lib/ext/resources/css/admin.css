@@ -1100,7 +1100,7 @@ td {
 /* line 1, ../sass/admin/css/_feedback-box.scss */
 .admin-notification-window {
   opacity: 0.9;
-  padding: 20px;
+  padding: 15px;
   position: relative;
   background: #008197; }
 
@@ -1111,7 +1111,7 @@ td {
 
 /* line 13, ../sass/admin/css/_feedback-box.scss */
 .admin-notification-window h3 {
-  margin-top: 0; }
+  line-height: 33px; }
 
 /* line 17, ../sass/admin/css/_feedback-box.scss */
 .admin-notification-window table {

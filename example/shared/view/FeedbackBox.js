@@ -15,7 +15,7 @@ Ext.define('Admin.view.FeedbackBox', {
          '			<td style="width: 48px;padding-top:4px;" valign="top">' +
          '				<img src="../resources/images/icons/48x48/message.png" style="width:48px; height:48px"/>' +
          '			</td>' +
-         '			<td valign="top" style="padding-left:20px">' +
+         '			<td valign="top" style="padding-left:15px">' +
          '				<h3>{messageTitle}</h3>' +
          '				<div class="message-text">{messageText}</div>' +
          '			</td>' +
