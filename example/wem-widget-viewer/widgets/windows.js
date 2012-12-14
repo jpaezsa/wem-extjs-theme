@@ -1,5 +1,7 @@
 function createWindowConfigContainer() {
     return Ext.create('Ext.container.Container', {
+        requires: 'Admin.MessageBus',
+
         cls: 'admin-panel',
         defaults: {
             margin: ITEM_MARGINS
@@ -81,18 +83,13 @@ function createWindowConfigContainer() {
                         xtype: 'button',
                         text: 'Feedback',
                         handler: function () {
-                            var feedbackBox = Ext.ComponentQuery.query('feedbackBox')[0];
-                            if (!feedbackBox) {
-                                feedbackBox = Ext.create('widget.feedbackBox');
-                            }
-                            feedbackBox.doShow('User was updated',
-                                'The user enonic\\esu was successfully updated. Do you want notify Erik now?',
-                                {notifyUser: true});
-
+                            Admin.MessageBus.showFeedback({
+                                title: 'Title',
+                                message: 'Message',
+                                opts: {}
+                            });
                         }
                     }
-
-
                 ]
             }
         ]

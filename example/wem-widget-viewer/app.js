@@ -5,7 +5,7 @@ Ext.application({
         'Admin.view.BaseGridPanel',
         'Admin.view.BaseConfirmationDialog',
         'Admin.view.BaseWindow',
-        'Admin.view.FeedbackBox'
+        'Admin.lib.FeedbackBox'
     ],
     launch: function () {
         Ext.create('Ext.container.Viewport', {
@@ -61,6 +61,8 @@ Ext.application({
                 }
             ]
         });
+
+        Ext.create('widget.feedbackBox');
 
         WemWidgets.createCombo();
     }
