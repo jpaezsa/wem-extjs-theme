@@ -12,10 +12,10 @@ Ext.create('Ext.data.Store', {
     model: 'TestDataViewModel',
     id: 'testDataViewStore',
     data: [
-        { key: '1', icon:'../resources/images/icons/32x32/cubes_blue.png', text: 'Lisa', description: '555-111-1234' },
-        { key: '2', icon:'../resources/images/icons/32x32/cubes_blue.png', text: 'Bart', description: '555-111-1234' },
-        { key: '3', icon:'../resources/images/icons/32x32/cubes_blue.png', text: 'Homer', description: '555-111-1234' },
-        { key: '4', icon:'../resources/images/icons/32x32/cubes_blue.png', text: 'Marge', description: '555-111-1234' }
+        { key: '1', icon:'../admin/resources/images/icons/32x32/cubes_blue.png', text: 'Lisa', description: '555-111-1234' },
+        { key: '2', icon:'../admin/resources/images/icons/32x32/cubes_blue.png', text: 'Bart', description: '555-111-1234' },
+        { key: '3', icon:'../admin/resources/images/icons/32x32/cubes_blue.png', text: 'Homer', description: '555-111-1234' },
+        { key: '4', icon:'../admin/resources/images/icons/32x32/cubes_blue.png', text: 'Marge', description: '555-111-1234' }
     ]
 });
 

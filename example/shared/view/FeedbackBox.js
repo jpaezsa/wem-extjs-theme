@@ -13,7 +13,7 @@ Ext.define('Admin.view.FeedbackBox', {
          '	<table border="0" cellpadding="0" cellspacing="0">' +
          '		<tr>' +
          '			<td style="width: 48px;padding-top:4px;" valign="top">' +
-         '				<img src="../resources/images/icons/48x48/message.png" style="width:48px; height:48px"/>' +
+         '				<img src="../admin/resources/images/icons/48x48/message.png" style="width:48px; height:48px"/>' +
          '			</td>' +
          '			<td valign="top" style="padding-left:15px">' +
          '				<h3>{messageTitle}</h3>' +
@@ -36,6 +36,14 @@ Ext.define('Admin.view.FeedbackBox', {
 
         me.callParent(arguments);
         me.update({});
+    },
+
+
+    afterRender: function () {
+        var me = this;
+        me.getEl().setOpacity(0);
+        me.addClickListener();
+        me.callParent(arguments);
     },
 
 
@@ -106,7 +114,7 @@ Ext.define('Admin.view.FeedbackBox', {
     },
 
 
-    addWindowClickListener: function () {
+    addClickListener: function () {
         var me = this;
 
         me.getEl().on('mouseenter', function () {
@@ -160,14 +168,6 @@ Ext.define('Admin.view.FeedbackBox', {
 
     onRender: function () {
         this.callParent(arguments);
-    },
-
-
-    afterRender: function () {
-        var me = this;
-        me.getEl().setOpacity(0);
-        me.addWindowClickListener();
-        me.callParent(arguments);
     },
 
 
