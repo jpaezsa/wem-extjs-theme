@@ -1,176 +1,176 @@
 .admin-wizard {
-  .navigation {
-    margin: 0 !important;
-    padding: 0 !important;
-    background-color: #ccc;
-    list-style: none;
-    overflow: hidden;
-    border: 1px solid #ccc;
-  }
+    .navigation {
+        margin: 0 !important;
+        padding: 0 !important;
+        background-color: #ccc;
+        list-style: none;
+        overflow: hidden;
+        border: 1px solid #ccc;
+    }
 
-  .navigation li {
-    float: left;
-  }
+    .navigation li {
+        float: left;
+    }
 
-  .navigation li a {
-    color: #222;
-    text-decoration: none !important;
-    padding: 8px 0 8px 48px;
-    background-color: #eee;
-    position: relative;
-    display: block;
-    float: left;
-  }
+    .navigation li a {
+        color: #222;
+        text-decoration: none !important;
+        padding: 8px 0 8px 48px;
+        background-color: #eee;
+        position: relative;
+        display: block;
+        float: left;
+    }
 
-  .navigation li a.first {
-    padding-left: 20px;
-  }
+    .navigation li a.first {
+        padding-left: 20px;
+    }
 
-  .navigation li a:after {
-    content: " ";
-    display: block;
-    width: 0;
-    height: 0;
-    border-top: 50px solid transparent; /* Go big on the size, and let overflow hide */
-    border-bottom: 50px solid transparent;
-    border-left: 30px solid #eee;
-    position: absolute;
-    top: 50%;
-    margin-top: -50px;
-    left: 100%;
-    z-index: 2;
-  }
+    .navigation li a:after {
+        content: " ";
+        display: block;
+        width: 0;
+        height: 0;
+        border-top: 50px solid transparent; /* Go big on the size, and let overflow hide */
+        border-bottom: 50px solid transparent;
+        border-left: 30px solid #eee;
+        position: absolute;
+        top: 50%;
+        margin-top: -50px;
+        left: 100%;
+        z-index: 2;
+    }
 
-  .navigation li a:before {
-    content: " ";
-    display: block;
-    width: 0;
-    height: 0;
-    border-top: 50px solid transparent; /* Go big on the size, and let overflow hide */
-    border-bottom: 50px solid transparent;
-    border-left: 30px solid #ccc;
-    position: absolute;
-    top: 50%;
-    margin-top: -50px;
-    margin-left: 1px;
-    left: 100%;
-    z-index: 1;
-  }
+    .navigation li a:before {
+        content: " ";
+        display: block;
+        width: 0;
+        height: 0;
+        border-top: 50px solid transparent; /* Go big on the size, and let overflow hide */
+        border-bottom: 50px solid transparent;
+        border-left: 30px solid #ccc;
+        position: absolute;
+        top: 50%;
+        margin-top: -50px;
+        margin-left: 1px;
+        left: 100%;
+        z-index: 1;
+    }
 
-  .navigation li a.previous {
-    font-weight: bold;
-  }
+    .navigation li a.previous {
+        font-weight: bold;
+    }
 
-  .navigation li a.current {
-    background-color: #fff;
-    font-weight: bold;
-  }
+    .navigation li a.current {
+        background-color: #fff;
+        font-weight: bold;
+    }
 
-  .navigation li a.current:after {
-    border-left: 30px solid #fff;
-  }
+    .navigation li a.current:after {
+        border-left: 30px solid #fff;
+    }
 
-  .navigation li a.current:before {
-    border-left: 30px solid #fff;
-  }
+    .navigation li a.current:before {
+        border-left: 30px solid #fff;
+    }
 
-  .navigation li a.next {
-    color: #acacac;
-  }
+    .navigation li a.next {
+        color: #acacac;
+    }
 
-  .toolbar .x-mask {
-    display: none;
-  }
+    .toolbar .x-mask {
+        display: none;
+    }
 
-  .toolbar .x-item-disabled {
-    opacity: 1;
-    filter: none;
-  }
+    .toolbar .x-item-disabled {
+        opacity: 1;
+        filter: none;
+    }
 
-  div.navigation-container {
-    padding: 7px 12px 0 6px;
-    background-color: #fff;
-  }
-  div.navigation-container-sticky {
-    position: fixed;
-    top: 89px;
-    width: 100%;
-  }
+    div.navigation-container {
+        padding: 7px 12px 0 6px;
+        background-color: #fff;
+    }
+    div.navigation-container-sticky {
+        position: fixed;
+        top: 89px;
+        width: 100%;
+    }
 }
 
 .admin-wizard-edit {
-  ul.navigation a.next,
-  ul.navigation a.next.immediate,
-  ul.navigation a.next.last {
-    color: #222;
-    cursor: pointer;
-  }
+    ul.navigation a.next,
+    ul.navigation a.next.immediate,
+    ul.navigation a.next.last {
+        color: #222;
+        cursor: pointer;
+    }
 
-  .toolbar-disabled ul.navigation a.next.last {
-    color: #acacac;
-    cursor: default;
-  }
+    .toolbar-disabled ul.navigation a.next.last {
+        color: #acacac;
+        cursor: default;
+    }
 }
 
 .admin-wizard-new {
-  ul.navigation li a.next {
-    color: #acacac;
-    cursor: default;
-  }
-
-  ul.navigation li a.next.immediate {
-    color: #222;
-    cursor: pointer;
-  }
-
-  .toolbar-diabled {
-    ul.navigation {
-      a.next, a.next.immidiate, a.next.last {
+    ul.navigation li a.next {
         color: #acacac;
         cursor: default;
-      }
     }
-  }
+
+    ul.navigation li a.next.immediate {
+        color: #222;
+        cursor: pointer;
+    }
+
+    .toolbar-diabled {
+        ul.navigation {
+            a.next, a.next.immidiate, a.next.last {
+                color: #acacac;
+                cursor: default;
+            }
+        }
+    }
 }
 
 .admin-wizard > div > .x-panel-body,
 .admin-glowing-item .x-panel-body,
 .admin-validation-label div,
 .admin-wizard .x-panel-body {
-  border: 0 none;
+    border: 0 none;
 }
 
 .admin-display-name {
-  width: 100%;
+    width: 100%;
 
-  input {
-    border: 1px solid transparent;
-    color: #555555;
-    font-size: 26px;
-    line-height: 36px !important;
-    height: 36px !important;
-    font-weight: normal;
-    margin: 0;
-    border-radius: 2px;
-    background: white none;
-  }
+    input {
+        border: 1px solid transparent;
+        color: #555555;
+        font-size: 26px;
+        line-height: 36px !important;
+        height: 36px !important;
+        font-weight: normal;
+        margin: 0;
+        border-radius: 2px;
+        background: white none;
+    }
 
-  input:hover {
-    border: 1px solid #98c9f2;
-    box-shadow: 0 0 3px #98c9f2;
-  }
-  input:focus {
-    color: #000 !important;
-    border: 1px solid #99BCE8 !important;
-  }
+    input:hover {
+        border: 1px solid #98c9f2;
+        box-shadow: 0 0 3px #98c9f2;
+    }
+    input:focus {
+        color: #000 !important;
+        border: 1px solid #99BCE8 !important;
+    }
 }
 
 .admin-wizard-header-container {
-  margin: 0 10px 3px 5px;
-  font-size: 12px;
+    margin: 0 10px 3px 5px;
+    font-size: 12px;
 
-  .admin-wizard-header {
-    position: relative;
-  }
+    .admin-wizard-header {
+        position: relative;
+    }
 }
 

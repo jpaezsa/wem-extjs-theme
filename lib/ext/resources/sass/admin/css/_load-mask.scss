@@ -1,21 +1,21 @@
 div.admin-load-mask {
-  
-  div.x-mask-loading {
-    background-position: center;
-    background-color: #ffffff;
+
+    div.x-mask-loading {
+        background-position: center;
+        background-color: #ffffff;
+        border: none;
+        padding: 0;
+        width: 16px;
+        height: 16px;
+    }
+
     border: none;
+
     padding: 0;
+
     width: 16px;
+
     height: 16px;
-  }
 
-  border: none;
-
-  padding: 0;
-
-  width: 16px;
-
-  height: 16px;
-
-  border: none;
+    border: none;
 }

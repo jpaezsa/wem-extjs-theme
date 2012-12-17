@@ -58,7 +58,7 @@ Ext.define('Example.view.GridPanel', {
         return Ext.String.format('<img src="../admin/resources/images/icons/32x32/cubes_blue.png" class="admin-grid-thumbnail"/>' +
                                  '<div class="admin-grid-description">' +
                                  '  <h6>' + value + '</h6>' +
-                                 '  <p>there/is/a/path/for/that</p>' +
+                                 '  <div>there/is/a/path/for/that</div>' +
                                  '</div>', value, value);
     },
 

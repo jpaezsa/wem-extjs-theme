@@ -2,10 +2,10 @@
 @import "../variables/grid";
 
 .x-grid-row .x-grid-cell {
-  font-size: $admin-font-size-small !important;
-  color: #000 !important;
-  vertical-align: middle !important;
-  border: none !important;
+    font-size: $admin-font-size-small !important;
+    color: #000 !important;
+    vertical-align: middle !important;
+    border: none !important;
 }
 
 .x-grid-row-selected .x-grid-cell,
@@ -78,12 +78,12 @@
         margin-bottom: 1px !important;
     }
 
-    .admin-grid-description p {
+    .admin-grid-description > div {
         margin: 0 !important;
-        color: $admin-medium-grey;
+        color: $admin-medium-grey !important;
     }
 
-    .x-grid-row-selected .admin-grid-description p {
+    .x-grid-row-selected .admin-grid-description div {
         color: #fff !important;
     }
 

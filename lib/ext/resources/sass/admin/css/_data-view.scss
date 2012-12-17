@@ -1,28 +1,28 @@
 @import "../variables/core";
 
 .admin-data-view {
-  background-color: #ffffff;
-  cursor: pointer;
+    background-color: #ffffff;
+    cursor: pointer;
 }
 
 .admin-data-view .admin-data-view-cell {
-  display: table-cell;
-  vertical-align: middle;
-  padding: 5px 10px;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 5px 10px;
 }
 
 .admin-data-view-cell div {
-  font-size: $admin-font-size-small;
+    font-size: $admin-font-size-small;
 }
 
 // over
 .admin-data-view.admin-data-view-over {
-  background-color: $admin-over-background-color;
+    background-color: $admin-over-background-color;
 }
 
 // selected
 .admin-data-view.x-item-selected {
-  background-color: $admin-selected-background-color;
-  color: $admin-selected-font-color;
+    background-color: $admin-selected-background-color;
+    color: $admin-selected-font-color;
 }
 
