@@ -70,20 +70,20 @@
         margin-right: 10px
     }
 
-    .admin-grid-description {
+    .admin-grid-name-renderer {
         float: left;
     }
 
-    .admin-grid-description h6 {
-        margin-bottom: 1px !important;
+    .admin-grid-name-renderer h6 {
+        margin-bottom: 2px !important;
     }
 
-    .admin-grid-description > div {
+    .admin-grid-name-renderer .admin-grid-name-renderer-path {
         margin: 0 !important;
         color: $admin-medium-grey !important;
     }
 
-    .x-grid-row-selected .admin-grid-description div {
+    .x-grid-row-selected .admin-grid-name-renderer .admin-grid-name-renderer-path {
         color: #fff !important;
     }
 
