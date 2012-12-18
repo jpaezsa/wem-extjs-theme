@@ -5,7 +5,7 @@ Ext.application({
         'Admin.view.BaseGridPanel',
         'Admin.view.BaseConfirmationDialog',
         'Admin.view.BaseWindow',
-        'Admin.lib.FeedbackBox'
+        'Admin.view.FeedbackBox'
     ],
     launch: function () {
         Ext.create('Ext.container.Viewport', {

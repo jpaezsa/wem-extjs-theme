@@ -84,8 +84,8 @@ function createWindowConfigContainer() {
                         text: 'Feedback',
                         handler: function () {
                             Admin.MessageBus.showFeedback({
-                                title: 'Title',
-                                message: 'Message',
+                                title: 'Something happened',
+                                message: 'You are never too old to set another goal or to dream a new dream',
                                 opts: {}
                             });
                         }

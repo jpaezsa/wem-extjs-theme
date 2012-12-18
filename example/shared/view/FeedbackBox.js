@@ -1,4 +1,4 @@
-Ext.define('Admin.lib.FeedbackBox', {
+Ext.define('Admin.view.FeedbackBox', {
     extend: 'Ext.Component',
     alias: 'widget.feedbackBox',
     requires: 'Admin.MessageBus',
@@ -11,10 +11,10 @@ Ext.define('Admin.lib.FeedbackBox', {
 
     notifyOpts: undefined,
 
-    tpl: '<div class="admin-notification-window clearfix">' +
+    tpl: '<div class="admin-feedback-box clearfix">' +
          '	<table border="0" cellpadding="0" cellspacing="0">' +
          '		<tr>' +
-         '			<td style="width: 48px;padding-top:4px;" valign="top">' +
+         '			<td style="width: 48px;" valign="top">' +
          '				<img src="../admin/resources/images/icons/48x48/message.png" style="width:48px; height:48px"/>' +
          '			</td>' +
          '			<td valign="top" style="padding-left:15px">' +
@@ -24,7 +24,7 @@ Ext.define('Admin.lib.FeedbackBox', {
          '     </tr>' +
          '		<tr>' +
          '		    <td colspan="2" style="text-align: right">' +
-         '		        <tpl if="notifyUser">' +
+         '		        <tpl if="showNotifyUserLink">' +
          '					<span class="link notify-user" href="javascript:;">Send Notification</span>' +
          '             </tpl>' +
          '			</td>' +
@@ -57,7 +57,7 @@ Ext.define('Admin.lib.FeedbackBox', {
         me.update({
             messageTitle: config.title,
             messageText: config.message,
-            notifyUser: config.opts.notifyUser === undefined ? false : config.opts.notifyUser
+            showNotifyUserLink: config.opts.notifyUser === undefined ? false : config.opts.notifyUser
         });
         me.setNotifyOpts(config.opts);
         me.show();
@@ -130,6 +130,7 @@ Ext.define('Admin.lib.FeedbackBox', {
         }, this);
 
         me.getEl().on('click', function (event, target) {
+            /*
             if (target.className.indexOf('notify-user') > -1) {
                 var notifyOpts = me.getNotifyOpts();
                 Ext.Ajax.request({
@@ -152,9 +153,9 @@ Ext.define('Admin.lib.FeedbackBox', {
                     }
                 });
             }
-
-            this.hide();
-        }, this);
+            */
+            me.hide();
+        }, me);
     },
 
 
