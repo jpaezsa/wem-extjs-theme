@@ -17,7 +17,7 @@ Compile
     > ${project-dir}/lib/ext/resources/sass/compass compile admin.scss
 
 
-## Deploy
+## Deploying
 
 ### CSS
 
