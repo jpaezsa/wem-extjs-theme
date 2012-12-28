@@ -70,19 +70,6 @@
         margin-right: 10px
     }
 
-    .admin-grid-name-renderer {
-        float: left;
-    }
-
-    .admin-grid-name-renderer h6 {
-        margin-bottom: 2px !important;
-    }
-
-    .admin-grid-name-renderer .admin-grid-name-renderer-path {
-        margin: 0 !important;
-        color: $admin-medium-grey !important;
-    }
-
     .x-grid-row-selected .admin-grid-name-renderer .admin-grid-name-renderer-path {
         color: #fff !important;
     }
