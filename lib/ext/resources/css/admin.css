@@ -1124,6 +1124,10 @@ div.admin-load-mask {
     width: 16px;
     height: 16px; }
 
+/* line 23, ../sass/admin/css/_load-mask.scss */
+div.x-mask {
+  background-color: #fff; }
+
 /* line 21, ../sass/admin/css/_top-bar.scss */
 .x-toolbar.admin-topbar-panel {
   color: #eee;
