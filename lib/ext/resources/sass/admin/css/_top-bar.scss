@@ -31,27 +31,25 @@
   /*      Start button        */
 
   .start-button {
-    @include topbar-button();
-
-    button {
-      overflow: visible;
-    }
-
-    .x-btn-icon {
-      width: 24px;
-      height: 24px;
-      top: -4px;
-    }
-
-    .x-btn-inner {
-      padding-left: 30px;
-    }
+    padding: 0;
+    border: 0 none;
+    background: url("../themes/images/default/leopard-home-button_128x128.png") center no-repeat;
+    background-size: 32px;
+    width: 32px;
+    height: 32px;
   }
 
   /*      Title button        */
 
   .title-button {
     @include topbar-button();
+  }
+
+  /*    Home button   */
+
+  .home-button {
+    @include topbar-button();
+    padding: 6px;
   }
 
 }
