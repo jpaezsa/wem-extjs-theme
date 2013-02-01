@@ -15,3 +15,22 @@
 .x-toolbar .x-btn-split-right {
     background-image: url("../themes/images/default/button/admin-arrow-dark.png") !important;
 }
+
+.x-btn.wizard-nav-button {
+    background-color: transparent;
+    border: none;
+    position:fixed;
+    top:50%;
+}
+
+.wizard-nav-button-right {
+    right:30px;
+}
+
+.wizard-nav-button-left  {
+    left:30px;
+}
+
+.x-btn.wizard-nav-button .x-btn-icon {
+    color: #777777;
+}
