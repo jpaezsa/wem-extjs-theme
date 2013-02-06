@@ -1,28 +1,44 @@
 @import "../variables/core";
 
 .admin-data-view {
-    background-color: #ffffff;
-    cursor: pointer;
-}
+  background-color: #ffffff;
+  cursor: pointer;
 
-.admin-data-view .admin-data-view-cell {
-    display: table-cell;
-    vertical-align: middle;
-    padding: 5px 10px;
-}
+  .admin-data-view-row {
+    padding: 5px;
 
-.admin-data-view-cell div {
-    font-size: $admin-font-size-small;
-}
+    // over
+    &.x-item-over {
+      background-color: $admin-over-background-color;
+    }
 
-// over
-.admin-data-view.admin-data-view-over {
-    background-color: $admin-over-background-color;
-}
+    // selected
+    &.x-item-selected {
+      background-color: $admin-selected-background-color;
+      color: $admin-selected-font-color;
+    }
+  }
 
-// selected
-.admin-data-view.x-item-selected {
-    background-color: $admin-selected-background-color;
-    color: $admin-selected-font-color;
+  .admin-data-view-thumbnail {
+    float: left;
+
+    img {
+      height: 32px;
+      width: 32px;
+      display: block;
+      margin: 0 15px 0 10px;
+    }
+  }
+
+  .admin-data-view-description {
+    float: left;
+    margin-top: 3px;
+
+    p {
+      margin: 0 !important;
+      line-height: 1;
+    }
+  }
+
 }
 
