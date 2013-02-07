@@ -143,3 +143,32 @@
     text-decoration: underline;
     cursor: pointer;
 }
+
+/**
+* Form item set
+*/
+
+.form-item-set {
+    .admin-formitemset-block {
+        border: none !important;
+        box-shadow: 0 0 4px #777;
+        border-radius: 0;
+
+        .header {
+            border: none;
+        }
+    }
+
+    .icon-grey {
+        color: #777777;
+    }
+}
+
+
+/* To allow box-shadow, we must override overflow: hidden on containing elements. */
+.x-fieldset-body,
+.x-panel-body,
+.x-fit-item,
+.x-panel {
+    overflow: visible !important;
+}

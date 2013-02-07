@@ -34,3 +34,12 @@
 .x-btn.wizard-nav-button .x-btn-icon {
     color: #777777;
 }
+
+.x-btn.nobg {
+    background-color: transparent;
+    border:none;
+}
+
+.x-btn.icon-button {
+    padding:0;
+}
