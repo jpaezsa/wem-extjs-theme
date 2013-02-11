@@ -166,9 +166,11 @@
 
 
 /* To allow box-shadow, we must override overflow: hidden on containing elements. */
-.x-fieldset-body,
-.x-panel-body,
-.x-fit-item,
-.x-panel {
-    overflow: visible !important;
+.admin-wizard {
+    .x-fieldset-body,
+    .x-panel-body,
+    .x-fit-item,
+    .x-panel {
+        overflow: visible;
+    }
 }
