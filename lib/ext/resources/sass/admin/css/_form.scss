@@ -162,8 +162,28 @@
     .icon-grey {
         color: #777777;
     }
-}
 
+    /* Sub form-item-sets needs to be padded */
+    .form-item-set {
+        margin-left: 10px !important;
+        .admin-formitemset-block {
+            background-color: #f9f9f9;
+        }
+
+        .form-item-set {
+            .admin-formitemset-block {
+                background-color: #ffffff;
+            }
+
+            .form-item-set {
+                .admin-formitemset-block {
+                    background-color: #f9f9f9;
+                }
+            }
+        }
+    }
+
+}
 
 /* To allow box-shadow, we must override overflow: hidden on containing elements. */
 .admin-wizard {
