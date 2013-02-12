@@ -48,9 +48,22 @@
 
     /*    Home button   */
 
-    .home-button {
+    .title-button {
         @include topbar-button();
-        padding: 6px;
+
+        button {
+            overflow: visible;
+
+            .x-btn-icon {
+                width: 32px;
+                height: 32px;
+                top: -6px;
+            }
+
+            .x-btn-inner {
+                padding-left: 36px;
+            }
+        }
     }
 
 }
