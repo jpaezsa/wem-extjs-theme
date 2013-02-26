@@ -55,7 +55,13 @@
       }
 
       .x-btn-inner {
-        padding-left: 36px;
+        padding-left: 40px;
+
+        .count {
+          padding: 4px;
+          margin-left: 8px;
+          background: red;
+        }
       }
     }
   }
