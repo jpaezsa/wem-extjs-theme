@@ -145,23 +145,24 @@
   margin: 0;
 // remove form field margin
 
-  .x-form-item-body {
-    padding: 3px;
-    // account space for glow
-
-    input {
-      border: 1px solid transparent;
-      color: #555555;
-      font-weight: normal;
-      margin: 0;
-      padding: 2px;
-      border-radius: 2px;
-      background: white none;
-    }
+  input,
+  .x-form-display-field {
+    border: 1px solid transparent;
+    color: #555555;
+    font-weight: normal;
+    margin: 0;
+    padding: 2px;
+    border-radius: 2px;
+    background: white none;
   }
 }
 
 @mixin admin-wizard-header-field-events {
+
+// account space for glow
+  .x-form-item-body {
+    padding: 3px;
+  }
 
   input:hover {
     border: 1px solid #98c9f2;
@@ -184,10 +185,13 @@
 
   .admin-display-name {
     @include admin-wizard-header-field();
-    @include admin-wizard-header-field-events();
+    &:not(.x-form-readonly):not(.x-form-display-field) {
+      @include admin-wizard-header-field-events();
+    }
     width: 100%;
 
-    input {
+    input,
+    .x-form-display-field {
       font-size: 26px;
       line-height: 36px !important;
       height: 36px !important;
@@ -197,8 +201,9 @@
   .admin-path {
     @include admin-wizard-header-field();
 
-    input {
-      color: #AAA;
+    input,
+    .x-form-display-field {
+      color: #AAA !important;
       font-size: 16px;
       line-height: 26px !important;
       height: 26px !important;
@@ -208,11 +213,12 @@
 
   .admin-name {
     @include admin-wizard-header-field();
-    &:not(.x-form-readonly) {
+    &:not(.x-form-readonly):not(.x-form-display-field) {
       @include admin-wizard-header-field-events();
     }
 
-    input {
+    input,
+    .x-form-display-field {
       font-size: 16px;
       line-height: 26px !important;
       height: 26px !important;
@@ -220,72 +226,3 @@
 
   }
 }
-
-/*
-*   Styles used in old wizard headers with templates
-*   //TODO: To be deleted after every wizard uses Admin.view.WizardHeader
-*/
-
-@mixin admin-wizard-header-input {
-  border: 1px solid transparent;
-  color: #555555;
-  font-weight: normal;
-  margin: 0;
-  border-radius: 2px;
-  background: white none;
-}
-
-@mixin admin-wizard-header-input-events {
-  &:hover {
-    border: 1px solid #98c9f2;
-    box-shadow: 0 0 3px #98c9f2;
-  }
-  &:focus {
-    color: #000 !important;
-    border: 1px solid #99BCE8 !important;
-  }
-}
-
-.admin-wizard-header-container {
-
-  .admin-content-path {
-
-    table {
-      width: 100%;
-
-      td.fluid {
-        width: 100%;
-      }
-
-      span {
-        color: #AAA;
-        font-size: 16px;
-        line-height: 26px !important;
-        height: 26px !important;
-        padding: 0 0 0 6px;
-        white-space: nowrap;
-      }
-
-      input {
-        @include admin-wizard-header-input();
-
-        width: 100%;
-        font-size: 16px;
-        line-height: 26px !important;
-        height: 26px !important;
-        padding: 2px;
-      }
-
-      input:not([readonly]) {
-        @include admin-wizard-header-input-events();
-      }
-
-    }
-
-  }
-
-}
-
-/*
-*   End of styles used in old wizard headers with templates
-*/
