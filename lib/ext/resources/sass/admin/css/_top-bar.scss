@@ -23,7 +23,6 @@
 
   color: #eee;
   font-size: 14px;
-  padding: 6px;
   background: black; /* for non-css3 browsers */
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType = 1, startColorstr = '#000000', endColorstr = '#4B4A4C'); /* for IE */
   background: -webkit-gradient(linear, left top, right top, from(#000), to(#4B4A4C)); /* for webkit browsers */
@@ -34,8 +33,9 @@
   .start-button {
     padding: 0;
     border: 0 none;
-    background: url("../themes/images/default/leopard-home-button_128x128.png") center no-repeat;
-    background-size: 32px;
+    background-image: url("../themes/images/default/home-button.svg");
+    -o-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
     width: 32px;
     height: 32px;
   }
@@ -66,11 +66,49 @@
     }
   }
 
+/*    Separator   */
+
+  .x-toolbar-separator {
+    height: 32px;
+    width: 1px;
+    background-color: #555;
+  }
+
 /*    Home button   */
 
   .home-button {
     @include topbar-button();
     padding: 6px;
+
+    .x-btn-inner {
+      font-weight: bold;
+    }
+  }
+
+/*    Image button   */
+
+  .admin-image-button {
+    padding: 0px;
+    border: 0 none;
+
+    button {
+      height: 44px;
+      line-height: 44px;
+      padding: 0 0 0 44px;
+
+      .x-btn-inner {
+        width: auto;
+        height: 44px;
+        line-height: 44px;
+        display: none;
+      }
+
+      .x-btn-icon {
+        height: 44px;
+        width: 44px;
+        background-size: 44px;
+      }
+    }
   }
 
 }
