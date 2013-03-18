@@ -129,10 +129,10 @@
 /**
 * Content Manager Form Components
 */
-.admin-formitemset-block {
+/*.admin-formitemset-block {
     border: 1px solid $admin-light-grey !important;
     border-radius: 3px;
-}
+}*/
 
 .admin-formitemset-block .header {
     border-bottom: 1px solid $admin-light-grey
@@ -147,6 +147,15 @@
 /**
 * Form item set
 */
+.admin-formitemset-container {
+    background-color: $admin-light-grey;
+}
+
+.admin-formitemset-block {
+    background-color: #fff;
+    border:0;
+    border-radius: 0;
+}
 
 .form-item-set {
     .admin-formitemset-block {
