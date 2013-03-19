@@ -149,11 +149,16 @@
 */
 .admin-formitemset-container {
     background-color: $admin-light-grey;
+    > div {
+        > .x-panel.x-column {
+            width: 100%;
+        }
+    }
 }
 
 .admin-formitemset-block {
     background-color: #fff;
-    border:0;
+    border: 0;
     border-radius: 0;
 }
 
