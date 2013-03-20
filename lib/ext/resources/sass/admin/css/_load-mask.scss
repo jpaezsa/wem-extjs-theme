@@ -1,27 +1,27 @@
 div.admin-load-mask {
+  border: none;
+  padding: 4px;
+  border: 0 none;
+  background-color: #ffffff;
 
-  div.x-mask-loading {
-    background-position: center;
-    background-color: #ffffff;
-    border: none;
-    padding: 0;
-    width: 16px;
+  .admin-load-text {
+    background-position: left;
+    padding: 0 0 0 20px;
+    background-color: transparent;
+    border: 0 none;
     height: 16px;
   }
-
-  border: none;
-
-  padding: 0;
-
-  width: 16px;
-
-  height: 16px;
-
-  border: none;
 }
 
-/*
-div.x-mask {
-  background-color: #fff;
+// Ext.Element.mask() is used
+// for masking floating components
+.x-mask {
+  background-color: #000 !important;
 }
-*/
+
+// Ext.LoadMask is used
+// for masking regular components
+.admin-mask-white {
+  background-color: #fff !important;
+  @include opacity(0.5);
+}
