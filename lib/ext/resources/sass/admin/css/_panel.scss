@@ -26,6 +26,12 @@
         .admin-facet {
             /*      padding-left: 10px;*/
 
+            &:hover {
+                label {
+                    color: #000 !important;
+                }
+            }
+
             input[type="checkbox"] {
                 display:none;
             }
