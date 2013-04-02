@@ -6,28 +6,15 @@
 
 // Drop indicator
 .admin-drop-indicator {
-    position: absolute;
     height: 1px;
     line-height: 0;
     overflow: visible;
-    border-bottom: 2px solid green;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 200px;
+    height: 200px;
+    font-size: 20px;
+    border: 4px dashed gray;
 }
 
-@mixin drop-indicator-bullet {
-    content: '•';
-    font-size: 16px;
-    color: green;
-    position: absolute;
-}
-
-.admin-drop-indicator:before {
-    @include drop-indicator-bullet;
-    left: -8px;
-    top: -1px;
-}
-
-.admin-drop-indicator:after {
-    @include drop-indicator-bullet;
-    right: -8px;
-    top: -1px;
-}
