@@ -1,4 +1,7 @@
 .admin-detail-nav {
+    .vertical & li {
+        float:left;
+    }
     li {
         font-size: 15px;
         padding: 10px 20px;
