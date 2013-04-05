@@ -163,17 +163,22 @@
     padding: 3px;
   }
 
+  input {
+    border: 1px solid #98c9f2;
+  }
+
   input:hover {
     border: 1px solid #98c9f2;
-    box-shadow: 0 0 3px #98c9f2;
   }
+  
   input:focus {
     color: #000;
-    border: 1px solid #99BCE8;
+    border: none;
+    box-shadow: 0 0 3px #98c9f2;
   }
 
   input.x-form-invalid-field {
-    border: 1px solid #CC3300;
+    border: none;
     box-shadow: 0 0 0 transparent;
   }
 }
@@ -187,7 +192,6 @@
     &:not(.x-form-readonly):not(.x-form-display-field) {
       @include admin-wizard-header-field-events();
     }
-    width: 100%;
 
     input,
     .x-form-display-field {
