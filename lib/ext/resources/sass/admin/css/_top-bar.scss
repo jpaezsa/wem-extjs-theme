@@ -5,7 +5,7 @@
     -ms-border-radius: 0;
     -khtml-border-radius: 0;
     border-radius: 0;
-    padding: 6px 16px;
+    padding: 4px 16px;
     border: 0 none;
     background-color: transparent;
 
@@ -52,7 +52,7 @@
             .x-btn-icon {
                 width: 32px;
                 height: 32px;
-                top: -6px;
+                top: -4px;
             }
 
             .x-btn-inner {
@@ -65,6 +65,7 @@
                     margin-left: 8px;
                     background: #DC143C;
                     color: #fff;
+                    border-radius: 50%;
                 }
             }
         }
